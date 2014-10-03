@@ -2410,3 +2410,11 @@ header {
   margin: -20px 0 0 0;
   display: block;
 }
+/* line 2151, ../sass/screen.scss */
+#blog_list .views {
+  float: right;
+  color: #727070;
+  font-family: "pf_square_sans_prolight";
+  font-size: 13px;
+  display: block;
+}
