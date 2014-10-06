@@ -1,5 +1,5 @@
 <div id="basket">
-	<h2>Купить</h2>
+	<h2>Корзина</h2>
 	<table>
 		<tr>
 			<th class="numb">№ П/П</th>
@@ -160,9 +160,10 @@
 			<td>12.200 Р</td>
 			<td>12.200 Р</td>
 		</tr>
-
 	</table>
 	<div class="summ">Сумма: 24.400 Р</div>
+	<div class="print"><a href="#">Версия для печати</a></div>
 	<div class="clr"></div>
 	<a class="order" href="#">Заказать</a>
+	<a class="order bg_orange" href="#">Получить скидку</a>
 </div>

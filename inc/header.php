@@ -26,7 +26,7 @@
 
 					<div id="menu">
 						<ul>
-							<li><a href="/metalika/">ГЛАВНАЯ</a></li>
+							<li><a href="/metalica/">ГЛАВНАЯ</a></li>
 							<li><a href="">О КОМПАНИИ</a></li>
 							<li><a href="">КАТАЛОГ</a></li>	
 							<li><a href="">НОВОСТИ</a></li>	

@@ -14,13 +14,16 @@
 		<li><a href="profile.php">Профиль</a></li>
 		<li><a href="photogallery.php">Фотогаллеря</a></li>
 		<li><a href="photoalbum.php">Фотоальбом</a></li>
-		<li>Просмотр фото</li>
 		<li><a href="vacancy.php">Вакансии</a></li>
 		<li><a href="clients.php">Клиенты</a></li>
 		<li><a href="people.php">Сотрудники</a></li>
 		<li><a href="review.php">Отзывы</a></li>
 		<li><a href="faq.php">Вопрос ответ</a></li>
-
+		<li><a href="blog_list.php">Список блогов</a></li>
+		<li><a href="contacts.php">Контакты</a></li>
+		<li><a href="catalog_novinki.php">Новинки и спецпредложения</a></li>
+		<li><a href="basket.php">Корзина</a></li>
+		<li><a href="404.php">Страница 404</a></li>
 	</ol>
 </div>
 		

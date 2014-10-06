@@ -48,13 +48,11 @@ h2 {
 	font-family: $fMedium;
 }
 
-
 footer {
 	height: 230px;
 	width: 1022px;
 	position: absolute;
 	bottom: 0;
-
 }
 
 @font-face {
@@ -131,16 +129,16 @@ header {
 		color: black;
 		padding: 5px 10px;
 		background-color: white;
-		box-shadow: inset 0px 2px 5px #cdcdcd;
+		@include box-shadow(inset 0px 2px 5px #cdcdcd);
 		font-size: 16px;
 		font-family: $fMedium;
-		border-radius: 50%;
+		@include border-radius(50%);
 		&.active {
-			box-shadow: none;
+			@include box-shadow(none);
 			background-color: transparent;
 		}
 		&.arrow {
-			box-shadow: none;
+			@include box-shadow(none);
 			background-color: #d0d0d0;
 		}
 	}
@@ -251,13 +249,13 @@ header {
 		margin: 0 auto;
 		li{
 			line-height: 54px;
-			display: inline-block;
+			display: table-cell;
 			margin-right: 25px;
 			&:last-child {
 				margin-right: 0px;
 			}
 			a {
-				padding: 18px 10px;
+				padding: 18px 24px;
 				&:hover{
 				background: url("../images/bgmenu_active.png");
 				}
@@ -311,7 +309,7 @@ header {
 	height: 53px;
 	a {
 		color: #fff;
-		text-shadow:0px 1px 1px #4e4e4e;
+		@include text-shadow(0px 1px 1px #4e4e4e);
 	}
 	ul {
 		display: table;
@@ -324,7 +322,7 @@ header {
 				padding: 20px;
 				margin-left: 180px;
 				margin-top: -60px;
-				box-shadow: 0px 0px 5px #949494;
+				@include box-shadow(0px 0px 5px #949494);
 				font-size: 14px;
 				line-height: 16px;
 				&:before {
@@ -337,8 +335,8 @@ header {
 					background-color: white;
 					position: absolute;
 					/* z-index: -1; */
-					box-shadow: 0px 0px 5px #949494;
-					transform: rotate(45deg);
+					@include box-shadow(0px 0px 5px #949494);
+					@include transform(rotate(45deg));
 				}
 				&:after {
 					height: 30px;
@@ -354,7 +352,7 @@ header {
 			width: 100%;
 			position: absolute;
 			background-color: #266493;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			left:0;
 			z-index: 10;
 			padding: 20px;
@@ -370,7 +368,7 @@ header {
 			width: 188px;
 			position: absolute;
 			background-color: #e06730;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			left:0;
 			z-index: 10;
 			padding: 20px;
@@ -386,7 +384,7 @@ header {
 			width: 188px;
 			position: absolute;
 			background-color: #827567;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			left:0;
 			z-index: 10;
 			padding: 20px;
@@ -402,7 +400,7 @@ header {
 			width: 188px;
 			position: absolute;
 			background-color: #5b6497;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			left:0;
 			z-index: 10;
 			padding: 20px;
@@ -418,7 +416,7 @@ header {
 			width: 188px;
 			position: absolute;
 			background-color: #9f8b54;
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			left:0;
 			z-index: 10;
 			padding: 20px;
@@ -436,7 +434,7 @@ header {
 			height: 51px;
 			width: 188px;
 			border-right: 1px solid white;
-			box-sizing:border-box;
+			@include box-sizing(border-box);
 			vertical-align: middle;
 			position: relative;
 			&:last-child {
@@ -463,7 +461,7 @@ header {
 			}
 
 			&.b1 {
-				background: linear-gradient(-14deg, #397db0 49%, #266493 49%);
+				@include background(linear-gradient(-14deg, #397db0 49%, #266493 49%));
 				border-bottom: 2px solid #12476f;
 				padding-left: 68px;
 				height: 51px;
@@ -476,7 +474,7 @@ header {
 				}
 			}	
 			&.b2 {
-				background: linear-gradient(-14deg, #f57840 49%, #e06730 49%);
+				@include background(linear-gradient(-14deg, #f57840 49%, #e06730 49%));
 				padding-left: 70px;
 				border-bottom: 2px solid #b14818;
 				height: 51px;
@@ -489,7 +487,7 @@ header {
 				}
 			}
 			&.b3 {
-				background: linear-gradient(-14deg, #938a80 49%, #827567 49%);
+				@include background(linear-gradient(-14deg, #938a80 49%, #827567 49%));
 				padding-left: 80px;
 				border-bottom: 2px solid #645545;
 				height: 51px;
@@ -502,7 +500,7 @@ header {
 				}
 			}
 			&.b4 {
-				background: linear-gradient(-14deg, #6b75aa 49%, #5b6497 49%);
+				@include background(linear-gradient(-14deg, #6b75aa 49%, #5b6497 49%));
 				padding-left: 80px;
 				border-bottom: 2px solid #414a7a;
 				height: 51px;
@@ -516,7 +514,7 @@ header {
 				}
 			}
 			&.b5 {
-				background: linear-gradient(-14deg, #b3a16e 49%, #9f8b54 49%);
+				@include background(linear-gradient(-14deg, #b3a16e 49%, #9f8b54 49%));
 				padding-left: 50px;
 				border-bottom: 2px solid #6f613b;
 				height: 51px;
@@ -561,7 +559,7 @@ header {
 
   &.next{
    right: 0;
-   transform: rotate(180deg);
+   @include transform(rotate(180deg));
    margin-right: -15px;
   }
   &.prev{
@@ -587,9 +585,9 @@ header {
 		height: 190px;	
 		background-color: #ffffff;
 		padding: 20px 30px 20px 30px;
-		box-sizing: border-box;
+		@include box-sizing(order-box);
 		margin-bottom: 15px;
-		box-shadow: 0 0 4px #cdcdcd;
+		@include box-shadow(0 0 4px #cdcdcd);
 		margin-right:10px;
 		margin-left: 3px;
 		margin-top: 3px;
@@ -607,11 +605,11 @@ header {
   cursor:pointer;
   width:50px;
   height: 50px;
-  background: url("../images/sprites.png") -48px -2px no-repeat;
+  @include background(url("../images/sprites.png") -48px -2px no-repeat);
 
   &.next{
    right: 0;
-   transform: rotate(180deg);
+   @include transform(rotate(180deg));
    margin-right: -23px;
   }
   &.prev{
@@ -657,7 +655,7 @@ header {
   cursor:pointer;
   width:50px;
   height: 50px;
-  background: url("../images/sprites.png") -48px -2px no-repeat;
+  @include background(url("../images/sprites.png") -48px -2px no-repeat);
 
   &.next{
    right: 0;
@@ -697,10 +695,10 @@ header {
   cursor:pointer;
   width:50px;
   height: 50px;
-  background: url("../images/sprites.png") -48px -2px no-repeat;
+  @include background( url("../images/sprites.png") -48px -2px no-repeat);
   &.next{
    right: 0;
-   transform: rotate(180deg);
+   @include transform(rotate(180deg));
    margin-right: -15px;
   }
   &.prev{
@@ -735,11 +733,11 @@ header {
   cursor:pointer;
   width:50px;
   height: 50px;
-  background: url("../images/sprites.png") -48px -2px no-repeat;
+  @include background(url("../images/sprites.png") -48px -2px no-repeat);
 
   &.next{
    right: 0;
-   transform: rotate(180deg);
+  @include transform(rotate(180deg));
    margin-right: -15px;
   }
   &.prev{
@@ -800,7 +798,7 @@ header {
 			margin-bottom: 20px;
 		}
 		img {
-			box-shadow: 0 0 4px #cdcdcd;
+			@include box-shadow(0 0 4px #cdcdcd);
 			margin-bottom: 20px;
 		}
 		span {
@@ -814,28 +812,28 @@ header {
 				margin-right: 15px;
 			}
 		}
-
-		.icon_new {
-			position: absolute;
-			background: url(../images/icon_new.png);
-			width: 77px;
-			height: 77px;
-		}
-
-		.icon_action {
-			position: absolute;
-			background: url(../images/icon_action.png);
-			width: 77px;
-			height: 77px;
-		}
-
-		.icon_lider {
-			position: absolute;
-			background: url(../images/icon_lider.png);
-			width: 77px;
-			height: 77px;
-		}
 	}
+}
+
+.icon_new {
+	position: absolute;
+	background: url(../images/icon_new.png);
+	width: 77px;
+	height: 77px;
+}
+
+.icon_action {
+	position: absolute;
+	background: url(../images/icon_action.png);
+	width: 77px;
+	height: 77px;
+}
+
+.icon_lider {
+	position: absolute;
+	background: url(../images/icon_lider.png);
+	width: 77px;
+	height: 77px;
 }
 
 #blog {
@@ -921,7 +919,7 @@ header {
 }
 
 #ft_ft {
-	box-sizing:border-box;
+	@include box-sizing(border-box);
 	background-color: #938a80;
 	height: 160px;
 	padding-bottom: 70px;
@@ -1051,7 +1049,7 @@ header {
 		img {
 			border: 2px solid transparent;
 			&:hover {
-				transform: scale(1.2);
+				@include transform(scale(1.2));
 				border: 2px solid white;
 
 			}
@@ -1065,16 +1063,16 @@ header {
 			color: black;
 			padding: 5px 10px;
 			background-color: white;
-			box-shadow: inset 0px 2px 5px #cdcdcd;
+			@include box-shadow(inset 0px 2px 5px #cdcdcd);
 			font-size: 16px;
 			font-family: $fMedium;
-			border-radius: 50%;
+			@include border-radius(50%);
 			&.active {
-				box-shadow: none;
+				@include box-shadow(none);
 				background-color: transparent;
 			}
 			&.arrow {
-				box-shadow: none;
+				@include box-shadow(none);
 				background-color: #d0d0d0;
 			}
 		}
@@ -1123,7 +1121,7 @@ header {
 	padding: 0 40px;
 	overflow: hidden;
 	img {
-		box-shadow: 0 0 4px #cdcdcd;
+		@include box-shadow(0 0 4px #cdcdcd);
 		margin-bottom: 20px;
 	}
 	h1 {
@@ -1168,6 +1166,14 @@ header {
 	border-top: 3px solid #27567a;
 	padding: 10px 50px;	
 	color: white;
+	}
+
+	.discount {
+	background-color: #397db0;
+	border-top: 3px solid #27567a;
+	padding: 10px 20px;	
+	color: white;
+	font-size: 14px;
 	}
 
 	.back {
@@ -1359,7 +1365,7 @@ header {
 		background: url("../images/color_top.png");
 		top: -5px;
 		left: 30px;
-		transform: rotate(-90deg);
+		@include transform(rotate(-90deg));
 	}
 	.minus {
 		display: block;
@@ -1369,7 +1375,7 @@ header {
 		background: url("../images/color_top.png");
 		top: -5px;
 		left: 90px;
-		transform: rotate(90deg);
+		@include transform(rotate(90deg));
 	}
 
 	.colorpicker {
@@ -1388,11 +1394,11 @@ header {
 
 	input.check_white[type="checkbox"] + label::before {
 		border: 6px solid #e5e4e6;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #e5e4e6;
 	    content:"";
@@ -1409,11 +1415,11 @@ header {
 
 	input.radio_red[type="radio"] + label::before {
 		border: 6px solid red;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: red;
 	    content:"";
@@ -1425,11 +1431,11 @@ header {
 
 	input.radio_orange[type="radio"] + label::before {
 		border: 6px solid #e26e3b;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #e26e3b;
 	    content:"";
@@ -1437,11 +1443,11 @@ header {
 
 	input.radio_yellow[type="radio"] + label::before {
 		border: 6px solid #f5e800;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #f5e800;
 	    content:"";
@@ -1452,11 +1458,11 @@ header {
 
 	input.radio_green[type="radio"] + label::before {
 		border: 6px solid #009764;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #009764;
 	    content:"";
@@ -1467,11 +1473,11 @@ header {
 
 	input.radio_blue[type="radio"] + label::before {
 		border: 6px solid #0069a7;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #0069a7;
 	    content:"";
@@ -1482,11 +1488,11 @@ header {
 	
 	input.radio_white[type="radio"] + label::before {
 		border: 5px solid #e5e4e6;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    display:inline-block;
 	    width:7px;
 	    height:7px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #e5e4e6;
 	    content:"";
@@ -1519,6 +1525,18 @@ header {
 	color: #fff;
 	float: right;
 	margin-top: 20px;
+	}
+
+	.bg_orange {
+	background-color: #f57840;
+	border-color: #a9532c;
+	padding: 10px 25px;
+	margin-right: 20px;
+	}
+
+	.print {
+		font-size: 14px;
+		text-decoration: underline;
 	}
 }
 
@@ -1624,10 +1642,10 @@ header {
 
 		input.go_save[type="checkbox"] + label::before {
 			border: 6px solid #e5e4e6;
-			box-shadow: 0px -1px 1px #bababa;
+			@include box-shadow(0px -1px 1px #bababa);
 		    width:6px;
 		    height:6px;
-		    border-radius: 50%;
+		    @include border-radius(50%);
 		    cursor:pointer;
 		    background-color: #e5e4e6;
 		    content:"";
@@ -1743,10 +1761,10 @@ header {
 
 	input[type="radio"] + label::before {
 		border: 6px solid #e5e4e6;
-		box-shadow: 0px -1px 1px #bababa;
+		@include box-shadow(0px -1px 1px #bababa);
 	    width:6px;
 	    height:6px;
-	    border-radius: 50%;
+	    @include border-radius(50%);
 	    cursor:pointer;
 	    background-color: #e5e4e6;
 	    content:"";
@@ -1902,7 +1920,6 @@ header {
 	}
 
 	.popup {
-		display: none;	
 		z-index: 100;
 		position: absolute;
 		width: 260px;
@@ -1923,13 +1940,13 @@ header {
 			border: 1px solid #e5e5e5;
 			padding-left: 10px;
 			margin: 0 25px 20px 25px;
-			box-sizing:border-box;
+			@include box-sizing(border-box);
 			font-family: $fLight;
 			font-size: 15px;
 		}
 
 		button {
-			box-sizing:border-box;
+			@include box-sizing(border-box);
 			background-color: #397db0;
 			height: 37px;
 			border: none;
@@ -1961,7 +1978,7 @@ header {
 			position: absolute;
 			left: 100px;
 			top: -6px;
-			transform: rotate(45deg);
+			@include transform(rotate(45deg));
 		}
 
 			span {
@@ -2013,7 +2030,7 @@ header {
 			height: 38px;
 			top: 2px;
 			cursor: pointer;
-			box-sizing:border-box;
+			@include box-sizing(border-box);
 			padding:0;
 			float: right;
 		}
@@ -2035,7 +2052,7 @@ header {
 				border: 1px solid #e5e5e5;
 				padding-left: 10px;
 				margin-bottom: 8px;
-				box-sizing:border-box;
+				@include box-sizing(border-box);
 				font-family: $fLight;
 				font-size: 15px;
 				resize:none;
@@ -2047,7 +2064,7 @@ header {
 				border: 1px solid #e5e5e5;
 				padding-left: 10px;
 				margin-bottom: 8px;
-				box-sizing:border-box;
+				@include box-sizing(border-box);
 				font-family: $fLight;
 				font-size: 15px;
 			}
@@ -2069,7 +2086,7 @@ header {
 			padding: 10px 0px;
 			color: #fff;
 			float: right;
-			box-sizing:border-box;
+			@include box-sizing(border-box);
 		}
 	}
 
@@ -2147,48 +2164,105 @@ header {
 		display: block;
 
 	}
+}
 
-		.views {
-		float: right;
-		color: #727070;
-		font-family: $fLight;
-		font-size: 13px;
-		display: block;
-		
+#contacts {
+	margin: 0 40px;
+
+	.map {
+		margin-left: 340px;
+	}
+
+	.address {
+		padding-left: 340px;
+		padding-top: 20px;
+		line-height: 22px;
+		span {
+			font-size: 12px;
+			color: #397db0;
+		}
+	}
+	.contact_form {
+		width: 325px;
+		height: 325px;
+		float: left;
+		background-color: #ffffff;
+		padding: 20px 15px;
+		@include box-sizing(border-box);
+
+		span {
+			font-size: 12px;
+			color: #7f7f7f;
+		}
+
+		strong {
+			font-family: $fMedium;
+			margin-bottom: 20px;
+			display: block;
+			color: #838383;
+		}
+
+		input {
+			font-family: $fLight;
+			width: 100%;
+			height: 28px;
+			padding: 0 0 0 10px;
+			margin-bottom: 7px;
+			border: 1px solid #dddddd;
+			@include box-sizing(border-box);
+		}
+
+		textarea {
+			font-family: $fLight;
+			width: 100%;
+			height: 65px;
+			padding: 5px 0 0 9px;
+			border: 1px solid #dddddd;
+			resize: none;
+			@include box-sizing(border-box);
+			margin-bottom: 15px;
+		}
+
+		button {
+			background-color: #397db0;
+			height: 26px;
+			border: none;
+			border-top: 3px solid #2b5e84;
+			color: #ffffff;
+			font-family: $fLight;
+			font-size: 13px;
+			width: 132px;
+			cursor: pointer;
+			float: right;
+		}
 	}
 }
 
 
+#notfound {
+	background: url("../images/bg_404.jpg") no-repeat;
+	margin: 0 auto;
+	width: 1010px;
+	height: 800px;
+	text-align: center;
 
+	h1 {
+		color: #a4a4a4;
+		font-weight: bolder;
+		padding-top: 70px;
+	}
 
+	p {
+		max-width: 300px;
+		margin: 0 auto;
+		line-height: 20px;
+	}
+	a {
+		color: #000000;
+		text-decoration: underline;
+	}
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.page404 {
+	background-color: #ffffff;
+}

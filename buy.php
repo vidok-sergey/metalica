@@ -29,7 +29,6 @@
 
 
 <? include 'inc/basket.php' ; ?>
-
 <? include 'inc/interes.php'; ?>
 
 <? include 'inc/footer.php'; ?> 
