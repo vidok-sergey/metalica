@@ -15,24 +15,38 @@
 							<li><a href="#">Заказать каталог</a></li>
 							</ul>
 						</div>
+				</div> <!--wrapper end -->						
 						<div id="ft_ft">
-							<div class="ftrow">
-								<img class="logo" src="images/logo.png" alt="logo"> 
-							</div>
-							<div class="ftrow">
-								<p>© Melgenz, 2014</p>
-								<div class="social">ВК OK FB TW	GP</div>
-							</div>
-							<div class="ftrow">
-								<p class="phone">8 800 568 58 59</p>
-								<p class="worktime">Режим работы: пн.-пт. 9:00 - 21:00</p>
-							</div>
-							<div class="ftrow">
-								<div class="vidok"><a href="http://www.ravidok.ru">создание сайта Чебоксары</a></div>
+							<div class="ft_cell">
+								<div class="ftrow">
+									<img class="logo_ft" src="images/logo.png" alt="logo"> 
+								</div>
+								<div class="ftrow">
+									<p>© Melgenz, 2014</p>
+									<div class="social">ВК OK FB TW	GP</div>
+								</div>
+								<div class="ftrow">
+									<p class="phone">8 800 568 58 59</p>
+									<p class="worktime">Режим работы: пн.-пт. 9:00 - 21:00</p>
+								</div>
+								<div class="ftrow">
+									<div class="vidok"><a href="http://www.ravidok.ru">создание сайта Чебоксары</a></div>
+								</div>
 							</div>
 						</div>
 					</footer>
 
-				</div>
+
+				<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+				<script>window.jQuery || document.write('<script src="/js/libs/jquery-2.0.3.min.js"><\/script>')</script>
+				<script type="text/javascript" src="slick/slick.min.js"></script>
+				<script type="text/javascript">
+					$(document).ready(function(){
+						$('.carusel').slick({
+						  setting-name: setting-value
+						});
+					});
+				</script>
+				<script type="text/javascript" src="js/script.js"></script>
 			</body>
 	</html>

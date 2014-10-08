@@ -41,7 +41,7 @@
 				<label for="c1"></label>
 			</td>
 		</tr>
-		<tr class="dop">
+		<tr>
 			<td></td>
 			<td><img src="images/goods1.png"></td>
 			<td>

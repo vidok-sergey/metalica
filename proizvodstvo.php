@@ -6,21 +6,17 @@
 	<h2>Производство</h2>
 	<div id="big_slide">
 		<div class="carusel_big">
-			<span class="arr prev"></span>
-			<span class="arr next"></span>
 			<div class="cWrapper">
-				<div class="lenta">
-					<div class="row">
-						<div class="block">
-							<img src="images/bigslide1.jpg" alt="">
-							<p>Производство</p>
-						</div>
+				<div class="row">
+					<div class="block">
+						<img src="images/bigslide1.jpg" alt="">
+						<p>Производство</p>
 					</div>
-					<div class="row">
-						<div class="block">
-							<img src="images/bigslide1.jpg" alt="">
-							<p>Производство</p>
-						</div>
+				</div>
+				<div class="row">
+					<div class="block">
+						<img src="images/bigslide1.jpg" alt="">
+						<p>Производство</p>
 					</div>
 				</div>
 			</div>

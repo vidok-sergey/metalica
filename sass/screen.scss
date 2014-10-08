@@ -99,6 +99,7 @@ footer {
 }
 
 .btn_mobile_menu {
+	display: none;
 	width: 60px;
 	height: 60px;
 	position: absolute;
@@ -109,6 +110,7 @@ footer {
 }
 
 #mobile_menu {
+	display: none;
 	position: absolute;
 	z-index: 1;
 	top: 60px;
@@ -119,38 +121,130 @@ footer {
 		width: 220px;
 		li {
 			background-color: #ffffff;
+			&.phone {
+				background: #938a80;
+				color: #ffffff;
+				margin: 40px 0 10px 60px;
+				&:after {
+				display: block;
+				content: '';
+				width: 30px;
+				height: 28px;
+				position: relative;
+				top: -24px;
+				left: -45px;
+				background: url('../images/sprites.png') no-repeat 2px -690px;
+
+				}
+			}
+
+			&.addr {
+				background: #938a80;
+				color: #ffffff;
+				margin-left: 60px;
+				&:after {
+				display: block;
+				content: '';
+				width: 30px;
+				height: 28px;
+				position: relative;
+				top: -30px;
+				left: -45px;
+				background: url('../images/sprites.png') no-repeat 2px -725px;
+
+				}
+			}
+			&.mail {
+				background: #938a80;
+				color: #ffffff;
+				margin-top: 10px;
+				margin-left: 60px;
+				&:after {
+				display: block;
+				content: '';
+				width: 30px;
+				height: 28px;
+				position: relative;
+				top: -24px;
+				left: -48px;
+				background: url('../images/sprites.png') no-repeat -27px -659px;
+
+				}
+			}
 
 			a {
 				display: block;
 				height: 40px;
 				border-bottom: 1px solid #e3e3e3;
-				padding-left: 55px;
+				padding-left: 60px;
 				color: #475055;
-				width: 163px;	
+				width: 160px;	
 				padding-top: 25px;
+				font-family: $fMedium;
+				text-decoration: none;
+				&:hover {
+					background-color: #397db0;
+					color: #ffffff;
+				}
 
 				&:after {
 				display: block;
 				content: '';
 				width: 30px;
-				height: 30px;
+				height: 28px;
 				position: relative;
-				border: 1px dotted red;
 				top: -24px;
-				left: -40px;
+				left: -45px;
+				background: url('../images/sprites.png') no-repeat;
 				}
 
 				&.m_main:after {
-					background: url('../images/sprites.png') no-repeat no-repeat 2px -495px;
+					background-position: 2px -495px;
+				}
+				&.m_main:hover:after {
+					background-position: -27px -495px;
 				}
 
-				&.m_main:after {
-					background: url('../images/sprites.png') no-repeat no-repeat 2px -495px;
+
+				&.m_about:after {
+					background-position: 2px -522px;
+				}
+				&.m_about:hover:after {
+					background-position: -27px -522px;
 				}
 
+				&.m_catalog:after {
+					background-position: 2px -552px;
+				}
+				&.m_catalog:hover:after {
+					background-position: -27px -552px;
+				}
 
+				&.m_news:after {
+					background-position: 2px -577px;
+				}
+				&.m_news:hover:after {
+					background-position: -27px -577px;
+				}
+				&.m_proizv:after {
+					background-position: 2px -600px;
+				}
+				&.m_proizv:hover:after {
+					background-position: -27px -600px;
+				}
 
-
+				&.m_faq:after {
+					background-position: 2px -630px;
+				}
+				&.m_faq:hover:after {
+					background-position: -27px -630px;
+				}
+				&.m_contact:after {
+					background-position: 2px -659px;
+				}
+				&.m_contact:hover:after {
+					background-position: -27px -659px;
+				}
 			}
 		}
 	}
@@ -177,20 +271,23 @@ header {
 }
 
 #wrap {
-	padding-bottom: 250px;
+	padding-bottom: 100px;
 }
 
 .pages {
 	text-align: center;
 	padding: 20px;
 	a {
+		width: 29px;
+		height: 29px;
+		@include border-radius(50%); // border radius
+		@include background-clip(padding-box); // prevents bg color from leaking outside the border
+		background-color: #fff; // layer fill content + color overlay
+		@include box-shadow(inset 0 2px 4px rgba(0,0,0,.1)); // inner shadow
 		color: black;
 		padding: 5px 10px;
-		background-color: white;
-		@include box-shadow(inset 0px 2px 5px #cdcdcd);
 		font-size: 16px;
 		font-family: $fMedium;
-		@include border-radius(50%);
 		&.active {
 			@include box-shadow(none);
 			background-color: transparent;
@@ -198,6 +295,7 @@ header {
 		&.arrow {
 			@include box-shadow(none);
 			background-color: #d0d0d0;
+			color: #fff;
 		}
 	}
 }
@@ -263,6 +361,10 @@ header {
 	margin-top: -42px;
 	margin-right: 45px;
 	border-bottom: 3px solid #27567a;
+	&:hover {
+		background-color: #2b638d;
+		text-decoration: none;
+	}
 }
 
 .button_details {
@@ -276,6 +378,10 @@ header {
 	float: left;
 	border-bottom: 3px solid #27567a;
 	margin-top: 20px;
+	&:hover {
+		background-color: #2b638d;
+		text-decoration: none;
+	}
 }
 
 .login {
@@ -336,9 +442,11 @@ header {
 	}
 }
 #slider {
-	font-size: 34px;
 	position: relative;
 	overflow: hidden;
+	font-size: 0;
+	@include box-shadow(0 3px 0 rgba(0,0,1,.2));
+	z-index: 1;
 	p {
 		line-height: 45px;
 	}
@@ -350,6 +458,7 @@ header {
 		height: auto;
 	}
 	.slider_text {
+		font-size: 34px;
 		padding-left: 100px;
 		position: absolute;
 		top: 0;
@@ -614,19 +723,33 @@ header {
 		}
 	}
 }
+.slick-prev {
+	top: 100px;
+	background: none;
+	width: 50px;
+	height: 50px;
+	@include background(url("../images/sprites.png") -48px -2px no-repeat);
+	&:hover {@include background(url("../images/sprites.png") -48px -95px no-repeat);}
+	&:before {content: '';}
+}
 
-.carusel {
- width: 100%;
+.slick-next {
+	top: 100px;
+	right: -12px;
+	background: none;
+	width: 50px;
+	height: 50px;
+	@include background(url("../images/sprites.png") -48px -2px no-repeat);
+	&:hover {@include background(url("../images/sprites.png") -48px -95px no-repeat);}
+	@include transform(rotate(180deg));
+		&:before {content: '';}
+}
+
+
+/*.carusel {
  .cWrapper{
-  width: 100%;position: relative;overflow: hidden;
   .lenta{
-   width: 2000px;
    .row{
-    display: inline-block;
-    float: left;
-  /*  text-align: center;*/
-    width: 219px;
-    margin-right: 20px;
    }
   }
  }
@@ -652,7 +775,7 @@ header {
    left: 0;
   }
  }
-}
+}*/
 
 .carusel_thanks {
  width: 101%;
@@ -715,13 +838,12 @@ header {
 .carusel_big { 
  width: 100%;
  .cWrapper{
-  width: 100%;position: relative;overflow: hidden;
+  width: 100%;position: relative;
   .lenta{
    width: 2000px;
    .row{
     display: inline-block;
     float: left;
-  /*  text-align: center;*/
     width: 800px;
     margin-right: 20px;
     p {
@@ -730,67 +852,38 @@ header {
    }
   }
  }
- .arr{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: block;
-  margin:auto;
-  z-index:10;
-  cursor:pointer;
-  width:50px;
-  height: 50px;
-  @include background(url("../images/sprites.png") -48px -2px no-repeat);
+	.slick-prev {
+		top: 220px;
+	}
 
-  &.next{
-   right: 0;
-   transform: rotate(180deg);
-   margin-right: -20px;
-  }
-  &.prev{
-  	margin-left: -20px;
-   left: 0;
-  }
- }
+	.slick-next {
+		top: 220px;
+		margin-right: -12px;
+	}
 }
 
 .carusel_clients {
  width: 100%;
  height: 120px;
  .cWrapper{
-  width: 100%;position: relative;overflow: hidden;
+  width: 100%;position: relative;
+  padding: 0 30px;
   .lenta{
    width: 2000px;
-   padding-left: 35px;
+   padding-left: 5px;
    .row{
     display: inline-block;
-    float: left;
-  	text-align: center;
     width: 150px;
    }
   }
  }
- .arr{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  display: block;
-  margin:auto;
-  z-index:10;
-  cursor:pointer;
-  width:50px;
-  height: 50px;
-  @include background( url("../images/sprites.png") -48px -2px no-repeat);
-  &.next{
-   right: 0;
-   @include transform(rotate(180deg));
-   margin-right: -15px;
-  }
-  &.prev{
-   left: 0;
-   margin-left: -20px;
-  }
- }
+	.slick-prev {
+		top: 20px;
+	}
+
+	.slick-next {
+		top: 20px;
+	}
 }
 
 .carusel_int {
@@ -851,7 +944,7 @@ header {
 	img {
 		&.about {
 			float: left;
-			margin-top: 60px;
+			margin-top: 30px;
 		}
 	}
 	p.about {
@@ -967,9 +1060,13 @@ header {
 			margin-top: 20px;
 			color: #397db0;
 			padding-top: 13px;
-			padding-left: 14px;
+			padding-left: 3px;
 			a {
-				color: #397db0;
+				padding: 9px 11px;
+					&:hover {
+					background-color: #f5f5f5;
+					text-decoration: none;
+					}
 			}
 		}
 	}
@@ -987,9 +1084,9 @@ header {
 }
 
 #ft_menu {
-	margin: 0px 20px;
+
 	border-top: 5px solid #938a80;
-	padding: 25px 0px;
+	padding: 25px 20px;
 	font-family: helveticaneuecyrlight;
 	text-align: center;
 	font-size: 14px;
@@ -1002,7 +1099,12 @@ header {
 	}
 }
 
+
 #ft_ft {
+	.ft_cell {
+		width: 1022px;
+		margin: 0 auto;
+	}
 	@include box-sizing(border-box);
 	background-color: #938a80;
 	height: 160px;
@@ -1012,7 +1114,7 @@ header {
 	font-size: 14px;
 	.ftrow {
 		float: left;
-		padding-right: 40px;
+		padding: 0 20px;
 		p.phone {
 			font-size: 30px;
 			font-family: $fMedium;
@@ -1109,7 +1211,7 @@ header {
 	ul {
 		li {
 			display: inline-block;
-			margin-right: 14px;
+			margin-right: 20px;
 			margin-bottom: 40px;
 			&:nth-child(4) {margin-right: 0px;}
 		}
@@ -1250,6 +1352,10 @@ header {
 	border-top: 3px solid #27567a;
 	padding: 10px 50px;	
 	color: white;
+		&:hover {
+		background-color: #2b638d;
+		text-decoration: none;
+		}
 	}
 
 	.discount {
@@ -1258,6 +1364,10 @@ header {
 	padding: 10px 20px;	
 	color: white;
 	font-size: 14px;
+			&:hover {
+		background-color: #2b638d;
+		text-decoration: none;
+		}
 	}
 
 	.back {
@@ -1609,6 +1719,10 @@ header {
 	color: #fff;
 	float: right;
 	margin-top: 20px;
+		&:hover {
+		background-color: #2b638d;
+		text-decoration: none;
+		}
 	}
 
 	.bg_orange {
@@ -1616,6 +1730,10 @@ header {
 	border-color: #a9532c;
 	padding: 10px 25px;
 	margin-right: 20px;
+			&:hover {
+		background-color: #E96023;
+		text-decoration: none;
+		}
 	}
 
 	.print {
@@ -1704,6 +1822,10 @@ header {
 			padding: 10px 0px;
 			color: #fff;
 			text-align: center;
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
 		}
 
 		input[type="checkbox"] {
@@ -1928,6 +2050,10 @@ header {
 			top: 2px;
 			margin-left: 20px;
 			cursor: pointer;
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
 		}
 
 	}
@@ -2044,6 +2170,10 @@ header {
 			top: 2px;
 			margin-left: 24px;
 			cursor: pointer;
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -2117,18 +2247,27 @@ header {
 			@include box-sizing(border-box);
 			padding:0;
 			float: right;
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
 		}
 
 		.addform {
 			border: 1px solid #dddddd;
 			padding: 22px;
 			width: 400px;
-			height: 250px;
+			height: 283px;
 			box-sizing: border-box;
 			background-color: #ffffff;
 			position: absolute;
 			right: -23px;
-			top: -202px;
+			top: -228px;
+			
+			strong {
+				display: block;
+				margin-bottom: 10px;
+			}
 
 			textarea {
 				width: 353px;
@@ -2171,6 +2310,10 @@ header {
 			color: #fff;
 			float: right;
 			@include box-sizing(border-box);
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
 		}
 	}
 
@@ -2318,6 +2461,11 @@ header {
 			width: 132px;
 			cursor: pointer;
 			float: right;
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
+
 		}
 	}
 }

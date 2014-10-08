@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'text-shadow'.
-        on line 29 of c:/xampp/htdocs/metalica/sass/768px.scss, in `text-shadow'
-        from line 29 of c:/xampp/htdocs/metalica/sass/768px.scss
+        on line 30 of c:/xampp/htdocs/metalica/sass/768px.scss, in `text-shadow'
+        from line 30 of c:/xampp/htdocs/metalica/sass/768px.scss
 
-24: 		font-size: 16px;
-25: 		border: none;
-26: 	}
-27: 
-28: 	#buttons {
-29: 		a {@include text-shadow(none);}
-30: 		ul {
-31: 			.second_b1 {
-32: 			padding: 10px;
-33: 			li{font-size: 14px;}
-34: 		}
+25: 	font-size: 16px;
+26: 	border: none;
+27: 	}
+28: 
+29: 	#buttons {
+30: 	a {@include text-shadow(none);}
+31: 	ul {
+32: 		.second_b1 {
+33: 		padding: 10px;
+34: 		li{font-size: 14px;}
+35: 	}
 
 Backtrace:
-c:/xampp/htdocs/metalica/sass/768px.scss:29:in `text-shadow'
-c:/xampp/htdocs/metalica/sass/768px.scss:29
+c:/xampp/htdocs/metalica/sass/768px.scss:30:in `text-shadow'
+c:/xampp/htdocs/metalica/sass/768px.scss:30
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
@@ -98,4 +98,4 @@ C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.r
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'text-shadow'.\A         on line 29 of c:/xampp/htdocs/metalica/sass/768px.scss, in `text-shadow'\A         from line 29 of c:/xampp/htdocs/metalica/sass/768px.scss\A \A 24: 		font-size: 16px;\A 25: 		border: none;\A 26: 	}\A 27: \A 28: 	#buttons {\A 29: 		a {@include text-shadow(none);}\A 30: 		ul {\A 31: 			.second_b1 {\A 32: 			padding: 10px;\A 33: 			li{font-size: 14px;}\A 34: 		}"; }
+  content: "Error: Undefined mixin 'text-shadow'.\A         on line 30 of c:/xampp/htdocs/metalica/sass/768px.scss, in `text-shadow'\A         from line 30 of c:/xampp/htdocs/metalica/sass/768px.scss\A \A 25: 	font-size: 16px;\A 26: 	border: none;\A 27: 	}\A 28: \A 29: 	#buttons {\A 30: 	a {@include text-shadow(none);}\A 31: 	ul {\A 32: 		.second_b1 {\A 33: 		padding: 10px;\A 34: 		li{font-size: 14px;}\A 35: 	}"; }
