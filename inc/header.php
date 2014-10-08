@@ -12,6 +12,10 @@
 							<span>Металлическая мебель</span>
 							<a href="/" title="Главная"><img src="images/logo.png"></a>
 						</div>
+						<div class="logo768">
+							<span>Металлическая мебель</span>
+							<a href="/" title="Главная"><img src="images/logo_m.png"></a>
+						</div>
 						<div class="tel">
 							8 800 568 58 59
 							<span>Звонок по россии бесплатный</span>
@@ -35,5 +39,18 @@
 							<li><a href="">БЛОГ</a></li>
 							<li><a href="">КОНТАКТЫ</a></li>		
 						</ul>					
+					</div>
+
+					<div class="btn_mobile_menu"></div>
+					<div id="mobile_menu">
+						<ul>
+							<li><a class="m_main" href="">Главная</a></li>
+							<li><a href="">О компании</a></li>
+							<li><a href="">Каталог</a></li>
+							<li><a href="">Новости</a></li>
+							<li><a href="">Производство</a></li>
+							<li><a href="">Вопрос / ответ</a></li>
+							<li><a href="">Контакты</a></li>
+						</ul>
 					</div>
 					<div id="wrap">

@@ -1,0 +1,97 @@
+@media screen and (max-width: 1021px) {
+
+	header {
+		background-color: #f57840;
+		height: 60px;
+	}
+
+	.logo768 {
+		display: block;
+		 span {
+			font-size: 12px;
+		}
+	}
+
+	.tel, .login, #menu, .logo{display: none;}
+
+	#slider {
+		font-size: 26px;
+		.slider_text {padding-left: 35px;}
+	}
+
+	.button_details {
+		padding: 12px 10px;
+		font-size: 16px;
+		border: none;
+	}
+
+	#buttons {
+		a {@include text-shadow(none);}
+		ul {
+			.second_b1 {
+			padding: 10px;
+			li{font-size: 14px;}
+		}
+
+		.second_b2 {
+		padding: 10px;
+		li{font-size: 14px;}
+	}
+		.second_b3 {
+		padding: 10px;
+		li{font-size: 14px;}
+	}
+
+		.second_b4 {
+		padding: 10px;
+		li{font-size: 14px;}
+	}
+
+		.second_b5 {
+		padding: 10px;
+		li{font-size: 14px;}
+	}
+
+
+			li {
+				.icon {display: none;}
+				width: 140px;
+
+				&.b1 {
+					background:none;
+					background-color: #397db0;
+					border-bottom: none;
+					padding-left: 30px;
+				}	
+				&.b2 {
+					background:none;;
+					background-color: #f57840;
+					padding-left: 30px;
+					border: none;
+				}
+				&.b3 {
+					background:none;
+					background-color: #938a80;
+					padding-left: 40px;
+					border-bottom:none;
+				}
+				&.b4 {
+					background: none;
+					background-color: #6b75aa;
+					padding-left: 40px;
+					border-bottom:none;
+				}
+				&.b5 {
+					background:none;
+					background-color: #b3a16e;
+					padding-left: 5px;
+					border-bottom: none;
+				}
+			}
+		}
+	}
+
+	.content {padding: 0 129px;}
+	.carusel .cWrapper .lenta .row{margin-right: 5%;}
+
+}

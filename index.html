@@ -1,19 +1,119 @@
-					<? include 'inc/header.php'; ?>
+<!DOCTYPE html>
+	<html lang="ru">
+		<head>	
+			<meta charset="UTF-8" />
+			<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+			<title>Металлическая мебель</title>
+		</head>
+			<body>
+				<div id="layer">
+					<header>
+						<div class="logo">
+							<span>Металлическая мебель</span>
+							<a href="/" title="Главная"><img src="images/logo.png"></a>
+						</div>
+						<div class="tel">
+							8 800 568 58 59
+							<span>Звонок по россии бесплатный</span>
+							<a href="#" class="button">Заказать звонок</a>
+						</div>
+						<div class="login">
+							Ваш город: <span class="state"><a href="#">Петропавловск-Камчатский</a></span>						
+							<span class="entry"><a href="#">Вход в кабинет</a></span>
+							<span class="basket"><a href="#">КОРЗИНА: 25</a></span>
+						</div>
+					</header>
+					<?php include '/inc/header.php'; ?>
+
+					<div id="menu">
+						<ul>
+							<li><a href="">ГЛАВНАЯ</a></li>
+							<li><a href="">О КОМПАНИИ</a></li>
+							<li><a href="">КАТАЛОГ</a></li>	
+							<li><a href="">НОВОСТИ</a></li>	
+							<li><a href="">ПРОИЗВОДСТВО</a></li>	
+							<li><a href="">ВОПРОС / ОТВЕТ</a></li>	
+							<li><a href="">БЛОГ</a></li>
+							<li><a href="">КОНТАКТЫ</a></li>		
+						</ul>					
+					</div>
 
 					<div id="slider">
-						<img src="images/slider1.jpg">
-						<div class="slider_text">
-							<p>При заказе <span class="hour">24</span><br>секционных шкафов<br>
-							<span class="ust">УСТАНОВКА В ПОДАРОК</span></p>
-							<a href="#" class="button_details">ПОДРОБНО ОБ АКЦИИ</a>
-						</div>
+						<p>При заказе <span class="hour">24</span><br>секционных шкафов<br>
+						<span class="ust">УСТАНОВКА В ПОДАРОК</span></p>
+						<a href="#" class="button_details">ПОДРОБНО ОБ АКЦИИ</a>
 					</div>
 					<div class="line"></div>
-					<? include 'inc/buttons.php'; ?>
+
+					<div id="buttons">
+						<ul>
+							<li class="b1">
+								<div class="icon"></div>
+								<a href="#">Шкафы гардеробные</a>
+								<ul class="second_b1">
+									<li>
+										<a href="#">Шкафы секционные</a>
+										<div class="tip">Шкафы для фитнеса предназначены для оборудования раздевалок и гардеробных зон производственных, спортивных, общественных и других помещений с целью оптимального использования пространства.</div>
+									</li>
+									<li>
+										<a href="#">Шкафы для одежды</a>
+										<div class="tip">Шкафы для фитнеса предназначены для оборудования раздевалок и гардеробных зон производственных, спортивных, общественных и других помещений с целью оптимального использования пространства.</div>
+									</li>
+									<li>
+										<a href="#">Шкафы для фитнеса</a>
+										<div class="tip">Шкафы для фитнеса предназначены для оборудования раздевалок и гардеробных зон производственных, спортивных, общественных и других помещений с целью оптимального использования пространства.</div>
+										</li>
+									<li>
+										<a href="#">Шкафы для сервиса сменной одежды</a>
+										<div class="tip">Шкафы для фитнеса предназначены для оборудования раздевалок и гардеробных зон производственных, спортивных, общественных и других помещений с целью оптимального использования пространства.</div>
+									</li>
+								</ul>
+							</li>
+							<li class="b2">
+								<div class="icon"></div>
+								<a href="#">Шкафы секционные</a>
+								<ul class="second_b2">
+									<li><a href="#">Шкафы секционные</a></li>
+									<li><a href="#">Шкафы для одежды</a></li>
+									<li><a href="#">Шкафы для фитнеса</a></li>
+									<li><a href="#">Шкафы для сервиса сменной одежды</a></li>
+								</ul>
+
+							</li>
+							<li class="b3">
+								<div class="icon"></div>
+								<a href="#">Шкафы офисные</a>
+								<ul class="second_b3">
+									<li><a href="#">Шкафы секционные</a></li>
+									<li><a href="#">Шкафы для одежды</a></li>
+									<li><a href="#">Шкафы для фитнеса</a></li>
+									<li><a href="#">Шкафы для сервиса сменной одежды</a></li>
+								</ul>
+							</li>
+							<li class="b4">
+								<div class="icon"></div>
+								<a href="#">Стеллажи</a>
+								<ul class="second_b4">
+									<li><a href="#">Шкафы секционные</a></li>
+									<li><a href="#">Шкафы для одежды</a></li>
+									<li><a href="#">Шкафы для фитнеса</a></li>
+									<li><a href="#">Шкафы для сервиса сменной одежды</a></li>
+								</ul>
+							</li>
+							<li class="b5">
+								<div class="icon"></div>
+								<a href="#">Производственная мебель</a>
+								<ul class="second_b5">
+									<li><a href="#">Шкафы секционные</a></li>
+									<li><a href="#">Шкафы для одежды</a></li>
+									<li><a href="#">Шкафы для фитнеса</a></li>
+									<li><a href="#">Шкафы для сервиса сменной одежды</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 
 					<div id="content">
-
-					<div id="novinki">
 						<h2>Новинки</h2>
 						<div class="carusel">
 							<span class="arr prev"></span>
@@ -71,9 +171,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div id="spec">
 						<h2>Спецпредложения</h2>
 						<div class="carusel">
 							<span class="arr prev"></span>
@@ -131,9 +229,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div id="lider">
 						<h2>Лидеры продаж</h2>
 						<div class="carusel">
 							<span class="arr prev"></span>
@@ -191,7 +287,6 @@
 								</div>
 							</div>
 						</div>
-					</div>
 						
 
 						<img class="about" src="images/about.jpg" alt="О нас">
@@ -220,7 +315,6 @@
 							<p>Обсуждаем новинки производства и всего рынка металлической мебели. Делимся впечатлениями и переживаниями.</p>
 						</div>
 					</div>
-					<div class="clear"></div>
 
 					<div id="clients">
 						<h3>Наши клиенты</h3>
@@ -251,5 +345,49 @@
 							</div>
 						</div>
 					</div>
-					
+
+					<footer>
+						<div id="ft_menu">
+							<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Каталог</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Производство</a></li>
+							<li><a href="#">Вопрос / Ответ</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Прайс-лист</a></li>
+							<li><a href="#">Заказать каталог</a></li>
+							</ul>
+						</div>
+						<div id="ft_ft">
+							<div class="ftrow">
+								<img class="logo" src="images/logo.png" alt="logo"> 
+							</div>
+							<div class="ftrow">
+								<p>© Melgenz, 2014</p>
+								<div class="social">
+									ВК
+									OK
+									FB
+									TW
+									GP
+								</div>
+							</div>
+							<div class="ftrow">
+								<p class="phone">8 800 568 58 59</p>
+								<p class="worktime">Режим работы: пн.-пт. 9:00 - 21:00</p>
+							</div>
+							<div class="ftrow">
+								<div class="vidok"><a href="http://www.ravidok.ru">создание сайта Чебоксары</a></div>
+							</div>
+						</div>
+					</footer>
+
 					<? include 'inc/footer.php'; ?> 
+
+				</div>
+			</body>
+	</html>
