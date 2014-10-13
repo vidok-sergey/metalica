@@ -513,6 +513,9 @@ header a.logo {
   width: 100%;
   height: auto;
 }
+#slider img.i {
+  display: none;
+}
 #slider .slider_text {
   font-size: 34px;
   padding-left: 100px;
@@ -1390,6 +1393,8 @@ header a.logo {
   -webkit-box-shadow: 0 0 4px #cdcdcd;
   box-shadow: 0 0 4px #cdcdcd;
   margin-bottom: 20px;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 #catalog h1 {
   font-size: 32px;
@@ -1416,6 +1421,7 @@ header a.logo {
   width: 220px;
   display: none;
   margin-bottom: 50px;
+  position: relative;
 }
 #catalog ul li:nth-child(-n+4) {
   display: inline-block;
@@ -1434,7 +1440,7 @@ header a.logo {
 #catalog .order {
   background-color: #397db0;
   border-top: 3px solid #27567a;
-  padding: 10px 50px;
+  padding: 10px 30px;
   color: white;
 }
 #catalog .order:hover {
@@ -2445,6 +2451,11 @@ header a.logo {
 }
 #contacts .map {
   margin-left: 340px;
+  float: right;
+  background-color: #cdcdcd;
+  overflow: hidden;
+  width: 600px;
+  height: 325px;
 }
 #contacts .address {
   padding-left: 340px;
@@ -2456,6 +2467,7 @@ header a.logo {
   color: #397db0;
 }
 #contacts .contact_form {
+  position: absolute;
   width: 325px;
   height: 325px;
   float: left;
@@ -2516,11 +2528,13 @@ header a.logo {
 }
 
 #notfound {
-  background: url("../images/bg_404.jpg") no-repeat;
   margin: 0 auto;
-  width: 1010px;
-  height: 800px;
+  max-width: 1010px;
   text-align: center;
+}
+#notfound .text404 {
+  position: relative;
+  overflow: hidden;
 }
 #notfound h1 {
   color: #a4a4a4;
@@ -2536,9 +2550,17 @@ header a.logo {
   color: #000000;
   text-decoration: underline;
 }
+#notfound img {
+  position: relative;
+  top: -180px;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
 
 .page404 {
   background-color: #ffffff;
+  height: 100%;
 }
 
 @media screen and (max-width: 1021px) {
@@ -2705,8 +2727,14 @@ header a.logo {
     margin-top: 50px;
   }
 
+  #catalog li {
+    display: none !important;
+  }
   #catalog li:nth-child(-n+3) {
-    display: inline-block;
+    display: inline-block !important;
+  }
+  #catalog li.h0 {
+    display: inline-block !important;
   }
 
   #album ul li {
@@ -2744,6 +2772,10 @@ header a.logo {
     margin-left: 85px;
   }
 
+  #client ul.cl li {
+    width: 130px;
+  }
+
   #client .popup {
     left: 37% !important;
     top: 30% !important;
@@ -2772,5 +2804,351 @@ header a.logo {
   }
   #leftside li a {
     text-decoration: none;
+  }
+
+  .contact_form {
+    position: relative !important;
+    width: auto !important;
+    margin-top: 10px;
+    height: 300px !important;
+  }
+
+  .contact_form input {
+    width: 49% !important;
+    margin-right: 4px !important;
+  }
+
+  .contact_form textarea {
+    width: 99% !important;
+  }
+
+  .map {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+
+  .contact_form span {
+    float: right;
+    position: relative;
+    right: -190px;
+  }
+
+  #contacts .address {
+    padding-left: 15px !important;
+    position: relative;
+    bottom: 100px;
+    height: 260px;
+    width: 350px;
+  }
+
+  #contacts button {
+    width: 200px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+    position: relative;
+    margin-top: 30px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #slider {
+    width: auto !important;
+  }
+  #slider img {
+    display: none;
+  }
+  #slider img.i {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 640px) {
+  header {
+    height: 50px;
+  }
+
+  .logo768 {
+    margin-top: 13px;
+    margin-left: -10px;
+  }
+  .logo768 span {
+    display: none;
+  }
+  .logo768 img {
+    transform: scale(0.7);
+  }
+
+  .tel, .login, #menu, .logo {
+    display: none;
+  }
+
+  .btn_mobile_menu {
+    transform: scale(0.84);
+    top: -5px;
+    right: -5px;
+  }
+
+  #slider {
+    width: 680px;
+  }
+  #slider p {
+    line-height: 35px;
+  }
+  #slider .slider_text {
+    padding-left: 20px;
+    font-size: 25px;
+  }
+
+  .button_details {
+    padding: 9px 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #buttons {
+    height: auto !important;
+    /*a {
+    	color: #fff;
+    	@include text-shadow(0px 1px 1px #4e4e4e);
+    }*/
+  }
+  #buttons ul {
+    display: block;
+  }
+  #buttons ul li:hover > ul {
+    display: none;
+  }
+  #buttons ul .second_b1 {
+    padding: 10px;
+  }
+  #buttons ul .second_b1 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b2 {
+    padding: 10px;
+  }
+  #buttons ul .second_b2 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b3 {
+    padding: 10px;
+  }
+  #buttons ul .second_b3 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b4 {
+    padding: 10px;
+  }
+  #buttons ul .second_b4 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b5 {
+    padding: 10px;
+  }
+  #buttons ul .second_b5 li {
+    font-size: 14px;
+  }
+  #buttons ul li {
+    width: 100% !important;
+    height: 45px !important;
+    display: block !important;
+    padding-left: 70px !important;
+    font-size: 21px;
+    border: none !important;
+    padding-top: 10px !important;
+    background: none;
+  }
+  #buttons ul li .icon {
+    display: block;
+    transform: scale(0.7);
+    left: 20px !important;
+    top: 4px !important;
+  }
+  #buttons ul li a {
+    text-shadow: none !important;
+  }
+
+  .adv1 {
+    transform: scale(0.75);
+  }
+
+  .adv2 {
+    transform: scale(0.75);
+  }
+
+  .adv3 {
+    transform: scale(0.75);
+  }
+
+  .adv4 {
+    transform: scale(0.75);
+  }
+
+  .content {
+    padding: 0 129px;
+  }
+
+  #content {
+    padding: 0 30px;
+  }
+
+  h1 {
+    margin-top: 20px;
+  }
+
+  /*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
+  #ft_menu {
+    display: none;
+  }
+
+  #blog .blogrow {
+    width: 50%;
+  }
+
+  #bread {
+    display: none;
+  }
+
+  #company {
+    margin-left: 0;
+  }
+
+  #company .back {
+    position: absolute;
+    bottom: 280px;
+    right: 50px !important;
+  }
+
+  .vidok {
+    margin-right: 1px !important;
+    margin-top: 50px;
+  }
+
+  #catalog li {
+    display: none !important;
+  }
+  #catalog li:nth-child(-n+3) {
+    display: inline-block !important;
+  }
+  #catalog li.h0 {
+    display: inline-block !important;
+  }
+
+  #album ul li {
+    margin-right: 5% !important;
+  }
+  #album ul li:nth-child(3) {
+    margin-right: 0 !important;
+  }
+
+  .in_cel {
+    width: 45% !important;
+    margin-right: 20px !important;
+  }
+
+  #profbg .profile {
+    margin-left: 0;
+  }
+
+  #gallery li {
+    margin-right: 5% !important;
+  }
+
+  #hr form input {
+    width: 38%;
+  }
+
+  #client ul.employes li {
+    margin: 0 1px 20px 0 !important;
+  }
+  #client ul.employes li:nth-child(4n) {
+    margin-right: 1px !important;
+  }
+
+  #client ul.employes li span {
+    margin-left: 85px;
+  }
+
+  #client ul.cl li {
+    width: 130px;
+  }
+
+  #client .popup {
+    left: 37% !important;
+    top: 30% !important;
+  }
+
+  #leftside {
+    float: none;
+    position: inherit;
+    width: inherit;
+    margin: 10px 0;
+  }
+  #leftside li {
+    line-height: 21px;
+    display: inline-block;
+    width: 220px;
+    height: 28px;
+    text-align: center;
+    padding-top: 7px;
+  }
+  #leftside li.active {
+    background-color: #b8b0b0;
+    color: #fff;
+  }
+  #leftside li.active a {
+    color: #fff;
+  }
+  #leftside li a {
+    text-decoration: none;
+  }
+
+  .contact_form {
+    position: relative !important;
+    width: auto !important;
+    margin-top: 10px;
+    height: 300px !important;
+  }
+
+  .contact_form input {
+    width: 49% !important;
+    margin-right: 4px !important;
+  }
+
+  .contact_form textarea {
+    width: 99% !important;
+  }
+
+  .map {
+    width: 100% !important;
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 40px;
+    overflow: hidden;
+  }
+
+  .contact_form span {
+    float: right;
+    position: relative;
+    right: -190px;
+  }
+
+  #contacts .address {
+    padding-left: 15px !important;
+    position: relative;
+    bottom: 100px;
+    height: 260px;
+    width: 350px;
+  }
+
+  #contacts button {
+    width: 200px !important;
+    height: 35px !important;
+    font-size: 16px !important;
+    position: relative;
+    margin-top: 30px;
+    right: 10px;
   }
 }

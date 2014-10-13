@@ -1,23 +1,27 @@
-@media screen and (max-width: 1021px) {
+@media screen and (max-width: 640px) {
 
-	header {
-	background-color: #f57840;
-	height: 60px;
-	}
+	header {height: 50px;}
 
 	.logo768 {
-	display: block;
-	 span {font-size: 12px;}
+		margin-top: 13px; margin-left: -10px;
+		span {display: none;}
+		img {transform: scale(0.7);}
 	}
 
 	.tel, .login, #menu, .logo{display: none;}
-	.btn_mobile_menu {display: block;}
+	.btn_mobile_menu {transform: scale(0.84); top: -5px; right: -5px;}
 
-	#slider {.slider_text {padding-left: 30px;font-size: 26px;}}
+	#slider {
+		width: 680px;
+		p {line-height: 35px;}
+		.slider_text {padding-left: 20px;font-size: 25px;}
+	}
 
-	.button_details {padding: 12px 10px; font-size: 16px; border: none;}
+	.button_details {padding: 9px 10px; font-size: 16px; border: none;}
 
 	#buttons {
+		height: auto !important;
+		ul {display: block;}
 		/*a {
 			color: #fff;
 			@include text-shadow(0px 1px 1px #4e4e4e);
@@ -52,43 +56,19 @@
 		}
 
 
-			li {
-
-				.icon {display: none;}
-				width: 140px;
-
-				&.b1 {
-					background:none;
-					background-color: #397db0;
-					border-bottom: none;
-					padding-left: 30px;
-				}	
-				&.b2 {
-					background:none;;
-					background-color: #f57840;
-					padding-left: 30px;
-					border: none;
-				}
-				&.b3 {
-					background:none;
-					background-color: #938a80;
-					padding-left: 40px;
-					border-bottom:none;
-				}
-				&.b4 {
-					background: none;
-					background-color: #6b75aa;
-					padding-left: 40px;
-					border-bottom:none;
-				}
-				&.b5 {
-					background:none;
-					background-color: #b3a16e;
-					padding-left: 5px;
-					border-bottom: none;
-				}
-			}
+		li {
+			.icon {display: block; transform: scale(0.7);left:20px !important; top:4px !important;}
+			width: 100% !important;
+			height: 45px !important;
+			display: block !important;
+			padding-left: 70px !important;
+			font-size: 21px;
+			border: none !important;
+			padding-top: 10px !important;
+			background:none;
+			a {text-shadow: none !important;}
 		}
+	}
 	}
 
 	.adv1 {transform: scale(.75);}

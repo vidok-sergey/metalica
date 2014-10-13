@@ -1,0 +1,7 @@
+@media screen and (max-width: 400px) {
+	#slider {
+		img {display: none;}
+		img.i{display: block !important;}
+		width: auto !important;
+	}
+}

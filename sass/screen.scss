@@ -458,6 +458,7 @@ header {
 		}
 	}
 }
+
 #slider {
 	position: relative;
 	overflow: hidden;
@@ -473,6 +474,7 @@ header {
 		position: relative;
 		width: 100%;
 		height: auto;
+		&.i {display: none;}
 	}
 	.slider_text {
 		font-size: 34px;
@@ -1317,6 +1319,8 @@ header {
 	img {
 		@include box-shadow(0 0 4px #cdcdcd);
 		margin-bottom: 20px;
+		margin-top: 2px;
+		margin-left: 2px;
 	}
 	h1 {
 		font-size: 32px;
@@ -1340,6 +1344,7 @@ header {
 			width: 220px;
 			display: none;
 			margin-bottom: 50px;
+			position: relative;
 				&:nth-child(-n+4){display: inline-block;}
 			p {
 			margin-bottom: 20px;
@@ -1359,7 +1364,7 @@ header {
 	.order {
 	background-color: #397db0;
 	border-top: 3px solid #27567a;
-	padding: 10px 50px;	
+	padding: 10px 30px;	
 	color: white;
 		&:hover {
 		background-color: #2b638d;
@@ -2406,6 +2411,11 @@ header {
 
 	.map {
 		margin-left: 340px;
+		float: right;
+		background-color: #cdcdcd;
+		overflow: hidden;
+		width: 600px;
+		height: 325px;
 	}
 
 	.address {
@@ -2418,6 +2428,7 @@ header {
 		}
 	}
 	.contact_form {
+		position: absolute;
 		width: 325px;
 		height: 325px;
 		float: left;
@@ -2480,11 +2491,14 @@ header {
 
 
 #notfound {
-	background: url("../images/bg_404.jpg") no-repeat;
 	margin: 0 auto;
-	width: 1010px;
-	height: 800px;
+	max-width: 1010px;
 	text-align: center;
+
+	.text404 {
+		position: relative;
+		overflow: hidden;
+	}
 
 	h1 {
 		color: #a4a4a4;
@@ -2501,11 +2515,22 @@ header {
 		color: #000000;
 		text-decoration: underline;
 	}
+	img {
+		position: relative;
+		top: -180px;
+		width: 100%;
+		height:auto;
+		z-index: -1;
+	}
 }
 
 
 .page404 {
 	background-color: #ffffff;
+	height: 100%
+
 }
 
 @import "768px.scss";
+@import "400px.scss";
+@import "320px.scss";
