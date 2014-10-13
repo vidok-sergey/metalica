@@ -7,92 +7,156 @@
 
 	.logo768 {
 	display: block;
-	 span {
-		font-size: 12px;
-	}
+	 span {font-size: 12px;}
 	}
 
 	.tel, .login, #menu, .logo{display: none;}
 	.btn_mobile_menu {display: block;}
 
-	#slider {
-	font-size: 26px;
-	.slider_text {padding-left: 30px;}
-	}
+	#slider {.slider_text {padding-left: 30px;font-size: 26px;}}
 
-	.button_details {
-	padding: 12px 10px;
-	font-size: 16px;
-	border: none;
-	}
+	.button_details {padding: 12px 10px; font-size: 16px; border: none;}
 
 	#buttons {
-	a {@include text-shadow(none);}
-	ul {
+		/*a {
+			color: #fff;
+			@include text-shadow(0px 1px 1px #4e4e4e);
+		}*/
+		ul li:hover > ul {
+			display: none;
+		}
+
+		ul {
 		.second_b1 {
 		padding: 10px;
 		li{font-size: 14px;}
-	}
+		}
 
-	.second_b2 {
-	padding: 10px;
-	li{font-size: 14px;}
-	}
-	.second_b3 {
-	padding: 10px;
-	li{font-size: 14px;}
-	}
+		.second_b2 {
+		padding: 10px;
+		li{font-size: 14px;}
+		}
+		.second_b3 {
+		padding: 10px;
+		li{font-size: 14px;}
+		}
 
-	.second_b4 {
-	padding: 10px;
-	li{font-size: 14px;}
-	}
+		.second_b4 {
+		padding: 10px;
+		li{font-size: 14px;}
+		}
 
-	.second_b5 {
-	padding: 10px;
-	li{font-size: 14px;}
-	}
+		.second_b5 {
+		padding: 10px;
+		li{font-size: 14px;}
+		}
 
 
-		li {
-			.icon {display: none;}
-			width: 140px;
+			li {
 
-			&.b1 {
-				background:none;
-				background-color: #397db0;
-				border-bottom: none;
-				padding-left: 30px;
-			}	
-			&.b2 {
-				background:none;;
-				background-color: #f57840;
-				padding-left: 30px;
-				border: none;
-			}
-			&.b3 {
-				background:none;
-				background-color: #938a80;
-				padding-left: 40px;
-				border-bottom:none;
-			}
-			&.b4 {
-				background: none;
-				background-color: #6b75aa;
-				padding-left: 40px;
-				border-bottom:none;
-			}
-			&.b5 {
-				background:none;
-				background-color: #b3a16e;
-				padding-left: 5px;
-				border-bottom: none;
+				.icon {display: none;}
+				width: 140px;
+
+				&.b1 {
+					background:none;
+					background-color: #397db0;
+					border-bottom: none;
+					padding-left: 30px;
+				}	
+				&.b2 {
+					background:none;;
+					background-color: #f57840;
+					padding-left: 30px;
+					border: none;
+				}
+				&.b3 {
+					background:none;
+					background-color: #938a80;
+					padding-left: 40px;
+					border-bottom:none;
+				}
+				&.b4 {
+					background: none;
+					background-color: #6b75aa;
+					padding-left: 40px;
+					border-bottom:none;
+				}
+				&.b5 {
+					background:none;
+					background-color: #b3a16e;
+					padding-left: 5px;
+					border-bottom: none;
+				}
 			}
 		}
 	}
-	}
+
+	.adv1 {transform: scale(.75);}
+	.adv2 {transform: scale(.75);}
+	.adv3 {transform: scale(.75);}
+	.adv4 {transform: scale(.75);}
 
 	.content {padding: 0 129px;}
-	/*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
+	#content {padding: 0 30px;}
 
+	h1 {margin-top: 20px;}
+	/*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
+	#ft_menu {display: none;}
+	#blog .blogrow {width: 50%;}
+	#bread {display: none;}
+	#company {margin-left: 0;}
+	#company .back {position: absolute; bottom: 280px; right: 50px !important;}
+
+	.vidok {margin-right: 1px !important; margin-top: 50px;}
+
+	#catalog {
+		li {
+			&:nth-child(-n+3) { 
+				display: inline-block;
+			}
+		}
+	}
+
+	#album {
+		ul {
+			li {
+				margin-right: 5% !important;
+				&:nth-child(3) {margin-right: 0 !important;}
+			}
+		}
+	}
+
+	.in_cel {width: 45% !important;	margin-right: 20px !important;}
+	#basket th.price {}
+	#profbg .profile {margin-left: 0;}
+
+	#gallery li {margin-right: 5% !important;}
+
+	#hr form input {width: 38%;}
+	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(4n){margin-right:1px !important;}}
+	#client ul.employes li span {margin-left: 85px;}
+	#client .popup {
+		left:37% !important; 
+		top:30% !important;
+	}
+
+	#leftside {
+		float: none;
+		position: inherit;
+		width: inherit;
+		margin: 10px 0;
+		li {
+			line-height: 21px;
+			display: inline-block;
+			width: 220px;
+			height: 28px;
+			text-align: center;
+			padding-top: 7px;
+				&.active {
+					background-color: #b8b0b0; color:#fff;
+					a {color:#fff}
+				}
+				a {text-decoration: none;}
+			}
+		}
 }

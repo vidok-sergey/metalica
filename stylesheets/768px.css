@@ -1,101 +1,233 @@
-/*
-Error: Undefined mixin 'text-shadow'.
-        on line 30 of c:/xampp/htdocs/metalica/sass/768px.scss, in `text-shadow'
-        from line 30 of c:/xampp/htdocs/metalica/sass/768px.scss
+@media screen and (max-width: 1021px) {
+  header {
+    background-color: #f57840;
+    height: 60px;
+  }
 
-25: 	font-size: 16px;
-26: 	border: none;
-27: 	}
-28: 
-29: 	#buttons {
-30: 	a {@include text-shadow(none);}
-31: 	ul {
-32: 		.second_b1 {
-33: 		padding: 10px;
-34: 		li{font-size: 14px;}
-35: 	}
+  .logo768 {
+    display: block;
+  }
+  .logo768 span {
+    font-size: 12px;
+  }
 
-Backtrace:
-c:/xampp/htdocs/metalica/sass/768px.scss:30:in `text-shadow'
-c:/xampp/htdocs/metalica/sass/768px.scss:30
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `map'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:502:in `visit_media'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/engine.rb:268:in `render'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/lib/sass/plugin/compiler.rb:328:in `block in watch'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `call'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/Ruby21/lib/ruby/gems/2.1.0/gems/sass-3.4.5/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'text-shadow'.\A         on line 30 of c:/xampp/htdocs/metalica/sass/768px.scss, in `text-shadow'\A         from line 30 of c:/xampp/htdocs/metalica/sass/768px.scss\A \A 25: 	font-size: 16px;\A 26: 	border: none;\A 27: 	}\A 28: \A 29: 	#buttons {\A 30: 	a {@include text-shadow(none);}\A 31: 	ul {\A 32: 		.second_b1 {\A 33: 		padding: 10px;\A 34: 		li{font-size: 14px;}\A 35: 	}"; }
+  .tel, .login, #menu, .logo {
+    display: none;
+  }
+
+  .btn_mobile_menu {
+    display: block;
+  }
+
+  #slider .slider_text {
+    padding-left: 30px;
+    font-size: 26px;
+  }
+
+  .button_details {
+    padding: 12px 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  #buttons {
+    /*a {
+    	color: #fff;
+    	@include text-shadow(0px 1px 1px #4e4e4e);
+    }*/
+  }
+  #buttons ul li:hover > ul {
+    display: none;
+  }
+  #buttons ul .second_b1 {
+    padding: 10px;
+  }
+  #buttons ul .second_b1 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b2 {
+    padding: 10px;
+  }
+  #buttons ul .second_b2 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b3 {
+    padding: 10px;
+  }
+  #buttons ul .second_b3 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b4 {
+    padding: 10px;
+  }
+  #buttons ul .second_b4 li {
+    font-size: 14px;
+  }
+  #buttons ul .second_b5 {
+    padding: 10px;
+  }
+  #buttons ul .second_b5 li {
+    font-size: 14px;
+  }
+  #buttons ul li {
+    width: 140px;
+  }
+  #buttons ul li .icon {
+    display: none;
+  }
+  #buttons ul li.b1 {
+    background: none;
+    background-color: #397db0;
+    border-bottom: none;
+    padding-left: 30px;
+  }
+  #buttons ul li.b2 {
+    background: none;
+    background-color: #f57840;
+    padding-left: 30px;
+    border: none;
+  }
+  #buttons ul li.b3 {
+    background: none;
+    background-color: #938a80;
+    padding-left: 40px;
+    border-bottom: none;
+  }
+  #buttons ul li.b4 {
+    background: none;
+    background-color: #6b75aa;
+    padding-left: 40px;
+    border-bottom: none;
+  }
+  #buttons ul li.b5 {
+    background: none;
+    background-color: #b3a16e;
+    padding-left: 5px;
+    border-bottom: none;
+  }
+
+  .adv1 {
+    transform: scale(0.75);
+  }
+
+  .adv2 {
+    transform: scale(0.75);
+  }
+
+  .adv3 {
+    transform: scale(0.75);
+  }
+
+  .adv4 {
+    transform: scale(0.75);
+  }
+
+  .content {
+    padding: 0 129px;
+  }
+
+  #content {
+    padding: 0 30px;
+  }
+
+  h1 {
+    margin-top: 20px;
+  }
+
+  /*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
+  #ft_menu {
+    display: none;
+  }
+
+  #blog .blogrow {
+    width: 50%;
+  }
+
+  #bread {
+    display: none;
+  }
+
+  #company {
+    margin-left: 0;
+  }
+
+  #company .back {
+    position: absolute;
+    bottom: 280px;
+    right: 50px !important;
+  }
+
+  .vidok {
+    margin-right: 1px !important;
+    margin-top: 50px;
+  }
+
+  #catalog li:nth-child(-n+3) {
+    display: inline-block;
+  }
+
+  #album ul li {
+    margin-right: 5% !important;
+  }
+  #album ul li:nth-child(3) {
+    margin-right: 0 !important;
+  }
+
+  .in_cel {
+    width: 45% !important;
+    margin-right: 20px !important;
+  }
+
+  #profbg .profile {
+    margin-left: 0;
+  }
+
+  #gallery li {
+    margin-right: 5% !important;
+  }
+
+  #hr form input {
+    width: 38%;
+  }
+
+  #client ul.employes li {
+    margin: 0 1px 20px 0 !important;
+  }
+  #client ul.employes li:nth-child(4n) {
+    margin-right: 1px !important;
+  }
+
+  #client ul.employes li span {
+    margin-left: 85px;
+  }
+
+  #client .popup {
+    left: 37% !important;
+    top: 30% !important;
+  }
+
+  #leftside {
+    float: none;
+    position: inherit;
+    width: inherit;
+    margin: 10px 0;
+  }
+  #leftside li {
+    line-height: 21px;
+    display: inline-block;
+    width: 220px;
+    height: 28px;
+    text-align: center;
+    padding-top: 7px;
+  }
+  #leftside li.active {
+    background-color: #b8b0b0;
+    color: #fff;
+  }
+  #leftside li.active a {
+    color: #fff;
+  }
+  #leftside li a {
+    text-decoration: none;
+  }
+}

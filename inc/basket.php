@@ -39,10 +39,10 @@
 			</td>
 			<td>
 				<div class="count">
-					1		
 					<a href=""><div class="plus"></div></a>
-					<a href=""><div class="minus"></div></a>
+					<a href=""><div class="minus"></div></a>	
 				</div>
+				1	
 			</td>
 			<td>12.200 Р</td>
 			<td>12.200 Р</td>

@@ -1,6 +1,6 @@
 <div id="leftside">
 	<ul>
-		<li><a href="#">О нас</a></li>
+		<li class="active"><a href="#">О нас</a></li>
 		<li><a href="#">Производство</a></li>		
 		<li><a href="#">Фотогалерея</a></li>
 		<li><a href="#">Сотрудники</a></li>

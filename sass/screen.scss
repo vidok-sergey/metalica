@@ -27,7 +27,6 @@ a {
 
 body {
 	background-color: #f5f5f5;
-	font-family: Tahoma;
 	font-size: 16px;
 	margin: 0px;
 	font-family: $fLight;
@@ -36,7 +35,7 @@ body {
 }
 
 h1 {
-	font-size: 34px;
+	font-size: 32px;
 	font-family: $fMedium;
 	margin-bottom: 20px;
 }
@@ -52,6 +51,8 @@ footer {
 	max-width: 1022px;
 	position: absolute;
 	bottom: 0;
+	margin: 0 auto;
+	margin-left: 20px;
 }
 
 @font-face {
@@ -104,13 +105,24 @@ footer {
 	height: 60px;
 	position: absolute;
 	background: url("../images/icon_m_menu.png");
-	z-index: 1;
+	z-index: 501;
 	right: 0;
 	top: 0;
+	cursor: pointer;
+}
+.openMenu {
+	display: block!important;
+}
+#pageHTML {
+	display: none;
+	background-color: rgba(1, 1, 1, 0.35);
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+	position: absolute;
 }
 
 #mobile_menu {
-	display: none;
 	position: absolute;
 	z-index: 1;
 	top: 60px;
@@ -255,9 +267,14 @@ footer {
 	margin: 0 auto;
 }
 
-.clr {
-	clear: both;
+.layer {
+	max-width: 1022px;
+	margin: 0 auto;
 }
+
+.clr {clear: both;}
+
+.h0 {height: 0; display:inline-block !important; margin-bottom: 0 !important;}
 
 
 header {
@@ -461,10 +478,8 @@ header {
 		font-size: 34px;
 		padding-left: 100px;
 		position: absolute;
-		top: 0;
-		bottom: 0;
-		margin: auto 0;
-		display: table;
+		top: 50%;
+  		transform: translateY(-50%);
 	}
 }
 
@@ -745,7 +760,6 @@ header {
 		&:before {content: '';}
 }
 
-
 /*.carusel {
  .cWrapper{
   .lenta{
@@ -778,62 +792,23 @@ header {
 }*/
 
 .carusel_thanks {
- width: 101%;
- .cWrapper{
-  width: 100%;position: relative;overflow: hidden;
-  .lenta{
-   width: 2000px;
-   .row{
-	display: inline-block;
-	text-align: center;
-	.block {
-		float: left;
-		text-align: center;
-		width: 187px;
-		height: 190px;	
-		background-color: #ffffff;
-		padding: 20px 30px 20px 30px;
-		@include box-sizing(order-box);
-		margin-bottom: 15px;
-		@include box-shadow(0 0 4px #cdcdcd);
-		margin-right:10px;
-		margin-left: 3px;
-		margin-top: 3px;
-	}
-   }
-  }
- }
- .arr{
-  position: absolute;
-  top: -30px;
-  bottom: 0;
-  display: block;
-  margin:auto;
-  z-index:10;
-  cursor:pointer;
-  width:50px;
-  height: 50px;
-  @include background(url("../images/sprites.png") -48px -2px no-repeat);
+		img {
+			box-shadow: 0 0 4px #cdcdcd;
+			margin: 2px 2px 20px 2px;
+			padding: 15px 35px;
+			background-color: #fff;
+		}
 
-  &.next{
-   right: 0;
-   @include transform(rotate(180deg));
-   margin-right: -23px;
-  }
-  &.prev{
-  	margin-left: -20px;
-   left: 0;
-  }
- }
+		span {
+			width: 150px;
+			display: block;
+			margin: 0 auto;
+			text-align: center;
+		}
 }
 
 #big_slide{
-	width: 800px;
-	height: 500px;
-	position: relative;
-	/* display: block; */
-	margin-bottom: 80px;
-
+	margin-bottom: 1px;
 }
 .carusel_big { 
  width: 100%;
@@ -864,7 +839,6 @@ header {
 
 .carusel_clients {
  width: 100%;
- height: 120px;
  .cWrapper{
   width: 100%;position: relative;
   padding: 0 30px;
@@ -969,7 +943,7 @@ header {
 		font-family: $fMedium;
 		height: 290px;
 		width: 220px;
-		margin-right: 12px;
+		/*margin-right: 12px;*/
 		display: inline-block;
 		p {
 			display: block;
@@ -977,7 +951,7 @@ header {
 		}
 		img {
 			@include box-shadow(0 0 4px #cdcdcd);
-			margin-bottom: 20px;
+			margin: 2px 2px 20px 2px;
 		}
 		span {
 			padding-top: 15px;
@@ -998,6 +972,9 @@ header {
 	background: url(../images/icon_new.png);
 	width: 77px;
 	height: 77px;
+	z-index: 1;
+	left: 2px;
+	top: 2px;
 }
 
 .icon_action {
@@ -1005,6 +982,9 @@ header {
 	background: url(../images/icon_action.png);
 	width: 77px;
 	height: 77px;
+	z-index: 1;
+	left: 2px;
+	top: 2px;
 }
 
 .icon_lider {
@@ -1012,6 +992,9 @@ header {
 	background: url(../images/icon_lider.png);
 	width: 77px;
 	height: 77px;
+	z-index: 1;
+	left: 2px;
+	top: 2px;
 }
 
 #blog {
@@ -1020,6 +1003,7 @@ header {
 	border-top: 5px solid #d0d0d0;
 	margin: 20px;
 	padding-top: 40px;
+	overflow: hidden;
 	.blogrow {
 		float: left;
 		width: 33%;
@@ -1073,7 +1057,7 @@ header {
 }
 
 #clients {
-	margin: 20px;
+	margin: 40px;
 	position: relative;
 	h3 {
 		color: #878787;
@@ -1086,7 +1070,7 @@ header {
 #ft_menu {
 
 	border-top: 5px solid #938a80;
-	padding: 25px 20px;
+	padding: 25px 0 25px 20px;
 	font-family: helveticaneuecyrlight;
 	text-align: center;
 	font-size: 14px;
@@ -1101,9 +1085,11 @@ header {
 
 
 #ft_ft {
+	position: relative;
 	.ft_cell {
-		width: 1022px;
+		max-width: 1022px;
 		margin: 0 auto;
+		padding-left: 60px;
 	}
 	@include box-sizing(border-box);
 	background-color: #938a80;
@@ -1112,39 +1098,50 @@ header {
 	padding-top: 42px;
 	font-family: $fHlight;
 	font-size: 14px;
-	.ftrow {
+
+	.ftrow_logo {
+		margin-right: 5%;
 		float: left;
-		padding: 0 20px;
-		p.phone {
-			font-size: 30px;
-			font-family: $fMedium;
-			margin-bottom: 10px;
+		display: block;
+		img {margin-top: 15px;}
+	}
+
+	.ftrow_soc {
+		margin-right: 5%;
+		margin-top: 15px;
+		display: block;
+		float: left;
+	}
+
+	.ftrow_tel {
+		margin-right: 5%;
+		display: block;
+		float: left;
+		p {
+		font-size: 30px;
+		font-family: $fMedium;
+		margin-bottom: 8px;
+		margin-top: -5px;
 		}
 		p.worktime {
 			font-size: 13px;
-		}
-
-		.social {
-			width: 138px;
-			height: 25px;
-			overflow: hidden;
-			margin-top: 10px;
+			font-family: $fHlight;
 		}
 
 	}
-	img.logo {
-		margin-top: 20px;
-	}
+
 	.vidok {
-		font-family: $fLight;
-		font-size: 12px;
-		letter-spacing: 1px;
-		margin-bottom: 10px;
-		margin-left: 40px;
-		background: url("../images/vidok.png") no-repeat 1px 2px;
-		padding-left: 25px;
-		height: 20px;
-		line-height: 15px;
+			font-family: "pf_square_sans_prolight";
+			font-size: 12px;
+			letter-spacing: 1px;
+			display: block;
+			text-align: center;
+			margin-right: 10%;
+		img {
+			position: relative;
+			top: 5px;
+			left: -5px;
+		}
 		a {
 			color: #000;
 			text-decoration:underline;
@@ -1164,12 +1161,21 @@ header {
 }
 
 #leftside {
-	margin-left: 40px;
 	width: 140px;
 	float: left;
 	position: absolute;
 	li {
 		line-height: 21px;
+		&.active a {
+			color: #397db0;
+		}
+		a {
+			color: #000000;
+			text-decoration: underline;
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 }
 
@@ -1179,13 +1185,7 @@ header {
 }
 
 #company {
-	width: 800px;
-	margin-left: 180px;
-	h2 {
-		font-size: 32px;
-		margin-bottom: 20px;
-		font-family: $fMedium;
-	}
+	margin-left: 140px;
 
 	p {
 		line-height: 21px;
@@ -1194,7 +1194,7 @@ header {
 			&:hover {text-decoration: none;}
 		}
 	}
-	.back {
+	.back {	
 		float: right;
 		margin-top: -43px;
 		margin-right: 5px;
@@ -1202,6 +1202,12 @@ header {
 }
 
 #gallery {
+
+		.back {
+		float: right;
+		font-size:20px;
+		text-decoration: underline; 
+	}
 
 	span {
 		display: block;
@@ -1226,7 +1232,9 @@ header {
 		font-family: $fMedium;
 	}
 	ul {
+		font-size: 0;
 		li {
+			font-size: 16px;
 			display: inline-block;
 			margin-right: 14px;
 			margin-bottom: 40px;
@@ -1324,18 +1332,19 @@ header {
 		line-height: 20px;
 	}
 	ul {
-		height: 450px;
-		width: 230px;
-		display: table;
 		margin-top: 30px;
+		text-align: justify;
+		&:before {width:100%}
 		li {
-			display: table-cell;
-			padding-right: 10px;
+			float: none;
+			width: 220px;
+			display: none;
+			margin-bottom: 50px;
+				&:nth-child(-n+4){display: inline-block;}
 			p {
 			margin-bottom: 20px;
 			margin-top: 12px;
-			font-size: 16px;
-			width: 230px;
+			text-align: left;
 			}
 		}
 	}
@@ -1371,7 +1380,6 @@ header {
 	}
 
 	.back {
-		margin-top:20px;
 		float: right;
 		font-size:14px;
 		text-decoration: underline; 
@@ -1494,6 +1502,7 @@ header {
 	h2 {
 		font-size: 32px;
 		font-family: $fMedium;
+		margin: 20px 0;
 	}
 
 	table {
@@ -1507,16 +1516,16 @@ header {
 		text-align: center;
 		height: 40px;
 		&.numb {
-			width: 10%;
+			width: 5%;
 		}
 		&.photo {
-			width: 15%;
+			width: 10%;
 		}
 		&.towar {
 			width: 20%;
 		}
 		&.color {
-			width: 12%;
+			width: 5%;
 		}
 		&.hcount {
 			width: 17%;
@@ -1546,10 +1555,9 @@ header {
 		display: block;
 	}
 	.count {
-		position: absolute;
-		width: 150px;
-		margin-left: 10px;
-		margin-top: -10px;
+		position: relative;
+		width: 90px;	
+		margin: 0 auto;
 	}
 	.plus {
 		display: block;
@@ -1558,7 +1566,7 @@ header {
 		height: 28px;
 		background: url("../images/color_top.png");
 		top: -5px;
-		left: 30px;
+		left: 0;
 		@include transform(rotate(-90deg));
 	}
 	.minus {
@@ -1568,7 +1576,7 @@ header {
 		height: 28px;
 		background: url("../images/color_top.png");
 		top: -5px;
-		left: 90px;
+		right: 0;
 		@include transform(rotate(90deg));
 	}
 
@@ -1747,14 +1755,14 @@ header {
 	overflow: hidden;
 	background:transparent url('../images/bgprofile.jpg') left top no-repeat;
 	.profile {
-		h1 {margin-left: 180px;}
+		margin-left: 140px;
 		position: relative;
 	}
 	.loginform {
 		width: 260px;
 		height: 470px;
 		background-color: #ffffff;
-		margin: 0 auto;	
+		margin: 0 25%;	
 		border: 1px solid #bbbbbb;
 		.lost {
 			font-size: 12px;
@@ -1895,7 +1903,7 @@ header {
 	}
 
 	#in_col_hidden {
-		display: none;
+	//	display: none;
 		padding-left: 15px;
 		height: 640px;
 	}
@@ -1932,7 +1940,7 @@ header {
 	}
 
 	input[type="text"] {
-		width: inherit;
+		width: 95%;
 		height: 33px;
 		border: 1px solid #e5e5e5;
 		padding-left: 10px;
@@ -2096,7 +2104,7 @@ header {
 	ul.employes {
 		margin: 20px 0;
 		li {
-			width: 250px;
+			width: 30%;
 			display: inline-block;
 			margin-bottom: 25px;
 			margin-right: 14px;
