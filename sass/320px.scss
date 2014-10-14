@@ -8,11 +8,12 @@
 		img {transform: scale(0.7);}
 	}
 
-	.tel, .login, #menu, .logo{display: none;}
+	.tel, .login, #menu, .logo {display: none;}
 	.btn_mobile_menu {transform: scale(0.84); top: -5px; right: -5px;}
+	.mobile_menu {top:50px;} 
 
 	#slider {
-		width: 680px;
+		min-height: 180px;
 		p {line-height: 35px;}
 		.slider_text {padding-left: 20px;font-size: 25px;}
 	}
@@ -77,17 +78,65 @@
 	.adv4 {transform: scale(.75);}
 
 	.content {padding: 0 129px;}
-	#content {padding: 0 30px;}
+	#content {padding: 0 17px; overflow: hidden !important;}
+
+
+	#content {
+	h2, h3 {
+		font-size: 24px;
+		margin: 10px 0;
+		padding-left: 0;
+	}
+	p.about {padding-left: 0;}
+	p.descr {
+		padding-top: 10px;
+	}
+	.block {
+		font-size: 12px;
+		display: inline-block;
+		p {display: block;	margin-bottom: 3px;}
+		img {margin: 2px 2px 10px 2px;}
+		span {
+			padding-top: 7px;
+			font-size: 18px;
+			&.crossed {display: none;}
+		}
+	}
+}
+
 
 	h1 {margin-top: 20px;}
 	/*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
 	#ft_menu {display: none;}
-	#blog .blogrow {width: 50%;}
-	#bread {display: none;}
+	#blog { 
+		height: 440px !important;
+		padding: 20px 10px 10px 10px !important;
+		margin:10px !important;
+		.blogrow {width: 90% !important; height: auto !important;}
+		h4, span {margin:0 !important;}
+		.subscribe {margin-left: 0 !important;}
+	}
+
 	#company {margin-left: 0;}
 	#company .back {position: absolute; bottom: 280px; right: 50px !important;}
+	#clients {margin: 20px !important;}
+	#clients h3 {padding-left: 0 !important;}
 
-	.vidok {margin-right: 1px !important; margin-top: 50px;}
+	footer {margin:0 !important;}
+	#ft_ft {
+		height: auto !important;
+		padding:0 !important;
+		.ftrow_logo, .ftrow_soc, .ftrow_tel{margin:0 !important; width: 100% !important; margin-bottom: 20px !important;}
+		.ftrow_logo img {margin-top: 0 !important;}
+		.ft_cell {padding-left: 0!important; text-align: center;}
+		.ftrow_tel p.worktime {position: relative; top:-60px;}
+		.ftrow_soc {position: relative; top: 60px;}
+		.ftrow_tel {position: relative; top:-20px;}
+	}
+	.ft_bg {height: 200px !important;}
+
+
+	.vidok {margin-right: 1px !important; margin-top: 50px;display: inline !important; position: relative; top:-10px;}
 
 	#catalog {
 		li {

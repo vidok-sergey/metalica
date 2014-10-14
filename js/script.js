@@ -13,21 +13,25 @@ $('.carusel .cWrapper').slick({ /*слайдер товары */
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: false
+        dots: false,
+        arrows: true
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        arrows: true
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 400,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false
       }
     }
   ]
@@ -52,15 +56,17 @@ $('.carusel_clients .cWrapper').slick({ /*слайдер наши клиенты
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 400,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true
       }
     }
   ]
@@ -79,21 +85,26 @@ $('.carusel_big .cWrapper').slick({ /*слайдер производство*/
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: false
+        dots: false,
+        arrows: true
       }
     },
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots:true
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
       }
     }
   ]

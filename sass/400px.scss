@@ -1,7 +1,14 @@
 @media screen and (max-width: 400px) {
+		h1 {font-size: 25px; margin: 10px 0;}
 	#slider {
 		img {display: none;}
 		img.i{display: block !important;}
 		width: auto !important;
 	}
-}
+	#content img.about {float: none; margin-left:-8px; margin-top: 0; transform: scale(1.1); margin-bottom: 10px; padding-top: 20px !important; padding-right: 20px !important;}
+	#blog {height: 362px !important;}
+	#leftside  {
+		li {width: 148px !important;}
+
+		margin:0 0 10px -17px !important;}
+	}

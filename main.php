@@ -127,22 +127,6 @@
 											<span class="crossed">5.500 Р</span><span>2.200 Р</span>
 										</div>
 									</div>
-									<div class="row">
-										<div class="block">
-											<div class="icon_action"></div>
-											<img src="images/img4.jpg" alt="шкаф">
-											<p><a href="#">Аптечка индвидуальная</a></p>
-											<span>2.200 Р</span>
-										</div>
-									</div>
-									<div class="row">
-										<div class="block">
-											<div class="icon_action"></div>
-											<img src="images/img4.jpg" alt="шкаф">
-											<p><a href="#">Аптечка индвидуальная</a></p>
-											<span>2.200 Р</span>
-										</div>
-									</div>
 								</div>
 							</div>
 						</div>
@@ -257,27 +241,6 @@
 								</div>
 								<div class="row">
 									<img src="images/client3.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client4.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client5.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client2.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client3.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client4.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client5.png" alt="">
-								</div>
-								<div class="row">
-									<img src="images/client2.png" alt="">
 								</div>
 							</div>
 						</div>

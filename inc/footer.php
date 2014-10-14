@@ -14,8 +14,7 @@
 							<li><a href="#">Прайс-лист</a></li>
 							<li><a href="#">Заказать каталог</a></li>
 							</ul>
-						</div>
-				</div> <!--wrapper end -->						
+						</div>					
 						<div id="ft_ft">
 							<div class="ft_cell">
 								<div class="ftrow_logo">
@@ -29,12 +28,17 @@
 									<p class="phone">8 800 568 58 59</p>
 									<p class="worktime">Режим работы: пн.-пт. 9:00 - 21:00</p>
 								</div>
-								
+								<div class="vidok">
+									<img src="images/vidok.png" alt="">
+									<a href="http://www.ravidok.ru">создание сайта Чебоксары</a>
+								</div>
+
 							</div>
-							<div class="clear"></div>
-							<div class="vidok"><img src="images/vidok.png" alt=""><a href="http://www.ravidok.ru">создание сайта Чебоксары</a></div>
 						</div>
 					</footer>
+				</div> <!--wrapper end -->	
+				<div class="ft_bg"></div>
+
 				<!--</div> pageHTML end-->
 
 

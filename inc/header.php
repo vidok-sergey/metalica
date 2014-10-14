@@ -11,7 +11,7 @@
 				<div id="pageHTML">
 					<div id="mobile_menu">
 						<ul>
-							<li><a class="m_main" href="/metalica">Главная</a></li>
+							<li><a class="m_main" href="#">Главная</a></li>
 							<li><a class="m_about" href="#">О компании</a></li>
 							<li><a class="m_catalog" href="#">Каталог</a></li>
 							<li><a class="m_news" href="#">Новости</a></li>

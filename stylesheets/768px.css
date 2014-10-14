@@ -1,4 +1,5 @@
 @media screen and (max-width: 1021px) {
+
   header {
     background-color: #f57840;
     height: 60px;
@@ -141,6 +142,7 @@
 
   #blog .blogrow {
     width: 50%;
+    margin-bottom: 40px !important;
   }
 
   #bread {
