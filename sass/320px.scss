@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @media screen and (max-width: 640px) {
+
 
 	header {height: 50px;}
 
@@ -119,7 +121,7 @@
 
 	#company {margin-left: 0;}
 	#company .back {position: absolute; bottom: 280px; right: 50px !important;}
-	#clients {margin: 20px !important;}
+	#clients {margin: 20px 20px 0 20px !important;}
 	#clients h3 {padding-left: 0 !important;}
 
 	footer {margin:0 !important;}
@@ -158,8 +160,12 @@
 	.in_cel {width: 45% !important;	margin-right: 20px !important;}
 	#basket th.price {}
 	#profbg .profile {margin-left: 0;}
+	#profbg span {display: none !important;}
+	.editform input[type="text"] input[type="password"] {width: 90% !important;}
 
+	.editform {width: 90% !important; padding: 20px 20px 60px 20px !important;}
 	#gallery li {margin-right: 5% !important;}
+	.go.f_right {float: none !important;}
 
 	#hr form input {width: 38%;}
 	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(4n){margin-right:1px !important;}}
@@ -197,4 +203,97 @@
 	.contact_form span {float: right; position: relative; right: -190px;}
 	#contacts .address {padding-left: 15px !important; position: relative; bottom: 100px; height:260px; width: 350px;}
 	#contacts button {width:200px !important; height:35px !important; font-size:16px !important;position: relative;margin-top: 30px; right: 10px;}
+
+	.responsive_table {
+	   thead, tbody, th, td, tr { 
+	    display: block; 
+	    text-align: left;
+	   }
+	   
+	   thead tr { 
+	    position: absolute;
+	    top: -9999px;
+	    left: -9999px;
+	    
+	   }
+	   
+	   td { 
+	    border: none;
+	    border-bottom: 1px solid #eee; 
+	    position: relative;
+	    padding-left: 50% !important; 
+	    height: auto !important;
+	    padding: 15px 0;
+	    width: 50% !important;
+	    &:last-child{
+	     border-bottom: 2px solid #d4d4d4;
+	    }
+	   }
+	   
+	   td:before { 
+	    position: absolute;
+	    /* Отступы сверху и слева */
+	    top: 15px;
+	    left: 6px;
+	    width: 45%; 
+	    padding-right: 10px; 
+	    white-space: nowrap;
+	   }
+	  
+	  
+	   td:nth-of-type(1):before { content: "№ П/П"; }
+	   td:nth-of-type(2):before { content: "ФОТОГРАФИЯ"; }
+	   td:nth-of-type(3):before { content: "НАИМЕНОВАНИЕ, СВОЙСТВА ТОВАРА"; }
+	   td:nth-of-type(4):before { content: "ЦВЕТ"; }
+	   td:nth-of-type(5):before { content: "КОЛИЧЕСТВО"; }
+	   td:nth-of-type(6):before { content: "ЦЕНА"; }
+	   td:nth-of-type(7):before { content: "СТОИМОСТЬ"; }
+	}
+
+	.responsive_table_history {
+	   thead, tbody, th, td, tr { 
+	    display: block; 
+	    text-align: left;
+	   }
+	   
+	   thead tr { 
+	    position: absolute;
+	    top: -9999px;
+	    left: -9999px;
+	   }
+	   
+	   td { 
+	    border: none;
+	    border-bottom: 1px solid #eee; 
+	    position: relative;
+	    padding-left: 50% !important; 
+	    height: auto !important;
+	    padding: 15px 0;
+	    width: 50% !important;
+	    &:last-child{
+	     border-bottom: 2px solid #d4d4d4;
+	    }
+	   }
+	   
+	   td:before { 
+	    position: absolute;
+	    /* Отступы сверху и слева */
+	    top: 15px;
+	    left: 6px;
+	    width: 45%; 
+	    padding-right: 10px; 
+	    white-space: nowrap;
+	   }
+	  
+	  
+	   td:nth-of-type(1):before { content: "№ П/П"; }
+	   td:nth-of-type(2):before { content: "ФОТОГРАФИЯ"; }
+	   td:nth-of-type(3):before { content: "НАИМЕНОВАНИЕ, СВОЙСТВА ТОВАРА"; }
+	   td:nth-of-type(4):before { content: "ЦВЕТ"; }
+	   td:nth-of-type(5):before { content: "КОЛИЧЕСТВО"; }
+	   td:nth-of-type(6):before { content: "ЦЕНА"; }
+	   td:nth-of-type(7):before { content: "СТОИМОСТЬ"; }
+	   td:nth-of-type(8):before { content: "ПОВТОР ЗАКАЗА"; }
+	}
+
 }

@@ -222,7 +222,7 @@
 						<div class="carusel_clients">
 							<div class="cWrapper">
 								<div class="row">
-									<img src="images/client1.png" alt="">
+									<img src="images/client5.png" alt="">
 								</div>
 								<div class="row">
 									<img src="images/client2.png" alt="">
@@ -234,7 +234,7 @@
 									<img src="images/client4.png" alt="">
 								</div>
 								<div class="row">
-									<img src="images/client5.png" alt="">
+									<img src="images/client1.png" alt="">
 								</div>
 								<div class="row">
 									<img src="images/client2.png" alt="">

@@ -11,7 +11,9 @@
 		<li><a href="buy.php">Покупка (6_Catalog)</a></li>
 		<li><a href="order.php">Оформление заказа</a></li>
 		<li><a href="history.php">История заказов</a></li>
-		<li><a href="profile.php">Профиль</a></li>
+		<li><a href="registration.php">Регистрация</a></li>
+		<li><a href="profile.php">Авторизация</a></li>
+		<li><a href="profile_edit.php">Редактирование профиля</a></li>
 		<li><a href="photogallery.php">Фотогаллеря</a></li>
 		<li><a href="photoalbum.php">Фотоальбом</a></li>
 		<li><a href="vacancy.php">Вакансии</a></li>
@@ -20,6 +22,7 @@
 		<li><a href="review.php">Отзывы</a></li>
 		<li><a href="faq.php">Вопрос ответ</a></li>
 		<li><a href="blog_list.php">Список блогов</a></li>
+		<li><a href="blog.php">Просмотр блога</a></li>
 		<li><a href="contacts.php">Контакты</a></li>
 		<li><a href="catalog_novinki.php">Новинки и спецпредложения</a></li>
 		<li><a href="basket.php">Корзина</a></li>

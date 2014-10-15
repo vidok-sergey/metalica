@@ -28,6 +28,16 @@
     height: 362px !important;
   }
 
+  #clients h3 {
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+    font-family: 'pf_square_sans_promedium';
+  }
+
+  #clients {
+    margin: 20px 20px 0 20px !important;
+  }
+
   #leftside {
     margin: 0 0 10px -17px !important;
   }

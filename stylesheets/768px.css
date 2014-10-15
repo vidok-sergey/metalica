@@ -1,5 +1,4 @@
 @media screen and (max-width: 1021px) {
-
   header {
     background-color: #f57840;
     height: 60px;
@@ -188,6 +187,10 @@
 
   #profbg .profile {
     margin-left: 0;
+  }
+
+  .editform, .loginform {
+    margin: 0 auto !important;
   }
 
   #gallery li {

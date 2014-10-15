@@ -52,16 +52,12 @@ h2 {
 }
 
 footer {
-//	height: 230px;
 	max-width: 1022px;
 	position: absolute;
 	bottom: 0;
 	margin: 0 auto;
-	margin-left: 20px;
+	margin-left: 30px;
 }
-
-
-
 
 
 @font-face {
@@ -303,6 +299,7 @@ header {
 .pages {
 	text-align: center;
 	padding: 20px;
+	margin-top: 50px;
 	a {
 		width: 29px;
 		height: 29px;
@@ -848,26 +845,16 @@ header {
 }
 
 .carusel_clients {
- width: 100%;
+	margin: 0 40px;
  .cWrapper{
-  width: 100%;position: relative;
-  padding: 0 30px;
   .lenta{
-   width: 2000px;
-   padding-left: 5px;
    .row{
     display: inline-block;
-    width: 150px;
    }
   }
  }
-	.slick-prev {
-		top: 20px;
-	}
-
-	.slick-next {
-		top: 20px;
-	}
+	.slick-prev {top: 20px; left: -	65px;}
+	.slick-next {top: 20px; right: -65px}
 }
 
 .carusel_int {
@@ -1083,13 +1070,13 @@ header {
 }
 
 #clients {
-	margin: 40px;
+	margin: 0 40px;
 	position: relative;
 	h3 {
 		color: #878787;
 		font-size: 32px;
 		margin-bottom: 30px;
-		padding-left: 40px;
+		font-family: $fMedium;
 	}
 }
 
@@ -1253,7 +1240,7 @@ header {
 			display: inline-block;
 			margin-right: 20px;
 			margin-bottom: 40px;
-		//	&:nth-child(4) {margin-right: 0px;}
+			&:nth-child(4) {margin-right: 0px;}
 			img {width: auto;}
 		}
 	}
@@ -1546,9 +1533,10 @@ header {
 	table {
 		margin: 20px 0;
 		font-family: $fMedium;
+		width: 100%;
 	}
 
-	th {
+	thead th {
 		font-size: 12px;
 		text-transform: uppercase;
 		text-align: center;
@@ -1579,7 +1567,7 @@ header {
 	tr {
 		border-bottom: 1px solid #e1e1e1;
 		&.dop {
-			display: none;
+	//		display: none;
 		}
 	}
 
@@ -1788,27 +1776,127 @@ header {
 	}
 }
 
+.input_mail {
+	display: block;
+	background-color: red;
+	width: 25px;
+	height: 25px;
+	background: url("../images/sprites.png" no-repeat 250px, 40px);
+}
+
 #profbg {
-	height: 640px;
-	overflow: hidden;
 	background:transparent url('../images/bgprofile.jpg') left top no-repeat;
 	.profile {
 		margin-left: 140px;
 		position: relative;
+		padding-bottom: 50px;
 	}
-	.loginform {
-		width: 260px;
-		height: 470px;
+
+	.editform {
+		width: 620px;
 		background-color: #ffffff;
-		margin: 0 25%;	
+		margin: 0 4%;	
 		border: 1px solid #bbbbbb;
+		padding: 40px 40px 60px 40px;
+		box-sizing:border-box;
+		p.yur {display: inline-block;}
 		.lost {
-			font-size: 12px;
+			font-size: 14px;
 			position: relative;
 			display: table;
 			margin:0 auto;
-			margin-top: 16px;
 	    	font-family: $fHlight;
+	    	text-decoration: underline;
+		}
+
+
+		input[type="text"], input[type="password"] {
+			border: 1px solid #c3c3c3;
+			width: 350px;
+			height: 40px;
+			color: #c3c3c3;
+			font-size: 14px;
+			color: #000000;
+			margin: 20px auto;
+			padding-left: 20px;
+			display: inline-block;
+			font-family: $fLight;
+		}
+
+		.go {
+			display: block;
+			width: 212px;
+			margin: 0 auto;
+			background-color: #397db0;
+			border-top: 3px solid #27567a;
+			padding: 10px 0px;
+			color: #fff;
+			text-align: center;
+				&:hover {
+				background-color: #2b638d;
+				text-decoration: none;
+			}
+		}
+
+		span {display: inline-block; width: 164px; font-size: 14px;}
+
+		input[type="checkbox"] {display: none;}
+
+			input.stat[type="radio"] + label {
+			cursor: pointer;
+			display: inline-block;
+			margin-left: 60px;
+			margin-right: 10px;
+			font-family: $fLight;
+			font-size: 16px;
+			}
+
+			input[type="radio"] {
+				display: none;
+			}
+
+			input[type="radio"] + label {
+		    	cursor: pointer;
+		    	display: inline-block;
+		    	margin-left: 55px;
+		    	font-family: $fLight;
+		    	font-size: 16px;
+			}
+
+			input[type="radio"]:checked + label::before {
+		    	background-color: white;
+			}
+
+
+			input[type="radio"] + label::before {
+				border: 6px solid #e5e4e6;
+				@include box-shadow(0px -1px 1px #bababa);
+			    width:6px;
+			    height:6px;
+			    @include border-radius(50%);
+			    cursor:pointer;
+			    background-color: #e5e4e6;
+			    content:"";
+			    top: 17px;
+			    left: -30px;
+			    display: block;
+			    position: relative;
+			}
+	}
+
+	.loginform {
+		width: 260px;
+		background-color: #ffffff;
+		margin: 0 25%;	
+		border: 1px solid #bbbbbb;
+		padding-bottom: 20px;
+		.lost {
+			font-size: 14px;
+			position: relative;
+			display: table;
+			margin:0 auto;
+	    	font-family: $fHlight;
+	    	text-decoration: underline;
 		}
 		.social {
 			font-size: 12px;
@@ -1835,7 +1923,8 @@ header {
 			height: 125px;
 			display: block;
 		}
-		.lg {
+
+		input[type="text"], input[type="password"] {
 			border: 1px solid #c3c3c3;
 			width: 190px;
 			height: 40px;
@@ -1847,17 +1936,13 @@ header {
 			display: inherit;
 		}
 
-		.ps {
-			border: 1px solid #c3c3c3;
-			width: 190px;
-			height: 40px;
-			color: #c3c3c3;
-			font-size: 14px;
-			color: #000000;
-			margin: 20px auto;
-			padding-left: 20px;
-			display: inherit;
-		}
+		.lg {background:url("../images/sprites.png") no-repeat 181px -754px;}
+		.ps {background:url("../images/sprites.png") no-repeat 181px -784px;}
+		.fio {background:url("../images/sprites.png") no-repeat 181px -754px;}
+		.org {background:url("../images/sprites.png") no-repeat 181px -818px;}
+		.inn {background:url("../images/sprites.png") no-repeat 181px -850px;}
+		.yur {background:url("../images/sprites.png") no-repeat 181px -885px;}
+		.mail {background:url("../images/sprites.png") no-repeat 181px -916px;}
 
 		.go {
 			display: block;
@@ -1874,17 +1959,17 @@ header {
 			}
 		}
 
-		input[type="checkbox"] {
-			display: none;
+		span {display: block; margin-left: 25px;padding-top: 20px;}
 
-		}
+		input[type="checkbox"] {display: none;}
 
 		input.go_save[type="checkbox"] + label {
 	    	cursor: pointer;
 	    	display: block;
 	    	margin-left: 110px;
 	    	font-family: $fHlight;
-	    	font-size: 12px;
+	    	font-size: 14px;
+	    	margin-bottom: 15px;
 		}
 
 		input.go_save[type="checkbox"]:checked + label::before {
@@ -1906,6 +1991,47 @@ header {
 		    display: block;
 		    position: relative;
 		}
+
+			input.stat[type="radio"] + label {
+			cursor: pointer;
+			display: inline-block;
+			margin-left: 60px;
+			margin-right: 10px;
+			font-family: $fLight;
+			font-size: 16px;
+			}
+
+			input[type="radio"] {
+				display: none;
+			}
+
+			input[type="radio"] + label {
+		    	cursor: pointer;
+		    	display: block;
+		    	margin-left: 55px;
+		    	font-family: $fLight;
+		    	font-size: 16px;
+			}
+
+			input[type="radio"]:checked + label::before {
+		    	background-color: white;
+			}
+
+
+			input[type="radio"] + label::before {
+				border: 6px solid #e5e4e6;
+				@include box-shadow(0px -1px 1px #bababa);
+			    width:6px;
+			    height:6px;
+			    @include border-radius(50%);
+			    cursor:pointer;
+			    background-color: #e5e4e6;
+			    content:"";
+			    top: 17px;
+			    left: -30px;
+			    display: block;
+			    position: relative;
+			}
 	}
 }
 
@@ -1978,6 +2104,7 @@ header {
 	}
 
 	input[type="text"] {
+		font-family: $fLight;
 		width: 95%;
 		height: 33px;
 		border: 1px solid #e5e5e5;
@@ -2308,7 +2435,7 @@ header {
 			background-color: #ffffff;
 			position: absolute;
 			right: -23px;
-			top: -228px;
+			top: -202px;
 			
 			strong {
 				display: block;
@@ -2396,8 +2523,31 @@ header {
 		left: 10px;
 		color: #3b4245;
 		font-family: $fMedium;
-
 	}
+
+	.comment_autor {
+		display: inline-block;
+		position: relative;
+		top:-7px;
+		color: #3b4245;
+	}
+
+	.button_comments {
+	text-decoration: none;
+	padding: 12px 15px;
+	font-size: 14px;
+	font-family: $fLight;
+	background-color: #397db0;
+	color: #ffffff;
+	display: block;
+	float: right;
+	border-bottom: 3px solid #27567a;
+	&:hover {
+		background-color: #2b638d;
+		text-decoration: none;	
+	}
+}
+
 
 	p {
 		font-size: 15px;
@@ -2435,6 +2585,34 @@ header {
 		padding-left: 20px;
 		margin: -20px 0 0 0;
 		display: block;
+
+	}
+
+		.reply {
+		background-color: #ffffff;
+		padding: 15px;
+		margin-bottom: 30px;
+		margin-left: 25px;
+		position: relative;
+		&:before {
+			display: block;
+			content: '';
+			background-color: #ffffff;
+			width: 13px;
+			height: 13px;
+			position: absolute;
+			left: 100px;
+			top: -6px;
+			@include transform(rotate(45deg));
+		}
+
+			span {
+		color: #999999;
+		font-size: 12px;
+		height: 14px;
+		display: block;
+		margin-top: 10px;
+		}
 
 	}
 }
@@ -2556,6 +2734,8 @@ header {
 		z-index: -1;
 	}
 }
+
+.f_right {float: right;}
 
 .page404 {
 	background-color: #ffffff;

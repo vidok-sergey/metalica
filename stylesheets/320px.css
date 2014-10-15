@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (max-width: 640px) {
   header {
     height: 50px;
@@ -199,7 +200,7 @@
   }
 
   #clients {
-    margin: 20px !important;
+    margin: 20px 20px 0 20px !important;
   }
 
   #clients h3 {
@@ -277,8 +278,25 @@
     margin-left: 0;
   }
 
+  #profbg span {
+    display: none !important;
+  }
+
+  .editform input[type="text"] input[type="password"] {
+    width: 90% !important;
+  }
+
+  .editform {
+    width: 90% !important;
+    padding: 20px 20px 60px 20px !important;
+  }
+
   #gallery li {
     margin-right: 5% !important;
+  }
+
+  .go.f_right {
+    float: none !important;
   }
 
   #hr form input {
@@ -375,5 +393,112 @@
     position: relative;
     margin-top: 30px;
     right: 10px;
+  }
+
+  .responsive_table thead, .responsive_table tbody, .responsive_table th, .responsive_table td, .responsive_table tr {
+    display: block;
+    text-align: left;
+  }
+  .responsive_table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .responsive_table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50% !important;
+    height: auto !important;
+    padding: 15px 0;
+    width: 50% !important;
+  }
+  .responsive_table td:last-child {
+    border-bottom: 2px solid #d4d4d4;
+  }
+  .responsive_table td:before {
+    position: absolute;
+    /* Отступы сверху и слева */
+    top: 15px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .responsive_table td:nth-of-type(1):before {
+    content: "№ П/П";
+  }
+  .responsive_table td:nth-of-type(2):before {
+    content: "ФОТОГРАФИЯ";
+  }
+  .responsive_table td:nth-of-type(3):before {
+    content: "НАИМЕНОВАНИЕ, СВОЙСТВА ТОВАРА";
+  }
+  .responsive_table td:nth-of-type(4):before {
+    content: "ЦВЕТ";
+  }
+  .responsive_table td:nth-of-type(5):before {
+    content: "КОЛИЧЕСТВО";
+  }
+  .responsive_table td:nth-of-type(6):before {
+    content: "ЦЕНА";
+  }
+  .responsive_table td:nth-of-type(7):before {
+    content: "СТОИМОСТЬ";
+  }
+
+  .responsive_table_history thead, .responsive_table_history tbody, .responsive_table_history th, .responsive_table_history td, .responsive_table_history tr {
+    display: block;
+    text-align: left;
+  }
+  .responsive_table_history thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .responsive_table_history td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50% !important;
+    height: auto !important;
+    padding: 15px 0;
+    width: 50% !important;
+  }
+  .responsive_table_history td:last-child {
+    border-bottom: 2px solid #d4d4d4;
+  }
+  .responsive_table_history td:before {
+    position: absolute;
+    /* Отступы сверху и слева */
+    top: 15px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .responsive_table_history td:nth-of-type(1):before {
+    content: "№ П/П";
+  }
+  .responsive_table_history td:nth-of-type(2):before {
+    content: "ФОТОГРАФИЯ";
+  }
+  .responsive_table_history td:nth-of-type(3):before {
+    content: "НАИМЕНОВАНИЕ, СВОЙСТВА ТОВАРА";
+  }
+  .responsive_table_history td:nth-of-type(4):before {
+    content: "ЦВЕТ";
+  }
+  .responsive_table_history td:nth-of-type(5):before {
+    content: "КОЛИЧЕСТВО";
+  }
+  .responsive_table_history td:nth-of-type(6):before {
+    content: "ЦЕНА";
+  }
+  .responsive_table_history td:nth-of-type(7):before {
+    content: "СТОИМОСТЬ";
+  }
+  .responsive_table_history td:nth-of-type(8):before {
+    content: "ПОВТОР ЗАКАЗА";
   }
 }

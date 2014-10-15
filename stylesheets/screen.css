@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -100,7 +101,7 @@ footer {
   position: absolute;
   bottom: 0;
   margin: 0 auto;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 @font-face {
@@ -321,6 +322,7 @@ header a.logo {
 .pages {
   text-align: center;
   padding: 20px;
+  margin-top: 50px;
 }
 .pages a {
   width: 29px;
@@ -911,26 +913,18 @@ header a.logo {
 }
 
 .carusel_clients {
-  width: 100%;
-}
-.carusel_clients .cWrapper {
-  width: 100%;
-  position: relative;
-  padding: 0 30px;
-}
-.carusel_clients .cWrapper .lenta {
-  width: 2000px;
-  padding-left: 5px;
+  margin: 0 40px;
 }
 .carusel_clients .cWrapper .lenta .row {
   display: inline-block;
-  width: 150px;
 }
 .carusel_clients .slick-prev {
   top: 20px;
+  left: -65px;
 }
 .carusel_clients .slick-next {
   top: 20px;
+  right: -65px;
 }
 
 .carusel_int {
@@ -1162,14 +1156,14 @@ header a.logo {
 }
 
 #clients {
-  margin: 40px;
+  margin: 0 40px;
   position: relative;
 }
 #clients h3 {
   color: #878787;
   font-size: 32px;
   margin-bottom: 30px;
-  padding-left: 40px;
+  font-family: "pf_square_sans_promedium";
 }
 
 #ft_menu {
@@ -1325,6 +1319,9 @@ header a.logo {
   display: inline-block;
   margin-right: 20px;
   margin-bottom: 40px;
+}
+#gallery ul li:nth-child(4) {
+  margin-right: 0px;
 }
 #gallery ul li img {
   width: auto;
@@ -1623,39 +1620,37 @@ header a.logo {
 #basket table {
   margin: 20px 0;
   font-family: "pf_square_sans_promedium";
+  width: 100%;
 }
-#basket th {
+#basket thead th {
   font-size: 12px;
   text-transform: uppercase;
   text-align: center;
   height: 40px;
 }
-#basket th.numb {
+#basket thead th.numb {
   width: 5%;
 }
-#basket th.photo {
+#basket thead th.photo {
   width: 10%;
 }
-#basket th.towar {
+#basket thead th.towar {
   width: 20%;
 }
-#basket th.color {
+#basket thead th.color {
   width: 5%;
 }
-#basket th.hcount {
+#basket thead th.hcount {
   width: 17%;
 }
-#basket th.price {
+#basket thead th.price {
   width: 10%;
 }
-#basket th.hsumm {
+#basket thead th.hsumm {
   width: 10%;
 }
 #basket tr {
   border-bottom: 1px solid #e1e1e1;
-}
-#basket tr.dop {
-  display: none;
 }
 #basket td {
   text-align: center;
@@ -1873,29 +1868,128 @@ header a.logo {
   text-decoration: underline;
 }
 
+.input_mail {
+  display: block;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  background: url("../images/sprites.png" no-repeat 250px, 40px);
+}
+
 #profbg {
-  height: 640px;
-  overflow: hidden;
   background: transparent url("../images/bgprofile.jpg") left top no-repeat;
 }
 #profbg .profile {
   margin-left: 140px;
   position: relative;
+  padding-bottom: 50px;
 }
-#profbg .loginform {
-  width: 260px;
-  height: 470px;
+#profbg .editform {
+  width: 620px;
   background-color: #ffffff;
-  margin: 0 25%;
+  margin: 0 4%;
   border: 1px solid #bbbbbb;
+  padding: 40px 40px 60px 40px;
+  box-sizing: border-box;
 }
-#profbg .loginform .lost {
-  font-size: 12px;
+#profbg .editform p.yur {
+  display: inline-block;
+}
+#profbg .editform .lost {
+  font-size: 14px;
   position: relative;
   display: table;
   margin: 0 auto;
-  margin-top: 16px;
   font-family: "helveticaneuecyrlight";
+  text-decoration: underline;
+}
+#profbg .editform input[type="text"], #profbg .editform input[type="password"] {
+  border: 1px solid #c3c3c3;
+  width: 350px;
+  height: 40px;
+  color: #c3c3c3;
+  font-size: 14px;
+  color: #000000;
+  margin: 20px auto;
+  padding-left: 20px;
+  display: inline-block;
+  font-family: "pf_square_sans_prolight";
+}
+#profbg .editform .go {
+  display: block;
+  width: 212px;
+  margin: 0 auto;
+  background-color: #397db0;
+  border-top: 3px solid #27567a;
+  padding: 10px 0px;
+  color: #fff;
+  text-align: center;
+}
+#profbg .editform .go:hover {
+  background-color: #2b638d;
+  text-decoration: none;
+}
+#profbg .editform span {
+  display: inline-block;
+  width: 164px;
+  font-size: 14px;
+}
+#profbg .editform input[type="checkbox"] {
+  display: none;
+}
+#profbg .editform input.stat[type="radio"] + label {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 10px;
+  font-family: "pf_square_sans_prolight";
+  font-size: 16px;
+}
+#profbg .editform input[type="radio"] {
+  display: none;
+}
+#profbg .editform input[type="radio"] + label {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 55px;
+  font-family: "pf_square_sans_prolight";
+  font-size: 16px;
+}
+#profbg .editform input[type="radio"]:checked + label::before {
+  background-color: white;
+}
+#profbg .editform input[type="radio"] + label::before {
+  border: 6px solid #e5e4e6;
+  -moz-box-shadow: 0px -1px 1px #bababa;
+  -webkit-box-shadow: 0px -1px 1px #bababa;
+  box-shadow: 0px -1px 1px #bababa;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #e5e4e6;
+  content: "";
+  top: 17px;
+  left: -30px;
+  display: block;
+  position: relative;
+}
+#profbg .loginform {
+  width: 260px;
+  background-color: #ffffff;
+  margin: 0 25%;
+  border: 1px solid #bbbbbb;
+  padding-bottom: 20px;
+}
+#profbg .loginform .lost {
+  font-size: 14px;
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  font-family: "helveticaneuecyrlight";
+  text-decoration: underline;
 }
 #profbg .loginform .social {
   font-size: 12px;
@@ -1920,7 +2014,7 @@ header a.logo {
   height: 125px;
   display: block;
 }
-#profbg .loginform .lg {
+#profbg .loginform input[type="text"], #profbg .loginform input[type="password"] {
   border: 1px solid #c3c3c3;
   width: 190px;
   height: 40px;
@@ -1931,16 +2025,26 @@ header a.logo {
   padding-left: 20px;
   display: inherit;
 }
+#profbg .loginform .lg {
+  background: url("../images/sprites.png") no-repeat 181px -754px;
+}
 #profbg .loginform .ps {
-  border: 1px solid #c3c3c3;
-  width: 190px;
-  height: 40px;
-  color: #c3c3c3;
-  font-size: 14px;
-  color: #000000;
-  margin: 20px auto;
-  padding-left: 20px;
-  display: inherit;
+  background: url("../images/sprites.png") no-repeat 181px -784px;
+}
+#profbg .loginform .fio {
+  background: url("../images/sprites.png") no-repeat 181px -754px;
+}
+#profbg .loginform .org {
+  background: url("../images/sprites.png") no-repeat 181px -818px;
+}
+#profbg .loginform .inn {
+  background: url("../images/sprites.png") no-repeat 181px -850px;
+}
+#profbg .loginform .yur {
+  background: url("../images/sprites.png") no-repeat 181px -885px;
+}
+#profbg .loginform .mail {
+  background: url("../images/sprites.png") no-repeat 181px -916px;
 }
 #profbg .loginform .go {
   display: block;
@@ -1956,6 +2060,11 @@ header a.logo {
   background-color: #2b638d;
   text-decoration: none;
 }
+#profbg .loginform span {
+  display: block;
+  margin-left: 25px;
+  padding-top: 20px;
+}
 #profbg .loginform input[type="checkbox"] {
   display: none;
 }
@@ -1964,7 +2073,8 @@ header a.logo {
   display: block;
   margin-left: 110px;
   font-family: "helveticaneuecyrlight";
-  font-size: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
 }
 #profbg .loginform input.go_save[type="checkbox"]:checked + label::before {
   background-color: white;
@@ -1984,6 +2094,45 @@ header a.logo {
   content: "";
   top: 15px;
   left: -24px;
+  display: block;
+  position: relative;
+}
+#profbg .loginform input.stat[type="radio"] + label {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 10px;
+  font-family: "pf_square_sans_prolight";
+  font-size: 16px;
+}
+#profbg .loginform input[type="radio"] {
+  display: none;
+}
+#profbg .loginform input[type="radio"] + label {
+  cursor: pointer;
+  display: block;
+  margin-left: 55px;
+  font-family: "pf_square_sans_prolight";
+  font-size: 16px;
+}
+#profbg .loginform input[type="radio"]:checked + label::before {
+  background-color: white;
+}
+#profbg .loginform input[type="radio"] + label::before {
+  border: 6px solid #e5e4e6;
+  -moz-box-shadow: 0px -1px 1px #bababa;
+  -webkit-box-shadow: 0px -1px 1px #bababa;
+  box-shadow: 0px -1px 1px #bababa;
+  width: 6px;
+  height: 6px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #e5e4e6;
+  content: "";
+  top: 17px;
+  left: -30px;
   display: block;
   position: relative;
 }
@@ -2046,6 +2195,7 @@ header a.logo {
   line-height: 20px;
 }
 #order input[type="text"] {
+  font-family: "pf_square_sans_prolight";
   width: 95%;
   height: 33px;
   border: 1px solid #e5e5e5;
@@ -2367,7 +2517,7 @@ header a.logo {
   background-color: #ffffff;
   position: absolute;
   right: -23px;
-  top: -228px;
+  top: -202px;
 }
 #client .add .addform strong {
   display: block;
@@ -2451,6 +2601,27 @@ header a.logo {
   color: #3b4245;
   font-family: "pf_square_sans_promedium";
 }
+#blog_list .comment_autor {
+  display: inline-block;
+  position: relative;
+  top: -7px;
+  color: #3b4245;
+}
+#blog_list .button_comments {
+  text-decoration: none;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-family: "pf_square_sans_prolight";
+  background-color: #397db0;
+  color: #ffffff;
+  display: block;
+  float: right;
+  border-bottom: 3px solid #27567a;
+}
+#blog_list .button_comments:hover {
+  background-color: #2b638d;
+  text-decoration: none;
+}
 #blog_list p {
   font-size: 15px;
   line-height: 20px;
@@ -2484,6 +2655,34 @@ header a.logo {
   padding-left: 20px;
   margin: -20px 0 0 0;
   display: block;
+}
+#blog_list .reply {
+  background-color: #ffffff;
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  position: relative;
+}
+#blog_list .reply:before {
+  display: block;
+  content: '';
+  background-color: #ffffff;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  left: 100px;
+  top: -6px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#blog_list .reply span {
+  color: #999999;
+  font-size: 12px;
+  height: 14px;
+  display: block;
+  margin-top: 10px;
 }
 
 #contacts {
@@ -2596,6 +2795,10 @@ header a.logo {
   width: 100%;
   height: auto;
   z-index: -1;
+}
+
+.f_right {
+  float: right;
 }
 
 .page404 {
@@ -2794,6 +2997,10 @@ header a.logo {
     margin-left: 0;
   }
 
+  .editform, .loginform {
+    margin: 0 auto !important;
+  }
+
   #gallery li {
     margin-right: 5% !important;
   }
@@ -2922,6 +3129,16 @@ header a.logo {
 
   #blog {
     height: 362px !important;
+  }
+
+  #clients h3 {
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+    font-family: 'pf_square_sans_promedium';
+  }
+
+  #clients {
+    margin: 20px 20px 0 20px !important;
   }
 
   #leftside {
@@ -3132,7 +3349,7 @@ header a.logo {
   }
 
   #clients {
-    margin: 20px !important;
+    margin: 20px 20px 0 20px !important;
   }
 
   #clients h3 {
@@ -3210,8 +3427,25 @@ header a.logo {
     margin-left: 0;
   }
 
+  #profbg span {
+    display: none !important;
+  }
+
+  .editform input[type="text"] input[type="password"] {
+    width: 90% !important;
+  }
+
+  .editform {
+    width: 90% !important;
+    padding: 20px 20px 60px 20px !important;
+  }
+
   #gallery li {
     margin-right: 5% !important;
+  }
+
+  .go.f_right {
+    float: none !important;
   }
 
   #hr form input {
@@ -3308,5 +3542,112 @@ header a.logo {
     position: relative;
     margin-top: 30px;
     right: 10px;
+  }
+
+  .responsive_table thead, .responsive_table tbody, .responsive_table th, .responsive_table td, .responsive_table tr {
+    display: block;
+    text-align: left;
+  }
+  .responsive_table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .responsive_table td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50% !important;
+    height: auto !important;
+    padding: 15px 0;
+    width: 50% !important;
+  }
+  .responsive_table td:last-child {
+    border-bottom: 2px solid #d4d4d4;
+  }
+  .responsive_table td:before {
+    position: absolute;
+    /* Отступы сверху и слева */
+    top: 15px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .responsive_table td:nth-of-type(1):before {
+    content: "№ П/П";
+  }
+  .responsive_table td:nth-of-type(2):before {
+    content: "ФОТОГРАФИЯ";
+  }
+  .responsive_table td:nth-of-type(3):before {
+    content: "НАИМЕНОВАНИЕ, СВОЙСТВА ТОВАРА";
+  }
+  .responsive_table td:nth-of-type(4):before {
+    content: "ЦВЕТ";
+  }
+  .responsive_table td:nth-of-type(5):before {
+    content: "КОЛИЧЕСТВО";
+  }
+  .responsive_table td:nth-of-type(6):before {
+    content: "ЦЕНА";
+  }
+  .responsive_table td:nth-of-type(7):before {
+    content: "СТОИМОСТЬ";
+  }
+
+  .responsive_table_history thead, .responsive_table_history tbody, .responsive_table_history th, .responsive_table_history td, .responsive_table_history tr {
+    display: block;
+    text-align: left;
+  }
+  .responsive_table_history thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .responsive_table_history td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50% !important;
+    height: auto !important;
+    padding: 15px 0;
+    width: 50% !important;
+  }
+  .responsive_table_history td:last-child {
+    border-bottom: 2px solid #d4d4d4;
+  }
+  .responsive_table_history td:before {
+    position: absolute;
+    /* Отступы сверху и слева */
+    top: 15px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .responsive_table_history td:nth-of-type(1):before {
+    content: "№ П/П";
+  }
+  .responsive_table_history td:nth-of-type(2):before {
+    content: "ФОТОГРАФИЯ";
+  }
+  .responsive_table_history td:nth-of-type(3):before {
+    content: "НАИМЕНОВАНИЕ, СВОЙСТВА ТОВАРА";
+  }
+  .responsive_table_history td:nth-of-type(4):before {
+    content: "ЦВЕТ";
+  }
+  .responsive_table_history td:nth-of-type(5):before {
+    content: "КОЛИЧЕСТВО";
+  }
+  .responsive_table_history td:nth-of-type(6):before {
+    content: "ЦЕНА";
+  }
+  .responsive_table_history td:nth-of-type(7):before {
+    content: "СТОИМОСТЬ";
+  }
+  .responsive_table_history td:nth-of-type(8):before {
+    content: "ПОВТОР ЗАКАЗА";
   }
 }
