@@ -322,7 +322,6 @@ header a.logo {
 .pages {
   text-align: center;
   padding: 20px;
-  margin-top: 50px;
 }
 .pages a {
   width: 29px;
@@ -1056,7 +1055,7 @@ header a.logo {
 }
 #content .block span {
   padding-top: 15px;
-  font-size: 24px;
+  font-size: 16px;
 }
 #content .block span.crossed {
   text-decoration: line-through;
@@ -1340,19 +1339,67 @@ header a.logo {
   display: inline-block;
   margin-right: 14px;
   margin-bottom: 40px;
+  width: 23%;
+  height: 23%;
 }
 #album ul li:nth-child(4) {
   margin-right: 0px;
 }
-#album ul img {
-  border: 2px solid transparent;
+#album ul li .row {
+  display: inline-block !important;
+}
+#album ul li a {
+  text-decoration: none;
+  color: #000;
 }
 #album ul img:hover {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
+}
+#album ul .squerEl {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+#album ul .squerEl .inner {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  left: -50%;
+}
+#album ul .squerEl .inner img {
+  max-width: 75%;
+  max-height: 75%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+#album ul .squerEl:hover {
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
   border: 2px solid white;
+  z-index: 100;
 }
 #album .pages {
   text-align: center;
@@ -1415,6 +1462,9 @@ header a.logo {
   border-bottom: 1px solid #d7d7d7;
   margin-bottom: 20px;
   padding-bottom: 10px;
+}
+#news .back {
+  margin-top: 20px;
 }
 
 #hcat {
@@ -1564,13 +1614,13 @@ header a.logo {
 }
 #goods .goods_pic {
   float: left;
-  width: 320px;
+  width: 32%;
   height: 388px;
 }
 #goods .color_choice {
   float: left;
   height: 350px;
-  width: 100px;
+  width: 10%;
   position: relative;
 }
 #goods .color_choice ul {
@@ -1597,11 +1647,24 @@ header a.logo {
 #goods .goods_descr {
   float: left;
   height: 388px;
-  width: 410px;
-  padding-left: 110px;
+  width: 52%;
+  padding-left: 30px;
 }
 #goods .goods_descr p {
   line-height: 22px;
+}
+
+.photo_pr {
+  padding-bottom: 40px;
+}
+.photo_pr img {
+  width: 100%;
+}
+.photo_pr span {
+  padding-top: 20px;
+  font-size: 16px;
+  display: block;
+  font-family: "pf_square_sans_promedium";
 }
 
 #basket {
@@ -1655,6 +1718,14 @@ header a.logo {
 #basket td {
   text-align: center;
   height: 140px;
+}
+#basket tr.dop320 {
+  height: 40px;
+  border: 1px solid red;
+}
+#basket tr.dop320 td {
+  height: 40px;
+  text-align: left !important;
 }
 #basket .data {
   color: #848484;
@@ -2981,8 +3052,13 @@ header a.logo {
     display: inline-block !important;
   }
 
+  #album span {
+    margin-top: 10px !important;
+  }
   #album ul li {
-    margin-right: 5% !important;
+    margin-right: 4% !important;
+    width: 29% !important;
+    height: 29% !important;
   }
   #album ul li:nth-child(3) {
     margin-right: 0 !important;
@@ -3035,10 +3111,13 @@ header a.logo {
     width: inherit;
     margin: 10px 0;
   }
+  #leftside ul {
+    width: 100% !important;
+  }
   #leftside li {
     line-height: 21px;
     display: inline-block;
-    width: 220px;
+    width: 32%;
     height: 28px;
     text-align: center;
     padding-top: 7px;
@@ -3119,12 +3198,12 @@ header a.logo {
 
   #content img.about {
     float: none;
-    margin-left: -8px;
+    width: 100%;
     margin-top: 0;
-    transform: scale(1.1);
     margin-bottom: 10px;
     padding-top: 20px !important;
-    padding-right: 20px !important;
+    transform: scale(1.12);
+    margin-left: 1px;
   }
 
   #blog {
@@ -3142,10 +3221,52 @@ header a.logo {
   }
 
   #leftside {
-    margin: 0 0 10px -17px !important;
+    margin: 0 !important;
   }
+
+  #leftside ul {
+    margin-left: -10px !important;
+  }
+
   #leftside li {
     width: 148px !important;
+    margin: 0 !important;
+  }
+
+  #goods {
+    padding: 0px 10px 10px 10px;
+  }
+
+  #goods h1 {
+    font-size: 24px !important;
+  }
+
+  #goods h2 {
+    font-size: 16px !important;
+  }
+
+  #basket h2 {
+    font-size: 24px !important;
+  }
+
+  #basket {
+    padding: 0 10px 10px 10px !important;
+  }
+
+  #basket .colorpicker {
+    width: 80px !important;
+  }
+
+  .carusel_clients {
+    margin: 0 10px !important;
+  }
+
+  #news {
+    padding: 0 10px !important;
+  }
+
+  #blog_list {
+    margin: 0 10px !important;
   }
 }
 @media screen and (max-width: 640px) {
@@ -3174,8 +3295,8 @@ header a.logo {
     right: -5px;
   }
 
-  .mobile_menu {
-    top: 50px;
+  #mobile_menu {
+    top: 50px !important;
   }
 
   #slider {
@@ -3193,6 +3314,18 @@ header a.logo {
     padding: 9px 10px;
     font-size: 16px;
     border: none;
+  }
+
+  .photo_pr {
+    padding-bottom: 20px;
+  }
+
+  .photo_pr span {
+    padding-top: 5px;
+  }
+
+  #blog_list {
+    margin: 0 20px !important;
   }
 
   #buttons {
@@ -3279,8 +3412,12 @@ header a.logo {
   }
 
   #content {
-    padding: 0 17px;
+    padding: 0 10px;
     overflow: hidden !important;
+  }
+
+  #news {
+    padding: 0 30px;
   }
 
   #content h2, #content h3 {
@@ -3322,6 +3459,10 @@ header a.logo {
     display: none;
   }
 
+  #blog .blogrow:nth-child(3) {
+    display: none !important;
+  }
+
   #blog {
     height: 440px !important;
     padding: 20px 10px 10px 10px !important;
@@ -3342,10 +3483,14 @@ header a.logo {
     margin-left: 0;
   }
 
+  #company h1 {
+    font-size: 24px;
+  }
+
   #company .back {
     position: absolute;
-    bottom: 280px;
-    right: 50px !important;
+    bottom: 310px;
+    right: 25px !important;
   }
 
   #clients {
@@ -3354,6 +3499,10 @@ header a.logo {
 
   #clients h3 {
     padding-left: 0 !important;
+  }
+
+  #novinki {
+    display: none;
   }
 
   footer {
@@ -3411,16 +3560,28 @@ header a.logo {
     display: inline-block !important;
   }
 
+  #album span {
+    margin-top: 0 !important;
+  }
   #album ul li {
     margin-right: 5% !important;
+    width: 45% !important;
+    height: 45% !important;
+  }
+  #album ul li:nth-child(2) {
+    margin-right: 0 !important;
   }
   #album ul li:nth-child(3) {
-    margin-right: 0 !important;
+    margin-right: 5% !important;
   }
 
   .in_cel {
     width: 45% !important;
     margin-right: 20px !important;
+  }
+
+  #basket .colorpicker {
+    width: 60px !important;
   }
 
   #profbg .profile {
@@ -3431,8 +3592,12 @@ header a.logo {
     display: none !important;
   }
 
-  .editform input[type="text"] input[type="password"] {
+  .editform input[type="text"], input[type="password"] {
     width: 90% !important;
+  }
+
+  .doplink {
+    display: none !important;
   }
 
   .editform {
@@ -3446,6 +3611,19 @@ header a.logo {
 
   .go.f_right {
     float: none !important;
+  }
+
+  #goods {
+    padding: 0px 20px 20px 20px;
+  }
+
+  .goods_descr {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+
+  .goods_pic {
+    width: 70% !important;
   }
 
   #hr form input {
@@ -3481,7 +3659,7 @@ header a.logo {
   #leftside li {
     line-height: 21px;
     display: inline-block;
-    width: 220px;
+    width: 48% !important;
     height: 28px;
     text-align: center;
     padding-top: 7px;
@@ -3572,7 +3750,9 @@ header a.logo {
     left: 6px;
     width: 45%;
     padding-right: 10px;
-    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
   }
   .responsive_table td:nth-of-type(1):before {
     content: "№ П/П";
@@ -3624,7 +3804,10 @@ header a.logo {
     left: 6px;
     width: 45%;
     padding-right: 10px;
-    white-space: nowrap;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    vertical-align: middle;
   }
   .responsive_table_history td:nth-of-type(1):before {
     content: "№ П/П";
@@ -3649,5 +3832,13 @@ header a.logo {
   }
   .responsive_table_history td:nth-of-type(8):before {
     content: "ПОВТОР ЗАКАЗА";
+  }
+  .responsive_table_history .dop320 {
+    text-align: left;
+  }
+  .responsive_table_history .dop320 td:nth-of-type(1):before {
+    display: none;
+    content: "";
+    padding-left: 0;
   }
 }

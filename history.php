@@ -74,7 +74,7 @@
 					<p class="goods_title">AB41-03-300X</p>
 					<p class="goods_size">1850х300х500</p>
 					<p class="goods_weight">30 кг</p>
-					<a href="">Дополнительное оборудование</a>
+					<a class="doplink" href="">Дополнительное оборудование</a>
 				</td>
 				<td>
 					Отправлен	
@@ -93,6 +93,7 @@
 					<label for="c2"></label>
 				</td>
 			</tr>
+			<tr class="dop320"><td colspan="8"><a href="">Дополнительное оборудование</a></td></tr>
 		</tbody>
 	</table>
 	<div class="summ">24.400 Р</div>

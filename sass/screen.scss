@@ -6,6 +6,37 @@
 @import "compass/reset";
 @import "compass/css3";
 
+@mixin imgWrapper($width, $height){
+	 width: $width; 
+	 height: $height;
+	 display: inline-block;
+	 position: relative;
+	 overflow: hidden;
+	 .inner{
+		  width:$width*2;
+		  height: $height*2;
+		  position: absolute;
+		  @include translateX (50%);
+		  @include translateY (-50%);
+		  top: 50%;
+		  left: -50%;
+		  img{max-width: 75%;max-height: 75%;
+			     //@include translateX (50%);
+			     //margin-left: -50%;
+			     //@include translateY (50%);
+			     //top: 50%;
+			     //left: 50%;
+			     top:0;
+			     left: 0;
+			     bottom: 0;
+			     right: 0;
+			     margin: auto;
+			     position: absolute;
+			   width: auto; height: auto;
+		  }
+	}
+}
+
 
 // FONTS
 $fLight:'pf_square_sans_prolight';
@@ -299,7 +330,7 @@ header {
 .pages {
 	text-align: center;
 	padding: 20px;
-	margin-top: 50px;
+//	margin-top: 50px;
 	a {
 		width: 29px;
 		height: 29px;
@@ -968,7 +999,7 @@ header {
 		}
 		span {
 			padding-top: 15px;
-			font-size: 24px;
+			font-size: 16px;
 			&.crossed {
 				text-decoration: line-through;
 				font-family: $fLight;
@@ -1247,7 +1278,6 @@ header {
 }
 
 #album {
-
 	span {
 		display: block;
 		margin-top: 20px;
@@ -1260,15 +1290,26 @@ header {
 			display: inline-block;
 			margin-right: 14px;
 			margin-bottom: 40px;
+			width: 23%;
+			height: 23%;
 			&:nth-child(4) {margin-right: 0px;}
+			.row {display: inline-block !important;}
+			a {
+				text-decoration: none;
+				color:#000;
+			}
 		}
+
 		img {
-			border: 2px solid transparent;
 			&:hover {
 				@include transform(scale(1.2));
-				border: 2px solid white;
-
+		//		border: 2px solid white;
 			}
+		}
+		.squerEl {
+			@include imgWrapper(100%, 100%);
+			border: 2px solid transparent;
+			&:hover {@include transform(scale(1.2)); border: 2px solid white; z-index: 100;}
 		}
 	}
 
@@ -1328,6 +1369,7 @@ header {
 		margin-bottom: 20px;
 		padding-bottom: 10px;
 	}
+ 	.back {margin-top: 20px;}
 }
 
 #hcat {
@@ -1474,14 +1516,14 @@ header {
 	}
 	.goods_pic {
 		float: left;
-		width: 320px;
+		width: 32%;
 		height: 388px;
 	}
 
 	.color_choice {
 		float: left;
 		height: 350px;
-		width: 100px;
+		width: 10%;
 		position: relative;
 		ul {
 			padding: 50px 20px;
@@ -1508,11 +1550,20 @@ header {
 	.goods_descr {
 		float: left;
 		height: 388px;
-		width: 410px;
-		padding-left: 110px;
-		p{
-			line-height: 22px;
-		}
+		width: 52%;
+		padding-left: 30px;
+		p{line-height: 22px;}
+	}
+}
+
+.photo_pr {
+	padding-bottom: 40px;
+	img {width: 100%;}
+		span {
+		padding-top: 20px;
+		font-size: 16px;
+		display: block;
+		font-family: $fMedium;
 	}
 }
 
@@ -1522,8 +1573,8 @@ header {
 	h1{
 		font-size: 32px;
 		font-family: $fMedium;
-
 	}
+
 	h2 {
 		font-size: 32px;
 		font-family: $fMedium;
@@ -1575,6 +1626,13 @@ header {
 		text-align: center;
 		height: 140px;
 	}
+
+	tr.dop320 {
+		height: 40px;
+		border: 1px solid red;
+		td {height: 40px; text-align:left !important;}
+	}
+
 	.data {
 		color: #848484;
 		font-size: 14px;

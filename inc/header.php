@@ -3,8 +3,10 @@
 		<head>	
 			<meta charset="UTF-8" />
 			<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+			<link rel="stylesheet" type="text/css" href="stylesheets/colorbox.css"/>
 			<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 			<link rel="shortcut icon" href="favicon.ico" />
+			<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
 			<title>Металлическая мебель</title>
 		</head>
 			<body>

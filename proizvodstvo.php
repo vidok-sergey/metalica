@@ -6,52 +6,47 @@
 
 	<div id="company">
 		<h1>Производство</h1>
+		<div class="photo_pr">
+			<img src="images/bigslide1.jpg" alt="">
+			<span>Описание фото</span>
+		</div>
+
 		<div id="big_slide">
-			<div class="carusel_big">
+			<div class="carusel_pr">
 				<div class="cWrapper">
 					<div class="row">
 						<div class="block">
-							<img src="images/bigslide1.jpg" alt="">
-							<p>Производство</p>
+							<a href=""><img src="images/photo1.jpg"></a>
+							<span>Производство</span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="block">
-							<img src="images/bigslide1.jpg" alt="">
-							<p>Производство</p>
+							<a href=""><img src="images/photo2.jpg"></a>
+							<span>Производство</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<a href=""><img src="images/photo3.jpg"></a>
+							<span>Производство</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<a href=""><img src="images/photo4.jpg"></a>
+							<span>Производство</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="block">
+							<a href=""><img src="images/photo2.jpg"></a>
+							<span>Производство</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div id="gallery">
-			<ul>
-				<li>
-					<a href=""><img src="images/photo1.jpg"></a>
-					<span>Производство</span>
-				</li>
-				<li>
-					<a href=""><img src="images/photo2.jpg"></a>
-					<span>Продукция</span>
-				</li>
-				<li>
-					<a href=""><img src="images/photo3.jpg"></a>
-					<span>Наши клиенты</span>
-				</li>
-				<li>
-					<a href=""><img src="images/photo4.jpg"></a>
-					<span>Наши клиенты</span>
-				</li>
-			</ul>
-			<div class="pages">
-				<a href="#" class="active">1</a>
-				<a href="#">2</a>
-				<a href="#">3</a>
-				<a href="#" class="arrow">></a>
-			</div>
-		</div>
-
 	</div>
 </div>
 	

@@ -12,7 +12,7 @@
 
 	.tel, .login, #menu, .logo {display: none;}
 	.btn_mobile_menu {transform: scale(0.84); top: -5px; right: -5px;}
-	.mobile_menu {top:50px;} 
+	#mobile_menu {top:50px !important;} 
 
 	#slider {
 		min-height: 180px;
@@ -21,6 +21,9 @@
 	}
 
 	.button_details {padding: 9px 10px; font-size: 16px; border: none;}
+	.photo_pr {padding-bottom: 20px;}
+	.photo_pr span {padding-top: 5px;}
+	#blog_list {margin: 0 20px !important;}
 
 	#buttons {
 		height: auto !important;
@@ -80,7 +83,9 @@
 	.adv4 {transform: scale(.75);}
 
 	.content {padding: 0 129px;}
-	#content {padding: 0 17px; overflow: hidden !important;}
+	#content {padding: 0 10px; overflow: hidden !important;}
+	#news {padding: 0 30px;}
+
 
 
 	#content {
@@ -110,19 +115,22 @@
 	h1 {margin-top: 20px;}
 	/*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
 	#ft_menu {display: none;}
+	#blog .blogrow:nth-child(3) {display: none !important;}
 	#blog { 
 		height: 440px !important;
 		padding: 20px 10px 10px 10px !important;
 		margin:10px !important;
-		.blogrow {width: 90% !important; height: auto !important;}
+		.blogrow {width: 90% !important; height: auto !important; }
 		h4, span {margin:0 !important;}
 		.subscribe {margin-left: 0 !important;}
 	}
 
 	#company {margin-left: 0;}
-	#company .back {position: absolute; bottom: 280px; right: 50px !important;}
+	#company h1 {font-size: 24px;}
+	#company .back {position: absolute; bottom: 310px; right: 25px !important;}
 	#clients {margin: 20px 20px 0 20px !important;}
 	#clients h3 {padding-left: 0 !important;}
+	#novinki {display: none;}
 
 	footer {margin:0 !important;}
 	#ft_ft {
@@ -149,23 +157,33 @@
 	}
 
 	#album {
+		span {margin-top: 0 !important;}
 		ul {
 			li {
 				margin-right: 5% !important;
-				&:nth-child(3) {margin-right: 0 !important;}
+				width: 45% !important;
+				height: 45% !important;
+				&:nth-child(2) {margin-right: 0 !important;}
+				&:nth-child(3) {margin-right: 5% !important;}
 			}
 		}
 	}
 
 	.in_cel {width: 45% !important;	margin-right: 20px !important;}
 	#basket th.price {}
+	#basket .colorpicker {width: 60px !important;}
 	#profbg .profile {margin-left: 0;}
 	#profbg span {display: none !important;}
-	.editform input[type="text"] input[type="password"] {width: 90% !important;}
+	.editform input[type="text"], input[type="password"] {width: 90% !important;}
+	.doplink {display: none !important;}
 
 	.editform {width: 90% !important; padding: 20px 20px 60px 20px !important;}
 	#gallery li {margin-right: 5% !important;}
 	.go.f_right {float: none !important;}
+
+	#goods {padding: 0px 20px 20px 20px;}
+	.goods_descr {width: 100% !important; padding-left: 0 !important;}
+	.goods_pic {width:70% !important;}
 
 	#hr form input {width: 38%;}
 	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(4n){margin-right:1px !important;}}
@@ -184,7 +202,7 @@
 		li {
 			line-height: 21px;
 			display: inline-block;
-			width: 220px;
+			width: 48% !important;
 			height: 28px;
 			text-align: center;
 			padding-top: 7px;
@@ -225,6 +243,7 @@
 	    height: auto !important;
 	    padding: 15px 0;
 	    width: 50% !important;
+
 	    &:last-child{
 	     border-bottom: 2px solid #d4d4d4;
 	    }
@@ -237,7 +256,10 @@
 	    left: 6px;
 	    width: 45%; 
 	    padding-right: 10px; 
-	    white-space: nowrap;
+	    font-size: 12px;
+		text-transform: uppercase;
+		text-align: left;
+//	    white-space: nowrap;
 	   }
 	  
 	  
@@ -282,9 +304,12 @@
 	    left: 6px;
 	    width: 45%; 
 	    padding-right: 10px; 
-	    white-space: nowrap;
+		font-size: 12px;
+		text-transform: uppercase;
+		text-align: left;
+		vertical-align: middle;
+//	    white-space:;
 	   }
-	  
 	  
 	   td:nth-of-type(1):before { content: "№ П/П"; }
 	   td:nth-of-type(2):before { content: "ФОТОГРАФИЯ"; }
@@ -294,6 +319,11 @@
 	   td:nth-of-type(6):before { content: "ЦЕНА"; }
 	   td:nth-of-type(7):before { content: "СТОИМОСТЬ"; }
 	   td:nth-of-type(8):before { content: "ПОВТОР ЗАКАЗА"; }
+
+	   .dop320 {
+	   	text-align: left;
+	   	 td:nth-of-type(1):before { display:none; content: ""; padding-left: 0;}
+	   }
 	}
 
 }

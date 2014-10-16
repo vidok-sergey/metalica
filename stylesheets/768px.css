@@ -173,8 +173,13 @@
     display: inline-block !important;
   }
 
+  #album span {
+    margin-top: 10px !important;
+  }
   #album ul li {
-    margin-right: 5% !important;
+    margin-right: 4% !important;
+    width: 29% !important;
+    height: 29% !important;
   }
   #album ul li:nth-child(3) {
     margin-right: 0 !important;
@@ -227,10 +232,13 @@
     width: inherit;
     margin: 10px 0;
   }
+  #leftside ul {
+    width: 100% !important;
+  }
   #leftside li {
     line-height: 21px;
     display: inline-block;
-    width: 220px;
+    width: 32%;
     height: 28px;
     text-align: center;
     padding-top: 7px;

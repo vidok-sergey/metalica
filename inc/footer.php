@@ -46,13 +46,14 @@
 				<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 				<script>window.jQuery || document.write('<script src="/js/libs/jquery-2.0.3.min.js"><\/script>')</script>
 				<script type="text/javascript" src="slick/slick.min.js"></script>
-				<script type="text/javascript">
+				<!--<script type="text/javascript">
 					$(document).ready(function(){
 						$('.carusel').slick({
 						  setting-name: setting-value
 						});
 					});
-				</script>
+				</script>-->
 				<script type="text/javascript" src="js/script.js"></script>
+				<script src="js/libs/jquery.colorbox-min.js"></script>
 			</body>
 	</html>

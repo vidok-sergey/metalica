@@ -10,30 +10,63 @@
 		<div class="clr"></div>
 		<div id="album">
 			<ul>
-				<li>
-					<a href=""><img src="images/photo1.jpg"></a>
-					<span>Заголовок фото</span>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/photo2.jpg"></a>
-					<span>Заголовок фото</span>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/photo3.jpg"></a>
-					<span>Заголовок фото</span>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/photo4.jpg"></a>
-					<span>Заголовок фото</span>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/photo2.jpg"></a>
-					<span>Заголовок фото</span>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
 				</li>
-				<li>
-					<a href=""><img src="images/photo4.jpg"></a>
-					<span>Заголовок фото</span>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
 				</li>
+				<li class="row">
+					<a href="images/bigslide1.jpg" class="gallery">
+						<div class="squerEl">
+							<div class="inner"><img src="images/bigslide1.jpg"></div>
+						</div>
+						<span>Заголовок фото</span>
+					</a>
+				</li>
+
 			</ul>
 			<div class="pages">
 				<a href="#" class="active">1</a>
