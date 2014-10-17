@@ -132,6 +132,46 @@ footer {
   font-weight: normal;
   font-style: normal;
 }
+article ol {
+  list-style-type: decimal !important;
+  margin: 20px 0 !important;
+  margin-left: 30px !important;
+}
+article ul {
+  list-style-type: square !important;
+  margin: 20px 0 !important;
+  margin-left: 30px !important;
+}
+article li {
+  line-height: 25px;
+}
+article h1 {
+  font-size: 32px !important;
+  margin-bottom: 20px !important;
+  font-family: "pf_square_sans_promedium";
+}
+article h2 {
+  font-size: 30px !important;
+  margin-bottom: 20px !important;
+  font-family: "pf_square_sans_promedium";
+}
+article h3 {
+  font-size: 26px !important;
+  margin-bottom: 15px !important;
+  font-family: "pf_square_sans_promedium";
+}
+article h4 {
+  font-size: 24px !important;
+  margin-bottom: 15px !important;
+  font-family: "pf_square_sans_promedium";
+}
+article b, article strong {
+  font-family: "pf_square_sans_promedium";
+}
+article i, article em {
+  font-style: italic !important;
+}
+
 .btn_mobile_menu {
   display: none;
   width: 60px;
@@ -1382,8 +1422,8 @@ header a.logo {
   left: -50%;
 }
 #album ul .squerEl .inner img {
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 90%;
+  max-height: 90%;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1398,7 +1438,7 @@ header a.logo {
   -ms-transform: scale(1.2);
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  border: 2px solid white;
+  border: 2px solid #fff;
   z-index: 100;
 }
 #album .pages {
@@ -1482,6 +1522,8 @@ header a.logo {
   margin-bottom: 20px;
   margin-top: 2px;
   margin-left: 2px;
+  width: 100%;
+  max-width: 220px;
 }
 #catalog h1 {
   font-size: 32px;
@@ -1504,10 +1546,11 @@ header a.logo {
   width: 100%;
 }
 #catalog ul li {
-  float: none;
-  width: 220px;
+  float: left;
+  width: 24%;
   display: none;
   margin-bottom: 50px;
+  margin-right: 1%;
   position: relative;
 }
 #catalog ul li:nth-child(-n+4) {
@@ -1554,7 +1597,7 @@ header a.logo {
 #advant {
   padding: 0 40px;
   overflow: hidden;
-  height: 160px;
+  height: 100%;
 }
 #advant h2 {
   font-size: 32px;
@@ -1568,6 +1611,7 @@ header a.logo {
 #advant ul li {
   width: 240px;
   display: table-cell;
+  height: 80px;
 }
 #advant ul li span {
   font-size: 16px;
@@ -2087,35 +2131,38 @@ header a.logo {
 }
 #profbg .loginform input[type="text"], #profbg .loginform input[type="password"] {
   border: 1px solid #c3c3c3;
-  width: 190px;
+  width: 210px;
   height: 40px;
   color: #c3c3c3;
   font-size: 14px;
   color: #000000;
   margin: 20px auto;
-  padding-left: 20px;
+  padding-left: 10px;
+  padding-right: 35px;
   display: inherit;
+  box-sizing: border-box;
+  font-family: "pf_square_sans_prolight";
 }
 #profbg .loginform .lg {
-  background: url("../images/sprites.png") no-repeat 181px -754px;
+  background: url("../images/sprites.png") no-repeat 180px -754px;
 }
 #profbg .loginform .ps {
-  background: url("../images/sprites.png") no-repeat 181px -784px;
+  background: url("../images/sprites.png") no-repeat 180px -784px;
 }
 #profbg .loginform .fio {
-  background: url("../images/sprites.png") no-repeat 181px -754px;
+  background: url("../images/sprites.png") no-repeat 180px -754px;
 }
 #profbg .loginform .org {
-  background: url("../images/sprites.png") no-repeat 181px -818px;
+  background: url("../images/sprites.png") no-repeat 180px -818px;
 }
 #profbg .loginform .inn {
-  background: url("../images/sprites.png") no-repeat 181px -850px;
+  background: url("../images/sprites.png") no-repeat 180px -850px;
 }
 #profbg .loginform .yur {
-  background: url("../images/sprites.png") no-repeat 181px -885px;
+  background: url("../images/sprites.png") no-repeat 180px -885px;
 }
 #profbg .loginform .mail {
-  background: url("../images/sprites.png") no-repeat 181px -916px;
+  background: url("../images/sprites.png") no-repeat 180px -916px;
 }
 #profbg .loginform .go {
   display: block;
@@ -2224,7 +2271,6 @@ header a.logo {
 #order .status {
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
-  height: 60px;
   padding: 20px;
 }
 #order .dostavka {
@@ -2354,6 +2400,9 @@ header a.logo {
   display: block;
   font-family: "pf_square_sans_promedium";
 }
+#hr .hr_info .inf {
+  width: 100%;
+}
 #hr form {
   max-width: 550px;
   padding: 20px;
@@ -2390,14 +2439,14 @@ header a.logo {
 }
 
 #client {
-  min-height: 450px;
+  padding: 20px 0;
 }
 #client strong {
   font-family: "pf_square_sans_promedium";
 }
 #client ul.cl {
   height: 100%;
-  margin: 40px 0;
+  margin: 3% 0;
   overflow: hidden;
 }
 #client ul.cl li {
@@ -2406,10 +2455,7 @@ header a.logo {
   height: 140px;
   display: block;
   float: left;
-  margin: 0 50px 20px 0;
-}
-#client ul.cl li:nth-child(4n) {
-  margin-right: 0px;
+  margin: 0 40px 20px 0;
 }
 #client ul.cl li img {
   width: 130px;
@@ -2425,7 +2471,7 @@ header a.logo {
   width: 30%;
   display: inline-block;
   margin-bottom: 25px;
-  margin-right: 14px;
+  margin-right: 2%;
   font-size: 14px;
 }
 #client ul.employes li img {
@@ -2456,6 +2502,7 @@ header a.logo {
   text-decoration: none;
 }
 #client .popup {
+  display: none;
   z-index: 100;
   position: absolute;
   width: 260px;
@@ -2552,7 +2599,6 @@ header a.logo {
   margin-top: 10px;
 }
 #client .add {
-  display: block;
   height: 60px;
   position: relative;
 }
@@ -2580,6 +2626,7 @@ header a.logo {
   text-decoration: none;
 }
 #client .add .addform {
+  display: none;
   border: 1px solid #dddddd;
   padding: 22px;
   width: 400px;
@@ -2588,7 +2635,7 @@ header a.logo {
   background-color: #ffffff;
   position: absolute;
   right: -23px;
-  top: -202px;
+  top: -200px;
 }
 #client .add .addform strong {
   display: block;
@@ -3042,14 +3089,36 @@ header a.logo {
     margin-top: 50px;
   }
 
+  #catalog {
+    padding: 0 20px 0 30px !important;
+  }
   #catalog li {
+    width: 30% !important;
+    max-width: 220px !important;
+    margin-right: 3% !important;
     display: none !important;
   }
   #catalog li:nth-child(-n+3) {
     display: inline-block !important;
+    margin-right: 3% !important;
+  }
+  #catalog li:nth-child(3) {
+    display: inline-block !important;
+    margin-right: 0 !important;
   }
   #catalog li.h0 {
     display: inline-block !important;
+  }
+
+  #advant {
+    padding: 0 20px;
+  }
+  #advant h2 {
+    font-size: 32px;
+  }
+  #advant span {
+    font-size: 14px !important;
+    margin-left: 80px !important;
   }
 
   #album span {
@@ -3088,8 +3157,8 @@ header a.logo {
   #client ul.employes li {
     margin: 0 1px 20px 0 !important;
   }
-  #client ul.employes li:nth-child(4n) {
-    margin-right: 1px !important;
+  #client ul.employes li:nth-child(3n) {
+    margin-right: 0 !important;
   }
 
   #client ul.employes li span {
@@ -3180,95 +3249,6 @@ header a.logo {
     right: 10px;
   }
 }
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 25px;
-    margin: 10px 0;
-  }
-
-  #slider {
-    width: auto !important;
-  }
-  #slider img {
-    display: none;
-  }
-  #slider img.i {
-    display: block !important;
-  }
-
-  #content img.about {
-    float: none;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-top: 20px !important;
-    transform: scale(1.12);
-    margin-left: 1px;
-  }
-
-  #blog {
-    height: 362px !important;
-  }
-
-  #clients h3 {
-    font-size: 24px !important;
-    margin-bottom: 10px !important;
-    font-family: 'pf_square_sans_promedium';
-  }
-
-  #clients {
-    margin: 20px 20px 0 20px !important;
-  }
-
-  #leftside {
-    margin: 0 !important;
-  }
-
-  #leftside ul {
-    margin-left: -10px !important;
-  }
-
-  #leftside li {
-    width: 148px !important;
-    margin: 0 !important;
-  }
-
-  #goods {
-    padding: 0px 10px 10px 10px;
-  }
-
-  #goods h1 {
-    font-size: 24px !important;
-  }
-
-  #goods h2 {
-    font-size: 16px !important;
-  }
-
-  #basket h2 {
-    font-size: 24px !important;
-  }
-
-  #basket {
-    padding: 0 10px 10px 10px !important;
-  }
-
-  #basket .colorpicker {
-    width: 80px !important;
-  }
-
-  .carusel_clients {
-    margin: 0 10px !important;
-  }
-
-  #news {
-    padding: 0 10px !important;
-  }
-
-  #blog_list {
-    margin: 0 10px !important;
-  }
-}
 @media screen and (max-width: 640px) {
   header {
     height: 50px;
@@ -3325,7 +3305,7 @@ header a.logo {
   }
 
   #blog_list {
-    margin: 0 20px !important;
+    padding: 0 20px !important;
   }
 
   #buttons {
@@ -3550,14 +3530,56 @@ header a.logo {
     top: -10px;
   }
 
+  #catalog {
+    padding: 0 20px !important;
+  }
   #catalog li {
-    display: none !important;
+    width: 46% !important;
+    margin-right: 2% !important;
   }
   #catalog li:nth-child(-n+3) {
+    display: none !important;
+  }
+  #catalog li:nth-child(-n+2) {
     display: inline-block !important;
+    margin-right: 6% !important;
+  }
+  #catalog li:nth-child(2) {
+    display: inline-block !important;
+    margin-right: 0 !important;
+  }
+  #catalog li:nth-child(1) {
+    display: inline-block !important;
+    margin-right: 5% !important;
   }
   #catalog li.h0 {
     display: inline-block !important;
+  }
+  #catalog li p {
+    font-size: 14px !important;
+  }
+  #catalog li .price {
+    font-size: 18px !important;
+  }
+
+  #advant {
+    padding: 0 20px !important;
+  }
+  #advant ul li {
+    display: inline-block !important;
+    width: 49% !important;
+  }
+  #advant h1 {
+    font-size: 24px !important;
+  }
+  #advant h4 {
+    font-size: 14px !important;
+  }
+  #advant p {
+    font-size: 16px !important;
+  }
+  #advant li {
+    width: 25% !important;
   }
 
   #album span {
@@ -3573,6 +3595,43 @@ header a.logo {
   }
   #album ul li:nth-child(3) {
     margin-right: 5% !important;
+  }
+
+  #hr {
+    position: relative;
+  }
+  #hr h1 {
+    margin-bottom: 50px;
+  }
+  #hr .hr_info {
+    float: none;
+    height: auto;
+    text-align: left !important;
+    position: inherit;
+    top: -50px;
+  }
+  #hr .hr_info p {
+    font-size: 15px;
+  }
+  #hr .hr_info img {
+    width: 50%;
+    margin-top: 20px;
+  }
+  #hr .hr_info .inf {
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    text-align: right;
+  }
+  #hr form {
+    text-align: right;
+  }
+  #hr form p {
+    text-align: left;
+  }
+  #hr form input {
+    width: 96% !important;
+    margin-bottom: 10px;
   }
 
   .in_cel {
@@ -3594,6 +3653,10 @@ header a.logo {
 
   .editform input[type="text"], input[type="password"] {
     width: 90% !important;
+  }
+
+  .loginform input[type="text"], input.ps[type="password"] {
+    width: 210px !important;
   }
 
   .doplink {
@@ -3631,10 +3694,8 @@ header a.logo {
   }
 
   #client ul.employes li {
-    margin: 0 1px 20px 0 !important;
-  }
-  #client ul.employes li:nth-child(4n) {
-    margin-right: 1px !important;
+    width: 45% !important;
+    margin: 0 1px 10px 0 !important;
   }
 
   #client ul.employes li span {
@@ -3720,6 +3781,37 @@ header a.logo {
     position: relative;
     margin-top: 30px;
     right: 10px;
+  }
+
+  #order {
+    padding: 0 20px;
+  }
+  #order .in_cel {
+    width: 95% !important;
+  }
+  #order .dostavka, #order .status, #order .in_col, #order .in_col_hidden {
+    padding-left: 0 !important;
+  }
+  #order input[type="password"], #order input[type="password"] span {
+    width: 95% !important;
+  }
+
+  #basket a.order {
+    border: none !important;
+    padding: 10px 45px !important;
+  }
+
+  #catalog a.order {
+    border: none !important;
+    padding: 10px 45px !important;
+  }
+
+  #catalog ul {
+    margin-top: 0;
+  }
+
+  #catalog h1 {
+    font-size: 22px;
   }
 
   .responsive_table thead, .responsive_table tbody, .responsive_table th, .responsive_table td, .responsive_table tr {
@@ -3840,5 +3932,127 @@ header a.logo {
     display: none;
     content: "";
     padding-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  #slider {
+    width: auto !important;
+  }
+  #slider img {
+    display: none;
+  }
+  #slider img.i {
+    display: block !important;
+  }
+
+  #content img.about {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 20px !important;
+    transform: scale(1.12);
+    margin-left: 1px;
+  }
+
+  #blog {
+    height: 362px !important;
+  }
+
+  #clients h3 {
+    font-size: 24px !important;
+    margin-bottom: 10px !important;
+    font-family: 'pf_square_sans_promedium';
+  }
+
+  #clients {
+    margin: 20px 20px 0 20px !important;
+  }
+
+  #leftside {
+    margin: 0 !important;
+  }
+
+  #leftside ul {
+    margin-left: -10px !important;
+  }
+
+  #leftside li {
+    width: 148px !important;
+    margin: 0 !important;
+  }
+
+  #goods {
+    padding: 0px 10px 10px 10px;
+  }
+
+  #goods h1 {
+    font-size: 24px !important;
+  }
+
+  #goods h2 {
+    font-size: 16px !important;
+  }
+
+  #basket h2 {
+    font-size: 24px !important;
+  }
+
+  #basket {
+    padding: 0 10px 10px 10px !important;
+  }
+
+  #basket .colorpicker {
+    width: 80px !important;
+  }
+
+  .carusel_clients {
+    margin: 0 10px !important;
+  }
+
+  #news {
+    padding: 0 10px !important;
+  }
+
+  #blog_list {
+    margin: 0 10px !important;
+  }
+
+  #advant h1 {
+    display: none !important;
+  }
+
+  #wrap #advant {
+    padding: 0 10px !important;
+  }
+
+  #catalog {
+    padding: 0 10px !important;
+  }
+
+  #blog_list {
+    padding: 0 !important;
+  }
+
+  #hr form {
+    padding: 0 !important;
+  }
+
+  #hr form input {
+    width: 96%;
+  }
+
+  #client ul.cl li {
+    margin-right: 20px;
+  }
+
+  #client ul.employes li {
+    width: 95% !important;
+    margin: 0 1px 12px 0 !important;
   }
 }

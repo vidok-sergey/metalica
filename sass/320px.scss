@@ -23,7 +23,7 @@
 	.button_details {padding: 9px 10px; font-size: 16px; border: none;}
 	.photo_pr {padding-bottom: 20px;}
 	.photo_pr span {padding-top: 5px;}
-	#blog_list {margin: 0 20px !important;}
+	#blog_list {padding: 0 20px !important;}
 
 	#buttons {
 		height: auto !important;
@@ -147,13 +147,28 @@
 
 
 	.vidok {margin-right: 1px !important; margin-top: 50px;display: inline !important; position: relative; top:-10px;}
-
 	#catalog {
+		padding: 0 20px !important;
 		li {
-			display: none !important;
-			&:nth-child(-n+3) {display: inline-block !important;}
+			width: 46% !important;
+			margin-right: 2% !important;
+			&:nth-child(-n+3) {display: none !important;}
+			&:nth-child(-n+2) {display: inline-block !important; margin-right: 6% !important;}
+			&:nth-child(2) {display: inline-block !important; margin-right:0 !important;}			
+			&:nth-child(1) {display: inline-block !important; margin-right:5% !important;}
 			&.h0 {display: inline-block !important;}
+			p {font-size: 14px !important;}
+			.price	{font-size: 18px !important;}
 		}
+	}
+
+	#advant {
+		ul li {display: inline-block !important; width: 49% !important;}
+		h1 {font-size: 24px !important;}
+		h4 {font-size: 14px !important;}
+		p {font-size: 16px !important;}
+		padding: 0 20px !important;
+		li {width: 25% !important;}
 	}
 
 	#album {
@@ -169,12 +184,44 @@
 		}
 	}
 
+		#hr {
+		position: relative;
+		h1 {margin-bottom: 50px;}
+		.hr_info {
+			float: none;
+			height: auto;
+			text-align: left !important;
+			position: inherit;
+			top:-50px;
+			p {font-size: 15px;}
+			img {width: 50%;margin-top: 20px;}
+			.inf {
+				width: 100%;
+				position: absolute;
+				top: 1px;
+				text-align: right;
+			}
+		}
+		
+		form {
+			text-align: right;
+			p {text-align: left;}
+
+			input {
+				width: 96% !important;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
 	.in_cel {width: 45% !important;	margin-right: 20px !important;}
 	#basket th.price {}
 	#basket .colorpicker {width: 60px !important;}
 	#profbg .profile {margin-left: 0;}
 	#profbg span {display: none !important;}
-	.editform input[type="text"], input[type="password"] {width: 90% !important;}
+ 	.editform input[type="text"], input[type="password"] {width: 90% !important;}
+ 	.loginform input[type="text"], input.ps[type="password"] {width: 210px !important;}
+
 	.doplink {display: none !important;}
 
 	.editform {width: 90% !important; padding: 20px 20px 60px 20px !important;}
@@ -186,13 +233,14 @@
 	.goods_pic {width:70% !important;}
 
 	#hr form input {width: 38%;}
-	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(4n){margin-right:1px !important;}}
+	#client ul.employes li {width: 45% !important; margin: 0 1px 10px 0 !important;}
 	#client ul.employes li span {margin-left: 85px;}
 	#client ul.cl li {width: 130px;}
 	#client .popup {
 		left:37% !important; 
 		top:30% !important;
 	}
+
 
 	#leftside {
 		float: none;
@@ -222,6 +270,20 @@
 	#contacts .address {padding-left: 15px !important; position: relative; bottom: 100px; height:260px; width: 350px;}
 	#contacts button {width:200px !important; height:35px !important; font-size:16px !important;position: relative;margin-top: 30px; right: 10px;}
 
+	#order {
+		padding: 0 20px;
+		.in_cel {width: 95% !important;}
+		.dostavka, .status, .in_col, .in_col_hidden {padding-left: 0 !important;}
+		input[type="password"], input[type="password"] span {
+			width: 95% !important;
+		}
+	}
+
+	#basket a.order {border: none !important; padding: 10px 45px !important;}
+	#catalog a.order {border: none !important; padding: 10px 45px !important;}
+	#catalog ul {margin-top: 0;}
+	#catalog h1 {font-size: 22px;}
+
 	.responsive_table {
 	   thead, tbody, th, td, tr { 
 	    display: block; 
@@ -232,7 +294,6 @@
 	    position: absolute;
 	    top: -9999px;
 	    left: -9999px;
-	    
 	   }
 	   
 	   td { 

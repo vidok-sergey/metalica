@@ -19,8 +19,8 @@
 					<span>ИНН</span><input type="text" class="inn" placeholder="ИНН" value="3453412834832422134234">
 					<span>Юридический адресс</span><input type="text" class="yur" placeholder="Юридический адрес" value="г. Москва, пл. Революции, 9">
 					<span>Электронная почта</span><input type="text" class="mail" placeholder="Электронная почта" value="pushkin@mail.ru">
-					<span>Пароль</span><input type="password" class="ps" placeholder="Пароль" value="111111111">
-					<span>Подтвердите пароль</span><input type="password" class="ps" placeholder="Подтвердите пароль" value="111111111">
+					<span>Пароль</span><input type="password" placeholder="Пароль" value="111111111">
+					<span>Подтвердите пароль</span><input type="password" placeholder="Подтвердите пароль" value="111111111">
 					<div class="f_right"><a href="" class="go">СОХРАНИТЬ</a></div>
 				</form>
 			</div>

@@ -110,11 +110,23 @@
 	.vidok {margin-right: 1px !important; margin-top: 50px;}
 
 	#catalog {
+		padding: 0 20px 0 30px !important;
 		li {
+			width: 30% !important;
+			max-width: 220px !important;
+			margin-right: 3% !important;
 			display: none !important;
-			&:nth-child(-n+3) {display: inline-block !important;}
+			&:nth-child(-n+3) {display: inline-block !important;margin-right: 3% !important;}
+			&:nth-child(3) {display: inline-block !important;margin-right:0 !important;}
 			&.h0 {display: inline-block !important;}
+
 		}
+	}
+
+	#advant {
+		padding: 0 20px;
+		h2 {font-size: 32px;}
+		span {font-size: 14px !important; margin-left: 80px !important;}
 	}
 
 	#album {
@@ -137,7 +149,7 @@
 	#gallery li {margin-right: 5% !important;}
 
 	#hr form input {width: 38%;}
-	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(4n){margin-right:1px !important;}}
+	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(3n){margin-right:0 !important;}}
 	#client ul.employes li span {margin-left: 85px;}
 	#client ul.cl li {width: 130px;}
 	#client .popup {

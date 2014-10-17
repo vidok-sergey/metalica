@@ -163,14 +163,36 @@
     margin-top: 50px;
   }
 
+  #catalog {
+    padding: 0 20px 0 30px !important;
+  }
   #catalog li {
+    width: 30% !important;
+    max-width: 220px !important;
+    margin-right: 3% !important;
     display: none !important;
   }
   #catalog li:nth-child(-n+3) {
     display: inline-block !important;
+    margin-right: 3% !important;
+  }
+  #catalog li:nth-child(3) {
+    display: inline-block !important;
+    margin-right: 0 !important;
   }
   #catalog li.h0 {
     display: inline-block !important;
+  }
+
+  #advant {
+    padding: 0 20px;
+  }
+  #advant h2 {
+    font-size: 32px;
+  }
+  #advant span {
+    font-size: 14px !important;
+    margin-left: 80px !important;
   }
 
   #album span {
@@ -209,8 +231,8 @@
   #client ul.employes li {
     margin: 0 1px 20px 0 !important;
   }
-  #client ul.employes li:nth-child(4n) {
-    margin-right: 1px !important;
+  #client ul.employes li:nth-child(3n) {
+    margin-right: 0 !important;
   }
 
   #client ul.employes li span {

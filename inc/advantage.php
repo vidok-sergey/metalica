@@ -3,7 +3,7 @@
 		<ul>
 			<li>
 				<div class="adv1"></div>
-				<span>Изготовлены<br> из металла</span>
+				<span>Изготовлены из металла</span>
 			</li>
 			<li>
 				<div class="adv2"></div>

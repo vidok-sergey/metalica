@@ -55,7 +55,7 @@
   }
 
   #blog_list {
-    margin: 0 20px !important;
+    padding: 0 20px !important;
   }
 
   #buttons {
@@ -280,14 +280,56 @@
     top: -10px;
   }
 
+  #catalog {
+    padding: 0 20px !important;
+  }
   #catalog li {
-    display: none !important;
+    width: 46% !important;
+    margin-right: 2% !important;
   }
   #catalog li:nth-child(-n+3) {
+    display: none !important;
+  }
+  #catalog li:nth-child(-n+2) {
     display: inline-block !important;
+    margin-right: 6% !important;
+  }
+  #catalog li:nth-child(2) {
+    display: inline-block !important;
+    margin-right: 0 !important;
+  }
+  #catalog li:nth-child(1) {
+    display: inline-block !important;
+    margin-right: 5% !important;
   }
   #catalog li.h0 {
     display: inline-block !important;
+  }
+  #catalog li p {
+    font-size: 14px !important;
+  }
+  #catalog li .price {
+    font-size: 18px !important;
+  }
+
+  #advant {
+    padding: 0 20px !important;
+  }
+  #advant ul li {
+    display: inline-block !important;
+    width: 49% !important;
+  }
+  #advant h1 {
+    font-size: 24px !important;
+  }
+  #advant h4 {
+    font-size: 14px !important;
+  }
+  #advant p {
+    font-size: 16px !important;
+  }
+  #advant li {
+    width: 25% !important;
   }
 
   #album span {
@@ -303,6 +345,43 @@
   }
   #album ul li:nth-child(3) {
     margin-right: 5% !important;
+  }
+
+  #hr {
+    position: relative;
+  }
+  #hr h1 {
+    margin-bottom: 50px;
+  }
+  #hr .hr_info {
+    float: none;
+    height: auto;
+    text-align: left !important;
+    position: inherit;
+    top: -50px;
+  }
+  #hr .hr_info p {
+    font-size: 15px;
+  }
+  #hr .hr_info img {
+    width: 50%;
+    margin-top: 20px;
+  }
+  #hr .hr_info .inf {
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    text-align: right;
+  }
+  #hr form {
+    text-align: right;
+  }
+  #hr form p {
+    text-align: left;
+  }
+  #hr form input {
+    width: 96% !important;
+    margin-bottom: 10px;
   }
 
   .in_cel {
@@ -324,6 +403,10 @@
 
   .editform input[type="text"], input[type="password"] {
     width: 90% !important;
+  }
+
+  .loginform input[type="text"], input.ps[type="password"] {
+    width: 210px !important;
   }
 
   .doplink {
@@ -361,10 +444,8 @@
   }
 
   #client ul.employes li {
-    margin: 0 1px 20px 0 !important;
-  }
-  #client ul.employes li:nth-child(4n) {
-    margin-right: 1px !important;
+    width: 45% !important;
+    margin: 0 1px 10px 0 !important;
   }
 
   #client ul.employes li span {
@@ -450,6 +531,37 @@
     position: relative;
     margin-top: 30px;
     right: 10px;
+  }
+
+  #order {
+    padding: 0 20px;
+  }
+  #order .in_cel {
+    width: 95% !important;
+  }
+  #order .dostavka, #order .status, #order .in_col, #order .in_col_hidden {
+    padding-left: 0 !important;
+  }
+  #order input[type="password"], #order input[type="password"] span {
+    width: 95% !important;
+  }
+
+  #basket a.order {
+    border: none !important;
+    padding: 10px 45px !important;
+  }
+
+  #catalog a.order {
+    border: none !important;
+    padding: 10px 45px !important;
+  }
+
+  #catalog ul {
+    margin-top: 0;
+  }
+
+  #catalog h1 {
+    font-size: 22px;
   }
 
   .responsive_table thead, .responsive_table tbody, .responsive_table th, .responsive_table td, .responsive_table tr {

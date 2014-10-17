@@ -8,10 +8,12 @@
 			<h1>Вакансии</h1>
 			<div class="hr_info">
 				<img src="images/hr_photo.jpg">
-				<p><span>Иванова</span>Лариса Сергеевна</p>
-				<p>Начальник отдела кадров</p>
-				<p>(8352) 61-67-40</p>
-				<p>ivanova@meigenz.ru</p>
+				<div class="inf">
+					<p><span>Иванова</span>Лариса Сергеевна</p>
+					<p>Начальник отдела кадров</p>
+					<p>(8352) 61-67-40</p>
+					<p>ivanova@meigenz.ru</p>
+				</div>
 			</div>
 
 			<form class="vac_subs">

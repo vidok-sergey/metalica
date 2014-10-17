@@ -8,7 +8,9 @@
 		<div id="gallery">
 			<ul>
 				<li>
-					<a href=""><img src="images/photo1.jpg"></a>
+					<div class="squerEl"><a href="">
+						<img src="images/photo1.jpg"></a>
+					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
 				<li>
