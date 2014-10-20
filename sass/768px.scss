@@ -102,12 +102,16 @@
 	h1 {margin-top: 20px;}
 	/*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
 	#ft_menu {display: none;}
+	#ft_ft {padding-top: 40px;}
 	#blog .blogrow {width: 50%; margin-bottom: 40px!important;}
 	#bread {display: none;}
 	#company {margin-left: 0;}
 	#company .back {position: absolute; bottom: 280px; right: 50px !important;}
+	#ft_ft .ftrow_logo {margin-right: 8% !important;}
+	#ft_ft .ftrow_soc {margin-right: 7% !important;}
+	#ft_ft .ftrow_tel {margin-right: 0 !important;}
 
-	.vidok {margin-right: 1px !important; margin-top: 50px;}
+	.vidok {margin-right: 1px !important; position: absolute; width: 100% !important; top:100px !important;}
 
 	#catalog {
 		padding: 0 20px 0 30px !important;
@@ -129,33 +133,31 @@
 		span {font-size: 14px !important; margin-left: 80px !important;}
 	}
 
-	#album {
+	#album, #gallery {
 		span {margin-top: 10px !important;}
 		ul {
 			li {
 				margin-right: 4% !important;
 				width: 29% !important;
 				height: 29% !important;
-				&:nth-child(3) {margin-right: 0 !important;}
+				&:nth-child(3n+3) {margin-right: 0 !important;}
 			}
 		}
 	}
 
 	.in_cel {width: 45% !important;	margin-right: 20px !important;}
 	#basket th.price {}
+//	#basket tr {border-bottom: none;}
 	#profbg .profile {margin-left: 0;}
 	.editform, .loginform {margin: 0 auto !important;}
 
-	#gallery li {margin-right: 5% !important;}
+//	#gallery li {margin-right: 5% !important;}
 
 	#hr form input {width: 38%;}
 	#client ul.employes li {margin: 0 1px 20px 0 !important; &:nth-child(3n){margin-right:0 !important;}}
 	#client ul.employes li span {margin-left: 85px;}
 	#client ul.cl li {width: 130px;}
-	#client .popup {
-		left:37% !important; 
-		top:30% !important;
-	}
+	#client .popup {transform: translateX(-50%) !important; left: 50% !important;}
 
 	#leftside {
 		float: none;
@@ -179,10 +181,11 @@
 	}
 
 	.contact_form {position: relative !important; width: auto !important; margin-top: 10px; height: 300px !important;}
-	.contact_form input {width: 49% !important; margin-right: 4px !important;}
+	.contact_form input {width: 48.8% !important; margin-right: 4px !important;}
 	.contact_form textarea {width: 99% !important;}
 	.map {width: 100% !important; float: none !important;margin-left:0 !important; margin-right: 40px; overflow: hidden;}
 	.contact_form span {float: right; position: relative; right: -190px;}
 	#contacts .address {padding-left: 15px !important; position: relative; bottom: 100px; height:260px; width: 350px;}
 	#contacts button {width:200px !important; height:35px !important; font-size:16px !important;position: relative;margin-top: 30px; right: 10px;}
+	footer {width: 90%;}
 }

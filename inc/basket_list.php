@@ -20,7 +20,7 @@
 					<p class="goods_title">AB41-03-300X</p>
 					<p class="goods_size">1850х300х500</p>
 					<p class="goods_weight">30 кг</p>
-					<a href="">Дополнительное оборудование</a>
+					<a class="dop" href="">Дополнительное оборудование</a>
 				</td>
 				<td>
 					<div class="colorpicker">
@@ -88,6 +88,8 @@
 				<td>12.200 Р</td>
 				<td>12.200 Р</td>
 			</tr>
+			<tr class="dop320"><td colspan="8"><a href="">Дополнительное оборудование</a></td></tr>
+
 			<tr>
 				<td>2</td>
 				<td><img src="images/goods1.png"></td>
@@ -95,7 +97,7 @@
 					<p class="goods_title">AB41-03-300X</p>
 					<p class="goods_size">1850х300х500</p>
 					<p class="goods_weight">40 кг</p>
-					<a href="">Дополнительное оборудование</a>
+					<a class="dop" href="">Дополнительное оборудование</a>
 				</td>
 				<td>
 					<div class="colorpicker">
@@ -163,6 +165,8 @@
 				<td>12.200 Р</td>
 				<td>12.200 Р</td>
 			</tr>
+			<tr class="dop320"><td colspan="8"><a href="">Дополнительное оборудование</a></td></tr>
+
 		</tbody>
 	</table>
 	<div class="summ">Сумма: 24.400 Р</div>

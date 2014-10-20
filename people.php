@@ -10,7 +10,7 @@
 					<strong>СВЯЗАТЬСЯ</strong>
 					<input type="text" placeholder="Ваше имя">
 					<input type="text" placeholder="Электронная почта">
-					<input type="text" placeholder="Сообщение">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
 					<button>Отправить</button>
 				</form>
 			</div>

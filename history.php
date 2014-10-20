@@ -1,5 +1,4 @@
 <? include 'inc/header.php'; ?>
-<? include 'inc/buttons.php'; ?>
 <? include 'inc/bread.php'; ?>
 
 <div id="basket">
@@ -25,7 +24,7 @@
 					<p class="goods_title">AB41-03-300X</p>
 					<p class="goods_size">1850х300х500</p>
 					<p class="goods_weight">30 кг</p>
-					<a href="">Дополнительное оборудование</a>
+					<a class="dop" href="">Дополнительное оборудование</a> <!--скрывается при 640px-->
 				</td>
 				<td>
 					Отправлен
@@ -44,6 +43,26 @@
 					<label for="c1"></label>
 				</td>
 			</tr>
+			<tr class="dop"> <!--доп оборудование-->
+				<td></td>
+				<td><img src="images/buy2.jpg"></td>
+				<td>
+					<p class="goods_title">ПОДСТАВКА</p>
+					<p class="goods_weight">5 кг</p>
+				</td>
+				<td>
+				</td>
+				<td>
+					<div class="count">
+						2		
+						<a href=""><div class="plus"></div></a>
+						<a href=""><div class="minus"></div></a>
+					</div>
+				</td>
+				<td>12.200 Р</td>
+				<td>12.200 Р</td>
+			</tr>
+			<tr class="dop320"><td colspan="8"><a href="">Дополнительное оборудование</a></td></tr><!--показывается при 640px-->
 			<tr>
 				<td></td>
 				<td><img src="images/goods1.png"></td>
@@ -51,7 +70,7 @@
 					<p class="goods_title">AB41-03-300X</p>
 					<p class="goods_size">1850х300х500</p>
 					<p class="goods_weight">30 кг</p>
-					<a href="">Дополнительное оборудование</a>
+					<a  class="dop" href="">Дополнительное оборудование</a>
 				</td>
 				<td>
 					Отправлен
@@ -67,6 +86,7 @@
 				<td>12.200 Р</td>
 				<td></td>
 			</tr>
+			<tr class="dop320"><td colspan="8"><a href="">Дополнительное оборудование</a></td></tr>
 			<tr>
 				<td>2 <span class="data">22.07.14</span></td>
 				<td><img src="images/goods2.png"></td>
@@ -74,7 +94,7 @@
 					<p class="goods_title">AB41-03-300X</p>
 					<p class="goods_size">1850х300х500</p>
 					<p class="goods_weight">30 кг</p>
-					<a class="doplink" href="">Дополнительное оборудование</a>
+					<a  class="dop" href="">Дополнительное оборудование</a>
 				</td>
 				<td>
 					Отправлен	

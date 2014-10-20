@@ -6,7 +6,8 @@
 		width: auto !important;
 	}
 	#content img.about {float: none; width: 100%; margin-top: 0; margin-bottom: 10px; padding-top: 20px !important; transform: scale(1.12);margin-left: 1px;}
-	#blog {height: 362px !important;}
+	#content img.imgabout {float: none; width: 100%; margin-top: 0; margin-bottom: 30px; padding-top: 20px !important; transform: scale(1.12);margin-left: 1px;}
+	#blog {height: auto !important;}
 	#clients h3 {font-size: 24px !important; margin-bottom: 10px !important; font-family: 'pf_square_sans_promedium';}
 	#clients {margin: 20px 20px 0 20px !important;}
 	#leftside {margin: 0 !important;}
@@ -28,5 +29,16 @@
 	#hr form {padding: 0 !important;}
 	#hr form input {width: 96%;}
 	#client ul.cl li {margin-right: 20px;}
+
 	#client ul.employes li {width: 95% !important; margin: 0 1px 12px 0 !important;}
+	#contacts .address {top:440px !important;}
+	#faq {margin: 0 !important;}
+	#client.replay {margin: 0 !important;}
+	article {
+		h1 {font-size: 24px;}
+		h2 {font-size: 22px;}
+
+	}
+
+
 }

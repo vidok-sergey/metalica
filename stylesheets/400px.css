@@ -1,19 +1,24 @@
 @media screen and (max-width: 400px) {
+  /* line 2, ../sass/400px.scss */
   h1 {
     font-size: 25px;
     margin: 10px 0;
   }
 
+  /* line 3, ../sass/400px.scss */
   #slider {
     width: auto !important;
   }
+  /* line 4, ../sass/400px.scss */
   #slider img {
     display: none;
   }
+  /* line 5, ../sass/400px.scss */
   #slider img.i {
     display: block !important;
   }
 
+  /* line 8, ../sass/400px.scss */
   #content img.about {
     float: none;
     width: 100%;
@@ -24,99 +29,157 @@
     margin-left: 1px;
   }
 
-  #blog {
-    height: 362px !important;
+  /* line 9, ../sass/400px.scss */
+  #content img.imgabout {
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-top: 20px !important;
+    transform: scale(1.12);
+    margin-left: 1px;
   }
 
+  /* line 10, ../sass/400px.scss */
+  #blog {
+    height: auto !important;
+  }
+
+  /* line 11, ../sass/400px.scss */
   #clients h3 {
     font-size: 24px !important;
     margin-bottom: 10px !important;
     font-family: 'pf_square_sans_promedium';
   }
 
+  /* line 12, ../sass/400px.scss */
   #clients {
     margin: 20px 20px 0 20px !important;
   }
 
+  /* line 13, ../sass/400px.scss */
   #leftside {
     margin: 0 !important;
   }
 
+  /* line 14, ../sass/400px.scss */
   #leftside ul {
     margin-left: -10px !important;
   }
 
+  /* line 15, ../sass/400px.scss */
   #leftside li {
     width: 148px !important;
     margin: 0 !important;
   }
 
+  /* line 16, ../sass/400px.scss */
   #goods {
     padding: 0px 10px 10px 10px;
   }
 
+  /* line 17, ../sass/400px.scss */
   #goods h1 {
     font-size: 24px !important;
   }
 
+  /* line 18, ../sass/400px.scss */
   #goods h2 {
     font-size: 16px !important;
   }
 
+  /* line 19, ../sass/400px.scss */
   #basket h2 {
     font-size: 24px !important;
   }
 
+  /* line 20, ../sass/400px.scss */
   #basket {
     padding: 0 10px 10px 10px !important;
   }
 
+  /* line 21, ../sass/400px.scss */
   #basket .colorpicker {
     width: 80px !important;
   }
 
+  /* line 22, ../sass/400px.scss */
   .carusel_clients {
     margin: 0 10px !important;
   }
 
+  /* line 23, ../sass/400px.scss */
   #news {
     padding: 0 10px !important;
   }
 
+  /* line 24, ../sass/400px.scss */
   #blog_list {
     margin: 0 10px !important;
   }
 
+  /* line 25, ../sass/400px.scss */
   #advant h1 {
     display: none !important;
   }
 
+  /* line 26, ../sass/400px.scss */
   #wrap #advant {
     padding: 0 10px !important;
   }
 
+  /* line 27, ../sass/400px.scss */
   #catalog {
     padding: 0 10px !important;
   }
 
+  /* line 28, ../sass/400px.scss */
   #blog_list {
     padding: 0 !important;
   }
 
+  /* line 29, ../sass/400px.scss */
   #hr form {
     padding: 0 !important;
   }
 
+  /* line 30, ../sass/400px.scss */
   #hr form input {
     width: 96%;
   }
 
+  /* line 31, ../sass/400px.scss */
   #client ul.cl li {
     margin-right: 20px;
   }
 
+  /* line 33, ../sass/400px.scss */
   #client ul.employes li {
     width: 95% !important;
     margin: 0 1px 12px 0 !important;
+  }
+
+  /* line 34, ../sass/400px.scss */
+  #contacts .address {
+    top: 440px !important;
+  }
+
+  /* line 35, ../sass/400px.scss */
+  #faq {
+    margin: 0 !important;
+  }
+
+  /* line 36, ../sass/400px.scss */
+  #client.replay {
+    margin: 0 !important;
+  }
+
+  /* line 38, ../sass/400px.scss */
+  article h1 {
+    font-size: 24px;
+  }
+  /* line 39, ../sass/400px.scss */
+  article h2 {
+    font-size: 22px;
   }
 }

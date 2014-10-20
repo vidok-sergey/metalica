@@ -22,7 +22,7 @@
 								</div>
 								<div class="ftrow_soc">
 									<p>© Melgenz, 2014</p>
-									<div class="social">ВК OK FB TW	GP</div>
+									<div class="social"><img src="images/social.png" alt=""></div>
 								</div>
 								<div class="ftrow_tel">
 									<p class="phone">8 800 568 58 59</p>

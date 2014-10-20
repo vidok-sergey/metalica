@@ -1,104 +1,130 @@
 @media screen and (max-width: 1021px) {
+  /* line 3, ../sass/768px.scss */
   header {
     background-color: #f57840;
     height: 60px;
   }
 
+  /* line 8, ../sass/768px.scss */
   .logo768 {
     display: block;
   }
+  /* line 10, ../sass/768px.scss */
   .logo768 span {
     font-size: 12px;
   }
 
+  /* line 13, ../sass/768px.scss */
   .tel, .login, #menu, .logo {
     display: none;
   }
 
+  /* line 14, ../sass/768px.scss */
   .btn_mobile_menu {
     display: block;
   }
 
+  /* line 16, ../sass/768px.scss */
   #slider .slider_text {
     padding-left: 30px;
     font-size: 26px;
   }
 
+  /* line 18, ../sass/768px.scss */
   .button_details {
     padding: 12px 10px;
     font-size: 16px;
     border: none;
   }
 
+  /* line 20, ../sass/768px.scss */
   #buttons {
     /*a {
     	color: #fff;
     	@include text-shadow(0px 1px 1px #4e4e4e);
     }*/
   }
+  /* line 25, ../sass/768px.scss */
   #buttons ul li:hover > ul {
     display: none;
   }
+  /* line 30, ../sass/768px.scss */
   #buttons ul .second_b1 {
     padding: 10px;
   }
+  /* line 32, ../sass/768px.scss */
   #buttons ul .second_b1 li {
     font-size: 14px;
   }
+  /* line 35, ../sass/768px.scss */
   #buttons ul .second_b2 {
     padding: 10px;
   }
+  /* line 37, ../sass/768px.scss */
   #buttons ul .second_b2 li {
     font-size: 14px;
   }
+  /* line 39, ../sass/768px.scss */
   #buttons ul .second_b3 {
     padding: 10px;
   }
+  /* line 41, ../sass/768px.scss */
   #buttons ul .second_b3 li {
     font-size: 14px;
   }
+  /* line 44, ../sass/768px.scss */
   #buttons ul .second_b4 {
     padding: 10px;
   }
+  /* line 46, ../sass/768px.scss */
   #buttons ul .second_b4 li {
     font-size: 14px;
   }
+  /* line 49, ../sass/768px.scss */
   #buttons ul .second_b5 {
     padding: 10px;
   }
+  /* line 51, ../sass/768px.scss */
   #buttons ul .second_b5 li {
     font-size: 14px;
   }
+  /* line 55, ../sass/768px.scss */
   #buttons ul li {
     width: 140px;
   }
+  /* line 57, ../sass/768px.scss */
   #buttons ul li .icon {
     display: none;
   }
+  /* line 60, ../sass/768px.scss */
   #buttons ul li.b1 {
     background: none;
     background-color: #397db0;
     border-bottom: none;
     padding-left: 30px;
   }
+  /* line 66, ../sass/768px.scss */
   #buttons ul li.b2 {
     background: none;
     background-color: #f57840;
     padding-left: 30px;
     border: none;
   }
+  /* line 72, ../sass/768px.scss */
   #buttons ul li.b3 {
     background: none;
     background-color: #938a80;
     padding-left: 40px;
     border-bottom: none;
   }
+  /* line 78, ../sass/768px.scss */
   #buttons ul li.b4 {
     background: none;
     background-color: #6b75aa;
     padding-left: 40px;
     border-bottom: none;
   }
+  /* line 84, ../sass/768px.scss */
   #buttons ul li.b5 {
     background: none;
     background-color: #b3a16e;
@@ -106,157 +132,211 @@
     border-bottom: none;
   }
 
+  /* line 94, ../sass/768px.scss */
   .adv1 {
     transform: scale(0.75);
   }
 
+  /* line 95, ../sass/768px.scss */
   .adv2 {
     transform: scale(0.75);
   }
 
+  /* line 96, ../sass/768px.scss */
   .adv3 {
     transform: scale(0.75);
   }
 
+  /* line 97, ../sass/768px.scss */
   .adv4 {
     transform: scale(0.75);
   }
 
+  /* line 99, ../sass/768px.scss */
   .content {
     padding: 0 129px;
   }
 
+  /* line 100, ../sass/768px.scss */
   #content {
     padding: 0 30px;
   }
 
+  /* line 102, ../sass/768px.scss */
   h1 {
     margin-top: 20px;
   }
 
   /*.carusel .cWrapper .lenta .row{margin-right: 5%;}*/
+  /* line 104, ../sass/768px.scss */
   #ft_menu {
     display: none;
   }
 
+  /* line 105, ../sass/768px.scss */
+  #ft_ft {
+    padding-top: 40px;
+  }
+
+  /* line 106, ../sass/768px.scss */
   #blog .blogrow {
     width: 50%;
     margin-bottom: 40px !important;
   }
 
+  /* line 107, ../sass/768px.scss */
   #bread {
     display: none;
   }
 
+  /* line 108, ../sass/768px.scss */
   #company {
     margin-left: 0;
   }
 
+  /* line 109, ../sass/768px.scss */
   #company .back {
     position: absolute;
     bottom: 280px;
     right: 50px !important;
   }
 
-  .vidok {
-    margin-right: 1px !important;
-    margin-top: 50px;
+  /* line 110, ../sass/768px.scss */
+  #ft_ft .ftrow_logo {
+    margin-right: 8% !important;
   }
 
+  /* line 111, ../sass/768px.scss */
+  #ft_ft .ftrow_soc {
+    margin-right: 7% !important;
+  }
+
+  /* line 112, ../sass/768px.scss */
+  #ft_ft .ftrow_tel {
+    margin-right: 0 !important;
+  }
+
+  /* line 114, ../sass/768px.scss */
+  .vidok {
+    margin-right: 1px !important;
+    position: absolute;
+    width: 100% !important;
+    top: 100px !important;
+  }
+
+  /* line 116, ../sass/768px.scss */
   #catalog {
     padding: 0 20px 0 30px !important;
   }
+  /* line 118, ../sass/768px.scss */
   #catalog li {
     width: 30% !important;
     max-width: 220px !important;
     margin-right: 3% !important;
     display: none !important;
   }
+  /* line 123, ../sass/768px.scss */
   #catalog li:nth-child(-n+3) {
     display: inline-block !important;
     margin-right: 3% !important;
   }
+  /* line 124, ../sass/768px.scss */
   #catalog li:nth-child(3) {
     display: inline-block !important;
     margin-right: 0 !important;
   }
+  /* line 125, ../sass/768px.scss */
   #catalog li.h0 {
     display: inline-block !important;
   }
 
+  /* line 130, ../sass/768px.scss */
   #advant {
     padding: 0 20px;
   }
+  /* line 132, ../sass/768px.scss */
   #advant h2 {
     font-size: 32px;
   }
+  /* line 133, ../sass/768px.scss */
   #advant span {
     font-size: 14px !important;
     margin-left: 80px !important;
   }
 
-  #album span {
+  /* line 137, ../sass/768px.scss */
+  #album span, #gallery span {
     margin-top: 10px !important;
   }
-  #album ul li {
+  /* line 139, ../sass/768px.scss */
+  #album ul li, #gallery ul li {
     margin-right: 4% !important;
     width: 29% !important;
     height: 29% !important;
   }
-  #album ul li:nth-child(3) {
+  /* line 143, ../sass/768px.scss */
+  #album ul li:nth-child(3n+3), #gallery ul li:nth-child(3n+3) {
     margin-right: 0 !important;
   }
 
+  /* line 148, ../sass/768px.scss */
   .in_cel {
     width: 45% !important;
     margin-right: 20px !important;
   }
 
+  /* line 151, ../sass/768px.scss */
   #profbg .profile {
     margin-left: 0;
   }
 
+  /* line 152, ../sass/768px.scss */
   .editform, .loginform {
     margin: 0 auto !important;
   }
 
-  #gallery li {
-    margin-right: 5% !important;
-  }
-
+  /* line 156, ../sass/768px.scss */
   #hr form input {
     width: 38%;
   }
 
+  /* line 157, ../sass/768px.scss */
   #client ul.employes li {
     margin: 0 1px 20px 0 !important;
   }
+  /* line 157, ../sass/768px.scss */
   #client ul.employes li:nth-child(3n) {
     margin-right: 0 !important;
   }
 
+  /* line 158, ../sass/768px.scss */
   #client ul.employes li span {
     margin-left: 85px;
   }
 
+  /* line 159, ../sass/768px.scss */
   #client ul.cl li {
     width: 130px;
   }
 
+  /* line 160, ../sass/768px.scss */
   #client .popup {
-    left: 37% !important;
-    top: 30% !important;
+    transform: translateX(-50%) !important;
+    left: 50% !important;
   }
 
+  /* line 162, ../sass/768px.scss */
   #leftside {
     float: none;
     position: inherit;
     width: inherit;
     margin: 10px 0;
   }
+  /* line 167, ../sass/768px.scss */
   #leftside ul {
     width: 100% !important;
   }
+  /* line 168, ../sass/768px.scss */
   #leftside li {
     line-height: 21px;
     display: inline-block;
@@ -265,17 +345,21 @@
     text-align: center;
     padding-top: 7px;
   }
+  /* line 175, ../sass/768px.scss */
   #leftside li.active {
     background-color: #b8b0b0;
     color: #fff;
   }
+  /* line 177, ../sass/768px.scss */
   #leftside li.active a {
     color: #fff;
   }
+  /* line 179, ../sass/768px.scss */
   #leftside li a {
     text-decoration: none;
   }
 
+  /* line 183, ../sass/768px.scss */
   .contact_form {
     position: relative !important;
     width: auto !important;
@@ -283,15 +367,18 @@
     height: 300px !important;
   }
 
+  /* line 184, ../sass/768px.scss */
   .contact_form input {
-    width: 49% !important;
+    width: 48.8% !important;
     margin-right: 4px !important;
   }
 
+  /* line 185, ../sass/768px.scss */
   .contact_form textarea {
     width: 99% !important;
   }
 
+  /* line 186, ../sass/768px.scss */
   .map {
     width: 100% !important;
     float: none !important;
@@ -300,12 +387,14 @@
     overflow: hidden;
   }
 
+  /* line 187, ../sass/768px.scss */
   .contact_form span {
     float: right;
     position: relative;
     right: -190px;
   }
 
+  /* line 188, ../sass/768px.scss */
   #contacts .address {
     padding-left: 15px !important;
     position: relative;
@@ -314,6 +403,7 @@
     width: 350px;
   }
 
+  /* line 189, ../sass/768px.scss */
   #contacts button {
     width: 200px !important;
     height: 35px !important;
@@ -321,5 +411,10 @@
     position: relative;
     margin-top: 30px;
     right: 10px;
+  }
+
+  /* line 190, ../sass/768px.scss */
+  footer {
+    width: 90%;
   }
 }

@@ -7,32 +7,43 @@
 		<h1>Фотогаллерея</h1>
 		<div id="gallery">
 			<ul>
-				<li>
-					<div class="squerEl"><a href="">
-						<img src="images/photo1.jpg"></a>
+				<li class="row">
+					<div class="squerEl">
+						<div class="inner"><img src="images/gal3.jpg"></div>
 					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
-				<li>
-					<a href=""><img src="images/photo2.jpg"></a>
+				<li class="row">
+					<div class="squerEl">
+						<div class="inner"><img src="images/gal1.jpg"></div>
+					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
-				<li>
-					<a href=""><img src="images/photo3.jpg"></a>
+				<li class="row">
+					<div class="squerEl">
+						<div class="inner"><img src="images/gal2.jpg"></div>
+					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
-				<li>
-					<a href=""><img src="images/photo4.jpg"></a>
+				<li class="row">
+					<div class="squerEl">
+						<div class="inner"><img src="images/gal3.jpg"></div>
+					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
-				<li>
-					<a href=""><img src="images/photo2.jpg"></a>
+				<li class="row">
+					<div class="squerEl">
+						<div class="inner"><img src="images/gal1.jpg"></div>
+					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
-				<li>
-					<a href=""><img src="images/photo4.jpg"></a>
+				<li class="row">
+					<div class="squerEl">
+						<div class="inner"><img src="images/gal2.jpg"></div>
+					</div>
 					<span><a href="#">Заголовок альбома</a></span>
 				</li>
+
 			</ul>
 			<div class="pages">
 				<a href="#" class="active">1</a>

@@ -17,31 +17,31 @@
 					<div class="row">
 						<div class="block">
 							<a href=""><img src="images/photo1.jpg"></a>
-							<span>Производство</span>
+							<p>Производство</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="block">
 							<a href=""><img src="images/photo2.jpg"></a>
-							<span>Производство</span>
+							<p>Производство</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="block">
 							<a href=""><img src="images/photo3.jpg"></a>
-							<span>Производство</span>
+							<p>Производство</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="block">
 							<a href=""><img src="images/photo4.jpg"></a>
-							<span>Производство</span>
+							<p>Производство</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="block">
 							<a href=""><img src="images/photo2.jpg"></a>
-							<span>Производство</span>
+							<p>Производство</p>
 						</div>
 					</div>
 				</div>

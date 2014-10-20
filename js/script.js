@@ -18,11 +18,13 @@ $(document).ready(function () {
                 }
               },
               {
-                breakpoint: 600,
+                breakpoint: 640,
                 settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-                  arrows: true
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  arrows: false,
+                  dots: true
+
                 }
               },
               {

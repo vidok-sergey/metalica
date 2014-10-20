@@ -16,6 +16,7 @@
 		<div class="add">
 			<a href="#" class="addbtn">Задать вопрос</a>
 			<div class="addform">
+				<strong>Задать вопрос</strong>
 				<input type="text" placeholder="Фамилия Имя Отчество *">
 				<input type="text" placeholder="Электронная почта *">
 				<textarea class="mess" placeholder="Текст отзыва *"></textarea>
